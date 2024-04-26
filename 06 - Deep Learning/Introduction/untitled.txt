@@ -1,0 +1,2 @@
+TensorFlow Tutorials: https://www.tensorflow.org/tutorials
+Keras API reference: https://keras.io/api/
