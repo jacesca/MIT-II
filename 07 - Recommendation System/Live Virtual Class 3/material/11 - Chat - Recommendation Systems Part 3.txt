@@ -1,0 +1,667 @@
+21:52:13 From MIKE I.C. ABEJO To Everyone:
+	Good morning!
+21:53:08 From Imon Rashid To All Panelists:
+	Hello
+21:53:16 From Imon Rashid To Everyone:
+	Hello
+21:54:23 From Sriram Akella To Everyone:
+	Good morning
+21:55:06 From Victoria Le To Everyone:
+	Good morning! TGIF!
+21:55:48 From Cesar Muino To Everyone:
+	Hello Everyone
+21:56:03 From Jacqueline Escalante de Cortez To Everyone:
+	Good day Everyone!
+21:56:46 From Tamari Kirtadze To Everyone:
+	Salutations! :)
+21:57:02 From Theodoros Alexandropoulos To Everyone:
+	Good afternoon from scorched Athens.
+21:57:36 From Lakshmi Vidyasagar To Everyone:
+	Good Afternoon!!!
+21:57:53 From carla rudder To Everyone:
+	Good Afternoon!
+21:57:57 From Kuran Lewis To Everyone:
+	Greetings from Syracuse, New York USA
+21:59:05 From Andres Alvarez To Everyone:
+	hello everyone!!
+21:59:20 From Will Rein To Everyone:
+	Hello
+21:59:27 From Victor Mensah To Everyone:
+	Happy Friday!!!
+21:59:32 From Rui Rodrigues To Everyone:
+	Hello everyone!
+21:59:33 From Anushree Pandya To Everyone:
+	Hello All
+21:59:33 From syed nabi To Everyone:
+	good evening
+21:59:41 From Herberth Gutierrez To Everyone:
+	Hello everyone.
+21:59:42 From Zdzislaw Wojtera To All Panelists:
+	Hello
+22:00:07 From Edwin Obando Hernandez To Everyone:
+	Good afternoon from Holland!
+22:00:21 From Ayman Daoud To Everyone:
+	Hello All
+22:00:21 From milly Nalukwago To Everyone:
+	Good evening
+22:00:23 From Jeanelle Frontin To Everyone:
+	Hello from the Caribbean 🏝️
+22:00:24 From Victor Mensah To Everyone:
+	Shubham,    what time is it where you are?
+22:00:34 From Mohammed Al Farsi To Everyone:
+	Hello from Oman, Muscat
+22:00:55 From Bill Hutchison To Everyone:
+	Hello from Bath, England
+22:01:02 From Prashanth Yadagiri To Everyone:
+	Hello from Windy City
+22:01:05 From maryam ghashghaie To Everyone:
+	Good afternoon
+22:01:09 From Venkatesh Prasad To Everyone:
+	Hi Professor, Good morning!,you said you will give us access to some system?
+22:01:13 From Amul Gadhia To Everyone:
+	Hello all
+22:01:17 From Nazar H. Elbashir To Everyone:
+	Good afternoon
+22:01:19 From Marja Crawford To Everyone:
+	Hello from mile high Denver
+22:01:26 From Brandon Alpert To Everyone:
+	Hello everyone
+22:01:33 From Yolanda Dolores To Everyone:
+	How cool, the Caribbean. You'll have a place to enjoy after the class is done
+22:01:33 From Brandon Alpert To Everyone:
+	yes
+22:01:34 From Amul Gadhia To Everyone:
+	All well
+22:01:35 From Pam Marcus To Everyone:
+	yep
+22:01:35 From Jyothi Ponde To Everyone:
+	Yes
+22:01:36 From Yolanda Dolores To Everyone:
+	yes
+22:01:38 From Hector Acaron To Everyone:
+	all good
+22:01:38 From Chih-Chung Wuo To Everyone:
+	yes
+22:01:38 From Venkatesh Prasad To Everyone:
+	Yes we can see
+22:01:38 From Lakshmi Vidyasagar To Everyone:
+	yes
+22:01:38 From Tamari Kirtadze To Everyone:
+	Yes
+22:01:38 From Christina Bell To Everyone:
+	Yes we can see and hear fine
+22:01:39 From maryam ghashghaie To Everyone:
+	Yes
+22:01:39 From Ron Carino To Everyone:
+	good to go!
+22:01:40 From carla rudder To Everyone:
+	yes all good
+22:01:40 From Prashanth Yadagiri To Everyone:
+	All is well
+22:01:41 From Laxmi Narayana Byagari To Everyone:
+	yes
+22:01:47 From syed nabi To Everyone:
+	looks good
+22:01:48 From Burt Sloane To Everyone:
+	👍
+22:02:25 From Jacqueline Escalante de Cortez To Everyone:
+	Noted!
+22:02:37 From Victor C Salas To Everyone:
+	Hello everyone!
+22:02:53 From Nnamdi Nwafor To Everyone:
+	Hello Everyone.
+22:03:26 From Edwin Obando Hernandez To Everyone:
+	It's been  a  great journey so far!!!
+22:03:32 From Gunjan Vaishnav To All Panelists:
+	It has been excellent journey thus far. Thank you all professors and mentors. Found new ways of looking at data, problems, thinking and applying.
+22:03:32 From [GL Mentor] Shubham Sharma To Everyone:
+	@Victor I am in PST today 🙂
+22:13:53 From Maliha Ahmad To Everyone:
+	Can you please go over the PCA part agin
+22:14:13 From Pam Marcus To Everyone:
+	i had a question last week about cos 180 degrees. how do you get a sim of -1?
+22:14:19 From Pam Marcus To Everyone:
+	last time.
+22:14:19 From Jeanelle Frontin To Everyone:
+	Is there ever an instance where the data remains categorical in nature and Kmodes applies?
+22:14:21 From Yolanda Dolores To Everyone:
+	k-means since we're reviewing
+22:14:24 From B. M. To All Panelists:
+	why can’t we jump directly to k means but rather use pca?
+22:14:30 From Marja Crawford To Everyone:
+	Is PCA the same as SVD
+22:14:40 From Marco Ocana To Everyone:
+	Couldn’t clustering be done in multiple dimensions? Is PCA essential?
+22:14:43 From Goutam Ghosh To Everyone:
+	d dimensional is lower dimensional space right?
+22:14:51 From aseem gupta To Everyone:
+	difference between SVD and SVT and where are they used?
+22:15:04 From Angel Rafael Ortega Ramirez To Everyone:
+	Is there any package to perform recommendation systems with pyspark?
+22:15:05 From Changsong Liu To Everyone:
+	do we worry about overfitting in this kind of approach (non-parametric nearest neighbor method)
+22:15:24 From Cris Arias To Everyone:
+	Are there other similarity functions that we could use other than cosine?
+22:16:08 From Maliha Ahmad To Everyone:
+	jacquard, centered cosine similarity
+22:17:28 From Mohamed Othman To Everyone:
+	can we interpret the meaning of each PCA? in other words, what will the PCA of the similarity matrix tell me? and why we still need k-means after? thanks
+22:21:16 From aseem gupta To Everyone:
+	How do you calculate sigma?
+22:22:45 From Marja Crawford To Everyone:
+	could you show the next page again
+22:22:48 From aseem gupta To Everyone:
+	Thank you,
+22:23:05 From Marja Crawford To Everyone:
+	thank you
+22:23:18 From Maliha Ahmad To Everyone:
+	Thank you! this was great!
+22:30:36 From Aseem Gupta To Everyone:
+	R components? Are components the entries
+22:30:38 From Aseem Gupta To Everyone:
+	?
+22:31:02 From Marja Crawford To Everyone:
+	shuld the indices of mhat be ik and kj?
+22:32:05 From Mohamed Othman To Everyone:
+	is that for a given r?
+22:34:12 From Gunjan Vaishnav To Everyone:
+	I have heard about Affinities and Lead Scoring.. where do they fit in recommendation systems overall, conceptually
+22:34:44 From Venkatesh Prasad To Everyone:
+	If any of values in uij and vkj are not observed then they are excluded, correct?
+22:35:18 From Aseem Gupta To Everyone:
+	Upper bound of outer Summation is “min”, what is the minimum?
+22:35:22 From Mohamed Othman To Everyone:
+	is the optimization problem for a given r?
+22:37:01 From Aseem Gupta To Everyone:
+	And I j also goes upto m x n?
+22:37:05 From Venkatesh Prasad To Everyone:
+	When you are summing over (I,j) observed, what are you excluding?
+22:37:56 From Aseem Gupta To Everyone:
+	Where to stop the outer summation ?
+22:37:57 From Mohamed Othman To Everyone:
+	are we solving this optimization problem with NN?
+22:38:20 From Aseem Gupta To Everyone:
+	Ok got it. No worries
+22:38:50 From Aseem Gupta To Everyone:
+	Thank you!
+22:42:16 From leo-shuxiong wu To Everyone:
+	would you please use the simple example(with numbers) to demonstrate the process?
+22:45:55 From Aseem Gupta To Everyone:
+	That was helpful , thanks
+22:46:19 From Mohammed Al Farsi To Everyone:
+	what is the target hear?
+22:47:40 From Sujatha Papagani To Everyone:
+	So do we combine the replacing ? with 0 and also this optimization where we don't replace to find the final answer or are they always used in separate situations
+22:47:42 From leo-shuxiong wu To Everyone:
+	Thank you!
+22:49:26 From Elizabeth Gozzer To Everyone:
+	spain
+22:49:27 From Basil Gil To Everyone:
+	spain
+22:49:28 From Aseem Gupta To Everyone:
+	Europe?
+22:49:28 From Will Rein To Everyone:
+	Euskera
+22:49:28 From Victor Mensah To Everyone:
+	yes
+22:49:28 From Theodoros Alexandropoulos To Everyone:
+	North Spain
+22:49:28 From Taylor Person To Everyone:
+	Northern spain
+22:49:28 From Barbara Knowles To Everyone:
+	spain
+22:49:29 From Tendo Lubwama To Everyone:
+	Spain
+22:49:29 From Juan Monroy To Everyone:
+	in SPAIN
+22:49:29 From Mary Pastore To Everyone:
+	They have great food
+22:49:30 From Andrew Mariano To Everyone:
+	norther spain
+22:49:32 From Elorri Destizons To Everyone:
+	France AND spain
+22:49:32 From Samer El Boustany To Everyone:
+	france And spain
+22:51:33 From Nicholas Okot To Everyone:
+	That means the dotted trend in GDP is the counterfactual ?
+22:51:53 From Nicholas Okot To Everyone:
+	Thanks
+22:51:54 From Aseem Gupta To Everyone:
+	Prediction of GDP because of terrorism
+22:52:00 From Satya Bhan To All Panelists:
+	Why does the prediction and reality follow so closely?
+22:52:18 From Jacqueline Escalante de Cortez To Everyone:
+	Identify how GDP will behaves without terrorism?
+22:52:33 From Sujatha Papagani To Everyone:
+	so when did terrorism happen only when they are deviating?
+22:52:33 From Rahul Rana To Everyone:
+	Is this  time series extrapolation
+22:53:22 From Victor Mensah To Everyone:
+	How did you account for any other issues that may have affected the economy like weather?
+22:53:44 From Sujatha Papagani To Everyone:
+	So the line for terrorism is at which year was my question
+22:53:54 From Victor Mensah To Everyone:
+	got it!     Thanks
+22:54:06 From Rahul Rana To Everyone:
+	How are we drawing causality from this?
+22:54:25 From Jacqueline Escalante de Cortez To Everyone:
+	It is the same case, right?
+	We are looking at what will be the tendency without the external factor
+22:54:55 From Ron Carino To Everyone:
+	https://business.purdue.edu/events/causal-machine-learning-for-novel-settings-boot-camp/presentations/shen-synthiv.pdf
+22:55:50 From Will Rein To Everyone:
+	Thanks @Ron
+22:56:07 From Taylor Person To Everyone:
+	+1, thanks!
+22:56:30 From Ron Carino To Everyone:
+	that's your paper :)
+22:57:13 From Nicolás S To Everyone:
+	So donor in the example of the Basque Country would be another close region's GDP?
+22:57:54 From Maksim Virskii To All Panelists:
+	Can you please explain how you have used the methods we’ve used to make an approximation??
+22:58:38 From Maksim Virskii To All Panelists:
+	That was SVD?
+22:58:43 From Mohamed Othman To Everyone:
+	the donors must also be affected by the intervention or not required?
+22:58:48 From Nicolás S To Everyone:
+	Got it, thanks
+22:59:39 From Maksim Virskii To Everyone:
+	How do we use recommendation system to make a forecast of GDP of basks without terrorism>
+22:59:40 From Maksim Virskii To Everyone:
+	?
+23:00:07 From Pam Marcus To Everyone:
+	When the word synthetic is used, is it always referring to causal inference/counterfactual?
+23:00:21 From Pam Marcus To Everyone:
+	thx
+23:01:32 From Pam Marcus To Everyone:
+	@prof - i'm an epidemiologist so causal inference is a big thing. just trying to learn how to talk to talk.
+23:19:06 From Alexander Prinz To Everyone:
+	amazing explanation! 😃
+23:19:08 From Sujatha Papagani To Everyone:
+	Nicely explained
+23:19:28 From Yolanda Dolores To Everyone:
+	I am trying to understand some examples of what would be noise, is it false positives?
+23:19:33 From leo-shuxiong wu To Everyone:
+	Zij is the noise?
+23:19:34 From Yolanda Dolores To Everyone:
+	neg?
+23:19:34 From Christina Bell To Everyone:
+	What measure would you use to determine that your content is good enough and don't need to continue with rating based approach
+23:19:41 From Nicholas Okot To Everyone:
+	will the parameters alpha and beta remain constant after training or calibration ?
+23:20:21 From Sashi Rekha Manickam Kasiviswanathan To Everyone:
+	How to validate your Estimates are good enough?
+23:20:29 From Yolanda Dolores To Everyone:
+	ok
+23:21:04 From Satya Bhan To Everyone:
+	Noise will always exist since the mean is 0 and it cannot therefore be predicted or learnt
+23:21:07 From Victor Mensah To Everyone:
+	so we are running the ratings on the non-observed estimates ?
+23:22:09 From Sujatha Papagani To Everyone:
+	Inspired by Proff getting a carrot to eat :-)
+23:22:21 From Victor Mensah To Everyone:
+	Thanks
+23:27:52 From Alexander Prinz To Everyone:
+	5 7 ?
+23:27:55 From Jacqueline Escalante de Cortez To Everyone:
+	5 7 ?
+23:27:55 From Sujatha Papagani To Everyone:
+	5 and 7
+23:27:55 From Elizabeth Gozzer To Everyone:
+	57?
+23:27:55 From Nicholas Okot To Everyone:
+	last matrix
+23:27:55 From Marja Crawford To Everyone:
+	5 7 ?
+23:27:57 From Sashi Rekha Manickam Kasiviswanathan To Everyone:
+	5/7/?
+23:28:02 From Nicholas Okot To Everyone:
+	5 7 ?
+23:29:35 From Vahid Monfared To Everyone:
+	There is a simple code in Python that can find some numbers randomly as a weights for given numbers of matrix and predict a patern for known values, and after finding these weights simply applied to find the unknows by multiplication. Is it correct?
+23:29:59 From Ihor Aleksykov To Everyone:
+	What should we do in case not possible to build quadratic matrix?
+23:30:02 From Steve Trenfield To Everyone:
+	What would you do if you didn’t have a perfect square number of values?
+23:30:52 From Ihor Aleksykov To Everyone:
+	Could we add extra items to predict ?
+23:31:13 From Nicolás S To Everyone:
+	How can you trust the forecast if the time series is not stationary?
+23:31:44 From Christina Bell To Everyone:
+	How interpretable do stakeholders find these forecasts to be, in your experience?
+23:32:50 From Michelle Mertens To Everyone:
+	Should you choose your matrix size based on the seasonality?
+23:33:19 From Cris Arias To Everyone:
+	How does this method generally compares wrt to ARIMA models? In terms of forecasting performance?
+23:35:17 From Maliha Ahmad To Everyone:
+	can you elaborate on how to read backa a time series. Thanks.
+23:35:56 From Maliha Ahmad To Everyone:
+	thank you!
+23:36:04 From Sujatha Papagani To Everyone:
+	Can we use the same method for content based ?
+23:36:11 From Victor Mensah To Everyone:
+	I am with you Pam, I am in health care and since data scientists make some algorithmic decisions based on personal preferences, two data scientists can use the same data and models and have different predictions.  Then we are left with explaining these models to lay people.
+23:37:04 From Nicholas Okot To Everyone:
+	Is the matrix version the same as multivariate time series or panel data approach ?
+23:37:50 From Victor Mensah To Everyone:
+	Great!! will look into that.  Thank you Prof.
+23:38:18 From Nicholas Okot To Everyone:
+	Thanks
+23:38:18 From Cris Arias To Everyone:
+	What is the advantage of the matrix version vs implementing the solution with one series at a time, one by one??
+23:38:20 From Pam Marcus To Everyone:
+	Adapting these methods to health care is a daunting task but it's happening already. I'm here so i can learn how to understand what's going on and the benefits and potential pitfalls.
+23:43:19 From Maliha Ahmad To Everyone:
+	what is l?
+23:46:26 From Maliha Ahmad To Everyone:
+	This is amazing!
+23:46:51 From Pam Marcus To Everyone:
+	OMG you are a total rock star!!!
+23:48:56 From Ron Carino To Everyone:
+	"It's that simple" :D
+23:49:08 From Jonathan Liggett To Everyone:
+	Funny
+23:49:11 From Barbara Knowles To Everyone:
+	I think you and I go to different cocktail parties
+23:49:18 From Victoria Le To Everyone:
+	Let’s have a cocktail party and talk algorithms.
+23:49:20 From Elizabeth Gozzer To Everyone:
+	In the previous class I asked you about the application of this models towards for example a) "Parenting" capacity building, and b) best livelihoods development for vulnerable populations in developing countries. Could you elaborate if/how we could do this?
+23:49:23 From Edwin Obando Hernandez To Everyone:
+	Many thanks!!!
+23:49:27 From Rahul Rana To Everyone:
+	👏🏻
+23:49:37 From Anthony Washington To Everyone:
+	Thank you.
+23:49:39 From Satya Bhan To Everyone:
+	Thank you
+23:49:41 From Nicholas Okot To Everyone:
+	Thank you
+23:49:47 From Anthony Washington To Everyone:
+	Will the cocktail party be in NYC?
+23:49:54 From Tendo Lubwama To Everyone:
+	Thanks
+23:49:57 From Barbara Knowles To All Panelists:
+	I'm in the Boston area too.  I'll invite you to a cocktail party sometime
+23:49:58 From Nazar Elbashir To Everyone:
+	Thank you, Professor!
+23:49:58 From Sharmila Veera To Everyone:
+	Thanks Prof
+23:50:13 From Lakshmi Vidyasagar To Everyone:
+	Thank You Professor
+23:50:17 From Chih-Chung Wuo To Everyone:
+	Thank you professor
+23:50:19 From Victoria Le To Everyone:
+	Maybe a carrot party.
+23:50:31 From Burt Sloane To Everyone:
+	Thanks!
+23:50:32 From Pam Marcus To Everyone:
+	one suggestion: in the future, don't eat carrots when you teach. you could choke and we need you to stick around.
+23:50:34 From Sujatha Papagani To Everyone:
+	It is better explained simple. Eat your own dog food and split it and eat so many times that it converges. Simple to explain. Jokes apart experience of these will add the meat on the frame - Thank you proff.
+23:50:35 From Jean-Christophe Pignon To Everyone:
+	Could you also elaborate about applications in of recommendation system in precision medicine
+23:50:38 From Bill Hutchison To Everyone:
+	You taught very well - thank you so much. Not easy to teach or to understand. I have not grasped it all, but I am well on the way which is nothing short of a miracle.
+23:50:39 From MIKE I.C. ABEJO To Everyone:
+	you're amazing professor! Thanks a lot!
+23:50:39 From Wendye Mingo To Everyone:
+	Thank you!
+23:50:53 From Herberth Gutierrez To Everyone:
+	Thank you!
+23:50:57 From Victor Mensah To Everyone:
+	I will invite you to my cocktail party.....
+23:50:58 From Andrea Robles To Everyone:
+	Profesor many thanks.  First session you offer a course. How can I get accesos?
+23:51:05 From leo-shuxiong wu To Everyone:
+	It seems that we have some ways to analysis the complex system problem.
+23:51:06 From Maksim Virskii To Everyone:
+	In forecasting stock price (shown on a slide with comparison vs DeepAR & Prophet) what else is used for estimation along with the stock price of the past periods?
+23:51:18 From Elizabeth Gozzer To Everyone:
+	We work in developing countries, with donors, we have relevant data from different programs we have implemented in terms of ages, program interventions (training, cash transfers, etc.), and inclusion of gender. Then, how could apply the recommendation process/formula to identify the best mix of interventions to alleviate poverty?
+23:52:04 From Barbara Knowles To Everyone:
+	That is a very cool question
+23:52:10 From Sujatha Papagani To Everyone:
+	@Bill Hutchinson completely agree with you.
+23:53:08 From Pam Marcus To Everyone:
+	Alzheimer's i think
+23:53:25 From Laura Truncellito To Everyone:
+	Can you elaborate on how we might utilize individualized recommendation system if we only have access to limited data? Thank you prof.!
+23:53:57 From Jean-Christophe Pignon To Everyone:
+	Thank you!
+23:54:05 From Laxmi Narayana Byagari To Everyone:
+	Thank You
+23:54:22 From Subhanku Chatterjee To Everyone:
+	Thanks a lot!!
+23:54:28 From Changsong Liu To Everyone:
+	for the matrix-completion based time-series method, is the matrix at time t very different from t-1, or matrix at time t just add more information (observations) to matrix at time t-1, which of the two scenarios is more suitable for this method?
+23:54:33 From Changsong Liu To Everyone:
+	and this method does captures the "time-series" part (i.e., relations between t and t-1), right?
+23:55:08 From Jeanelle Frontin To Everyone:
+	For my fellow students:
+	
+	As this is our final class with everyone, in case you want to stay connected with the rest of us and haven’t joined already, here are the links to our WhatsApp and LinkedIn groups:
+	
+	LinkedIn: https://www.linkedin.com/groups/12862139
+	
+	WhatsApp: https://chat.whatsapp.com/H574WTLdTuMCjQ8XkNJm3g
+23:55:33 From Jonathan Liggett To Everyone:
+	Michaels business is Covariance
+23:56:36 From Mohamed Othman To Everyone:
+	it sounds like the data is placed in matrix shape and being processed for future predictions, you mentioned recommendation systems is universal prediction, can we assume we can do the same for motion pictures? or any time varying frames?
+23:56:39 From Elizabeth Gozzer To Everyone:
+	thanks!
+23:56:52 From leo-shuxiong wu To Everyone:
+	Thank you !!!
+23:57:49 From Tom Chacko To Everyone:
+	What Andrea asked, I think, is that you mentioned that you would give free pass to attend a class/course related to recommendation systems.
+23:57:59 From Laura Truncellito To Everyone:
+	Thank you Prof!
+23:59:23 From Andrea Robles To Everyone:
+	Thanks Tom!
+23:59:26 From Elizabeth Gozzer To Everyone:
+	do we get the notes written during the class along with the presentation?
+23:59:52 From Pam Marcus To Everyone:
+	Thank you so so much. Great week, great classes, and lots of fun - just what learning should be. Be well.
+00:00:10 From Jacqueline Escalante de Cortez To Everyone:
+	Could you share with us the link?
+00:00:42 From Ron Carino To Everyone:
+	love the name. ikagai has been my north star
+00:01:30 From Prof.Devavrat To Everyone:
+	he sign-up process for self-serve users is as followed:
+	Go to https://app.ikigailabs.io/signup
+	Provide your email, fill in the basic details form (name, country, industry, designation).
+	Enter coupon code IKG_MAY_23 to get 14days free trial.
+	Verify your email address from the link you get in an email from hello@ikigailabs.io
+	Sign-in at https://app.ikigailabs.io/login
+00:02:10 From Victor C Salas To Everyone:
+	Prof. Devavrat, excellent lecture. Helpful information. Thank you.
+00:02:12 From Cris Arias To Everyone:
+	Thank you very much Prof. Devavrat, this course was very insightful!
+00:02:19 From gladys joseph To Everyone:
+	thank you
+00:02:19 From Will Kerner To Everyone:
+	Lots of fun thanks
+00:02:21 From Fé Valvekens To Everyone:
+	Thank you very much
+00:02:23 From Juan Monroy To Everyone:
+	Thanks a lot, really interesting
+00:02:23 From Marja Crawford To Everyone:
+	Thank you very much!
+00:02:24 From Victor Mensah To Everyone:
+	Thank you!!
+00:02:25 From Sashi Rekha Manickam Kasiviswanathan To Everyone:
+	Thank you Professor!
+00:02:26 From Rahul Rana To Everyone:
+	Absolutely! Thank you Sir!!
+00:02:29 From carla rudder To Everyone:
+	Thank you this was great!
+00:02:31 From Hemant Mylavarapu To Everyone:
+	Thank You Professor
+00:02:32 From David Vallejo To All Panelists:
+	Thanks Prof, this part has been excellent
+00:02:32 From Anuradha Rajkumar To Everyone:
+	Thank you so much prof! Great Explanations!
+00:02:32 From Edwin Obando Hernandez To Everyone:
+	Many thanks!!!
+00:02:33 From Christina Bell To Everyone:
+	Thank you Professor!
+00:02:33 From Gunjan To Everyone:
+	Superb experience 
+	Thank you professor you’ve opened up a world for us
+00:02:34 From Jyothi Ponde To Everyone:
+	Thank you very much
+00:02:35 From Aseem Gupta To Everyone:
+	Thank you Prof. Shah.
+00:02:36 From Laura Truncellito To Everyone:
+	Thank you so much!  Looking forward to connecting!
+00:02:37 From Venkatesh Prasad To Everyone:
+	Thanks Professor
+00:02:41 From Tibebu Ayalew To Everyone:
+	Thank you!
+00:02:44 From Sujatha Papagani To Everyone:
+	Thank you very much - Best you read and answer all questions and still make it on time - Thank you
+00:02:44 From Yolanda Dolores To Everyone:
+	Thank you  so much Prof. Devavrat
+00:02:44 From Raymond Nelson To Everyone:
+	Thank you!
+00:02:45 From Zach Seymour To Everyone:
+	Thank you Professor!
+00:02:46 From Andres Alvarez To Everyone:
+	thanks!!
+00:02:49 From Elizabeth Gozzer To Everyone:
+	Thanks Proffesor!
+00:02:51 From Mary Pastore To Everyone:
+	Thank you Professor!
+00:02:53 From Carlos Quezada To All Panelists:
+	Thank you!!
+00:02:57 From Nazar Elbashir To Everyone:
+	Thank You Professor
+00:02:59 From Ron Carino To Everyone:
+	thank you prof!
+00:03:21 From Girisha Ramakrishna To Everyone:
+	Thank you Prof!
+00:05:22 From Mohamed Othman To Everyone:
+	thank you! clear.
+00:05:34 From Satya Bhan To Everyone:
+	Very well explained thanks!
+00:05:39 From Elizabeth Gozzer To Everyone:
+	Shubham, the Professor said that after this three classes we should be able to explain in a cocktail party how does recommendation algorithms and the whole process work. Could I please kindly ask you to do so for us here? In one minute or so, explain it to us as if we were in a cocktail party, with napkin in front of us to write anything we need.
+00:07:37 From Elizabeth Gozzer To Everyone:
+	The idea is to find the Next item in the series.. to predict. right?
+00:08:04 From [GL Mentor] Niruppam Sharma To Everyone:
+	yes you can say it is predicting next items in the series
+00:08:25 From Elizabeth Gozzer To Everyone:
+	thanks!
+00:09:33 From Raj Maragoud To Everyone:
+	thank you
+00:10:44 From Maksim Virskii To Everyone:
+	On this lecture slide with compression with DeepAD& Prophet systems it is shown that recommendation algorithms are used for financial data forecasting. Do you know if it is an industry standard and is used or this was a sort of “power demonstration” and is not explored so far?
+00:14:47 From Mary Pastore To Everyone:
+	CPI, Sector growth?
+00:14:50 From Victor Mensah To Everyone:
+	are we sometimes incorrectly using prediction  and recommendation interchargeably?
+00:15:11 From Mohamed Othman To Everyone:
+	taking movies recommendation as an example, will the recommendation be also adjusted based on other user's ratings? not necessary the target user.
+00:15:26 From Mary Pastore To Everyone:
+	Are you aware of data that is publicly available for stock analysis?
+00:15:44 From [GL Mentor] Niruppam Sharma To Everyone:
+	all the stock prices are available
+00:15:53 From [GL Mentor] Niruppam Sharma To Everyone:
+	also global indicators are there
+00:17:29 From Victor Mensah To Everyone:
+	Great..... Got it...
+00:17:41 From Sujatha Papagani To All Panelists:
+	Subham I have a question on elective project specifically code I sent it in slack If you and or Nirupam can stay back 2 mins that will be nice in this call at the end
+00:17:51 From Elizabeth Gozzer To Everyone:
+	so, in applied data science: how do you see recommendations? (I got the predictions)
+00:18:45 From Elizabeth Gozzer To Everyone:
+	ha! thanks! also a fan here.
+00:18:54 From Mohamed Othman To Everyone:
+	will do.. thanks.
+00:18:56 From Marco Ocana To Everyone:
+	I predicted your rating!
+00:18:59 From Anuradha Rajkumar To Everyone:
+	During the Basque county hand written example the prof took a 1* 9 matrix, divided them into 3 sections  and wrote them in columns ( 3 x 3 matrix). He said that this method was very effective. In this way, aren't we losing the original 'timeline'?
+00:20:06 From Anuradha Rajkumar To Everyone:
+	I see thanks!
+00:21:44 From Elizabeth Gozzer To Everyone:
+	i must go now. Thanks very much for your help. Truly useful. I will watch this video again before completing my Capstone and Elective Project.
+00:21:55 From Anuradha Rajkumar To Everyone:
+	I have a question about the elective project as well
+00:23:44 From Andrew Mariano To Everyone:
+	Ha...!  I have a question about a project.  I have a very short piece of code that I know 100% is correct... but I get errors with it...!   what do I do...?
+00:24:04 From Sujatha Papagani To All Panelists:
+	My project question is - I selected Practical data science project where we are predicting the resource will be converted to paid member or not. So it is a classification problem. When I do the decision tree and get the 3 parameters. My scores are 1 for all 3 in training and testing and even if I train with 1 and test for 99 it is still the same
+00:24:47 From Sujatha Papagani To All Panelists:
+	can you tell me some reasons why this will be
+00:25:07 From Sujatha Papagani To All Panelists:
+	If this is the case we cant do any more tuning or it is not needed but I am sure there is some issue
+00:26:36 From Mary Pastore To Everyone:
+	What would you consider the core algorithms that we absolutely need to have complete understanding of  for Machine Learning?
+00:27:31 From Rahul Rana To Everyone:
+	I realized the elective project problem statement is different from what was mentioned on the google form. Did the form specify capstone project?
+00:27:46 From Venkatesh Prasad To Everyone:
+	Hi Andrew, I can take a look at your code.
+00:28:21 From Anuradha Rajkumar To Everyone:
+	For the Deep Learning capstones/elective projects, won't the training take a long time since its image data? do we just use google colab GPUs or is there any other way?
+00:28:33 From Mary Pastore To Everyone:
+	thank you
+00:29:08 From Sashi Rekha Manickam Kasiviswanathan To Everyone:
+	Do we have content-based recommendation case study ?
+00:29:16 From Mohamed Othman To Everyone:
+	Deep learning vs recommendation systems, which one has better job market today?
+00:29:34 From Sujatha Papagani To All Panelists:
+	Dropped id and also dropped status (Target variable) from X but still it pops up so I guess that's the issue but not sure how to resolve it because I drop and it pops up again
+00:29:48 From Sujatha Papagani To All Panelists:
+	You suggest a support request then ?
+00:29:57 From [GL Mentor] Niruppam Sharma To Sujatha Papagani and All Panelists:
+	yes
+00:30:06 From Anuradha Rajkumar To Everyone:
+	And we just start with the elective project of our choice for this week? the form feedback is more related to the final capstone?
+00:30:16 From Victor C Salas To Everyone:
+	GL team, Thanks!
+00:30:21 From Laxmi Narayana Byagari To Everyone:
+	Thank You
+00:30:22 From Victoria Le To Everyone:
+	Thank you guys!
+00:30:23 From Sujatha Papagani To All Panelists:
+	Thank you both
+00:30:29 From Samer El Boustany To Everyone:
+	Thanks a lot
+00:30:30 From Rahul Rana To Everyone:
+	Thank you all!
+00:30:31 From [GL Mentor] Shubham Sharma To Everyone:
+	@Sashi yes, it will be in MLS
+00:30:33 From Lakshmi Vidyasagar To Everyone:
+	Thank You Mentors
+00:30:33 From Nazar H. Elbashir To Everyone:
+	Thank you so much 💓
+00:30:34 From Shawn Reynolds To Everyone:
+	Thank you!
+00:30:36 From Victoria Elia To Everyone:
+	Thank you
+00:30:39 From Sujatha Papagani To Everyone:
+	Thanks Nirupam and Shubham
+00:30:40 From SHILPA DINESH To Everyone:
+	thank you
+00:30:40 From gladys joseph To Everyone:
+	thank you
+00:30:40 From Julien Pierre Amelie Makongo Mangan To Everyone:
+	Thank you
+00:30:40 From Jyothi Ponde To Everyone:
+	Thank you
+00:30:42 From Yolanda Dolores To Everyone:
+	Thank you!!!
+00:30:43 From Juan Monroy To Everyone:
+	thankyou
+00:30:44 From Ajith Radhakrishnan To Everyone:
+	Thank you!!
+00:30:45 From Will Rein To Everyone:
+	Thank you
+00:30:46 From Maliha Ahmad To Everyone:
+	thank you! ypu have been amazing
+00:30:48 From Oliver Fugger To Everyone:
+	Thank you!
+00:31:00 From carla rudder To Everyone:
+	thank you

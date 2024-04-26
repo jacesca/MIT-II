@@ -1,0 +1,637 @@
+21:53:16 From MIKE I.C. ABEJO To Everyone:
+	Good morning!
+21:53:59 From Victoria Le To Everyone:
+	Hi Everyone!
+21:54:36 From Theodoros Alexandropoulos To Everyone:
+	Good day.
+21:57:36 From Sriram Akella To Everyone:
+	Good morning
+21:57:55 From Will Rein To Everyone:
+	Good morning
+21:57:55 From Lakshmi Vidyasagar To Everyone:
+	Good Afternoon All
+21:58:00 From Samer El Boustany To Everyone:
+	Hello
+21:58:01 From Herberth Gutierrez To Everyone:
+	Good morning all
+21:58:18 From Jeanelle Frontin To Everyone:
+	Good afternoon!! ☺️
+21:58:26 From sharmistha Jena To Everyone:
+	Good Afternoon from NJ
+21:58:43 From Stuart MacEachern To Everyone:
+	I can see this.. hello from hopkinton
+21:58:43 From Thomas Philip To Everyone:
+	Good Evening from Doha, Qatar
+21:58:44 From Nicholas Okot To Everyone:
+	Greetings from Kampala Uganda
+21:58:46 From Andres Alvarez To Everyone:
+	Hello!!
+21:58:55 From Rui Rodrigues To Everyone:
+	Hello everyone
+21:58:56 From Faculty (Olympus) To Everyone:
+	Good mroning.
+21:58:59 From Cesar Muino To Everyone:
+	Hello everyone
+21:59:00 From Aseem Gupta To Everyone:
+	hellos
+21:59:10 From Edwin Obando Hernandez To Everyone:
+	Hello everyone!.
+21:59:14 From Will Kerner To Everyone:
+	Good morning all
+21:59:15 From Jacqueline Escalante de Cortez To All Panelists:
+	Good day team!
+21:59:26 From Raymond Nelson III To Everyone:
+	Afternoon
+21:59:33 From Will Kerner To Everyone:
+	9:30am much more civilized
+21:59:49 From Ayman Daoud To Everyone:
+	Good Afternoon
+21:59:53 From Nazar H. Elbashir To Everyone:
+	Good morning 🙏
+22:00:01 From Suveer Desai To All Panelists:
+	Good afternoon
+22:00:07 From Edwin Obando Hernandez To Everyone:
+	For me it is 6.30 pm!!!.
+22:00:10 From David Vallejo To All Panelists:
+	Good Morning
+22:00:40 From Amul Gadhia To Everyone:
+	Hello all
+22:00:46 From Aseem Gupta To Everyone:
+	I like this time more being than 6 30am too
+22:00:56 From Victor Mensah To Everyone:
+	Hello prof.   Really really enjoyed Monday's lecture
+22:01:13 From Ayman Daoud To Everyone:
+	yes
+22:01:13 From Lakshmi Vidyasagar To Everyone:
+	yes
+22:01:13 From Yolanda Dolores To Everyone:
+	I agree...from Alameda, CA.
+22:01:14 From Andrew Mariano To Everyone:
+	Yes
+22:01:14 From Srikanth Susarapu To Everyone:
+	ok
+22:01:14 From fares emmanuel To Everyone:
+	all good
+22:01:15 From Chih-Chung Wuo To Everyone:
+	yes we can hear you :)
+22:01:16 From carla rudder To Everyone:
+	yes
+22:01:16 From Marja Crawford To Everyone:
+	all is oka
+22:01:17 From sharmistha Jena To Everyone:
+	yes
+22:01:18 From Jyothi Ponde To Everyone:
+	Every thing is fine
+22:01:18 From Christina Bell To Everyone:
+	Yes we can hear and see fine
+22:01:18 From Srikanth Susarapu To Everyone:
+	av ok
+22:01:19 From Yolanda Dolores To Everyone:
+	yes
+22:01:19 From Nazar H. Elbashir To Everyone:
+	yes all good
+22:01:25 From Sarah Phen To Everyone:
+	yes all good
+22:01:25 From Kevin Drevitch To Everyone:
+	I liked the "Regulating algorithmic filtering on social media" paper. What other industries and areas of data science could these concepts be applied?
+22:01:25 From Mark Bolton To All Panelists:
+	All good
+22:01:26 From Thomas Philip To Everyone:
+	Yes, all good.
+22:01:28 From Andrew Mariano To Everyone:
+	Hello from Amsterdam...!
+22:01:47 From Marja Crawford To Everyone:
+	Hello from Denver Colorado
+22:02:00 From Aseem Gupta To Everyone:
+	hello from Menlo Park, California
+22:02:18 From Venkata Deviprasad Sadasivuni To Everyone:
+	Hello from Knoxville, Tennessee
+22:02:37 From Charles Henderson To Everyone:
+	Hello from Estes Park Colorado - highly recommended on Yelp
+22:02:42 From Daniel Frantzen To Everyone:
+	Hello from Northern Virginia
+22:02:45 From Bill Hutchison To Everyone:
+	Hello from Bath, England
+22:02:49 From Davaa To All Panelists:
+	Hello all
+22:02:58 From Anthony Washington To Everyone:
+	Hello from NYC
+22:03:06 From Will Kerner To Everyone:
+	Yeah huge lawsuit at Google now for taking the “internet blueprint” for training AI
+22:03:13 From David Im To All Panelists:
+	Hello from Atlanta
+22:03:13 From Kuran Lewis To Everyone:
+	Hello from Syracuse, New York
+22:03:51 From Steve Trenfield To Everyone:
+	Hello from Denver!
+22:03:59 From Kevin Drevitch To Everyone:
+	Thank you!
+22:04:01 From Edwin Obando Hernandez To Everyone:
+	https://edition.cnn.com/2023/07/11/tech/google-ai-lawsuit/index.html
+22:06:17 From Anthony Washington To Everyone:
+	😒
+22:12:09 From Marja Crawford To Everyone:
+	how do you decide who gets the number of wins? is ist the row person?
+22:12:24 From Marja Crawford To Everyone:
+	what if there are ties or 4 to 2 wins
+22:13:53 From Jyothi Ponde To Everyone:
+	What if somebody is not in any group?
+22:15:21 From Marja Crawford To Everyone:
+	thank you
+22:15:59 From Will Kerner To Everyone:
+	Sort of like Great Learning’s feedback
+22:16:11 From Sharmila Veera To Everyone:
+	If there is a group of new players coming in how would we fit in?
+22:19:30 From Charles Henderson To Everyone:
+	What's the paper that describes how that is solved?
+22:20:09 From Mary Pastore To Everyone:
+	If Multiple people interview one person, and each person is asked to rank based on one criteria, what kind of ranking model would this be?
+22:21:15 From Ron Carino To All Panelists:
+	i would imagine skill score for a certain user can get better if the ‘was this review helpful?’ score increases
+22:22:15 From Sujatha Papagani To Everyone:
+	Do we usually bring in info from different problem to support the decision making of one problem? In examples 0.1 and 0.9 will be from same problem info or other problem info?
+22:23:55 From Steve Trenfield To Everyone:
+	How do recommendation systems handle response bias? With something like Yelp for instance, people are more likely to review a place that they really like or really hate without much in between
+22:24:18 From Jean-Christophe Pignon To Everyone:
+	Are recommendation systems used in (bio)medical field?
+22:25:39 From Venkatesh Prasad To Everyone:
+	Can we use distance to the closest user, to fill in the blanks?
+22:25:47 From Charles Henderson To Everyone:
+	Since LLM are designed to predict missing values, what is the connection between LLM filling in missing values (next word) and fill in the missing values for recommendation?
+22:26:48 From Mohamed Othman To Everyone:
+	is correlated reviews acceptable? as a review is affected by other reviews leading to loops, or positive feedback.
+22:27:11 From Rewa Rai To Everyone:
+	Can we also recommend experimental methods that which will be the better than other?
+22:27:46 From Elizabeth Gozzer To Everyone:
+	sorry, LLMs are time... ??
+22:27:49 From Elizabeth Gozzer To Everyone:
+	time series?
+22:31:09 From Charles Henderson To Everyone:
+	+ = reward outliers, - = penalize outliers?
+22:31:14 From Ron Carino To Everyone:
+	error drops as N —> higher
+22:31:15 From Sashi Rekha Manickam Kasiviswanathan To Everyone:
+	Std error corrections
+22:31:31 From Jean-Christophe Pignon To Everyone:
+	to take account average error?
+22:31:46 From Pam Marcus To Everyone:
+	big sample size, little fudge factor
+22:31:47 From Aseem Gupta To Everyone:
+	is it because the missing values ar enot equally spread?
+22:35:44 From Pam Marcus To Everyone:
+	so in effect you are using the upper bound (or lower bound) of the  conf interval, using z score of 1. Why 1, why not 1.96?
+22:35:53 From Jeanelle Frontin To Everyone:
+	👏🏽
+22:36:11 From Yolanda Dolores To Everyone:
+	It is like skewing the data,"correcting?"? +1/n
+22:36:33 From Sujatha Papagani To Everyone:
+	In case of coin toss (Again fair coins) it is always 0.5 so will this even apply ?
+22:36:58 From Alpha Barry To Everyone:
+	How do we evaluate the recommendation system accuracy?
+22:37:02 From Pam Marcus To Everyone:
+	thx!
+22:40:39 From Nicholas Okot To Everyone:
+	Are there application of recommendation system in public policy analysis?
+22:43:59 From Ron Carino To Everyone:
+	independent districting for voting?
+22:44:45 From Pam Marcus To Everyone:
+	since the diagonal cells should be 1, can you use the observed to de-noise non-diag cells?
+22:45:31 From Sriram Akella To Everyone:
+	For clustering the movies, what could be the features that we could use? And will the user prices be one of them?
+22:45:34 From Ron Carino To Everyone:
+	that was an attempt and Nich’s question
+22:45:38 From Bill Hutchison To Everyone:
+	So are these clusters not necessarily interpretable by a human?
+22:46:11 From Ron Carino To Everyone:
+	about public policy application
+22:46:27 From Chih-Chung Wuo To Everyone:
+	So can this be used for mediation to resolve a conflict between union and employer?
+22:47:18 From Pam Marcus To Everyone:
+	my sense is you can use these systems for anything but you have to be careful - because the error could be serious. which is probably why causal inference is employed.
+22:47:39 From Will Kerner To Everyone:
+	Its why I buy so much crap I don’t need
+22:47:48 From Anthony Washington To Everyone:
+	Good Question Chih-Chung. We are always resolving union grievances and clustering is used for job assignment
+22:47:48 From Pam Marcus To Everyone:
+	me too!
+22:47:51 From Alexander Prinz To Everyone:
+	😅
+22:49:51 From Chih-Chung Wuo To Everyone:
+	so union has different levels of employees within that may have different demand and the employer have different department/management (for example, if employees asking for collective raise, then finance may have different opinion "likes" on certain offer than what board of investors of the company may like.  so if we both side onto this matrix then we can get a recommended set so solutions that mediator can use to try to bring both side of the group into agreement? Thanks!
+22:50:31 From Henry Ngan To Everyone:
+	Q.  Some of the popular and commonly known Recommendation Systems are. 1. Yelp, 2. Netflix, 3. Amazon, etc.  I personally do not hear as much in Financial Services, can you kindly share some Recommendation Systems used in Financial Services if any please?   Portfolio Construction Recommendations?  Stock Recommendations?
+22:51:21 From Ihor Aleksykov To Everyone:
+	Did he do any sorting before drawing ? Because normally it could be just lines (or some noise), right?
+22:51:48 From Chih-Chung Wuo To Everyone:
+	for sure thank you prof!
+22:51:59 From Alexander Prinz To Everyone:
+	What was the basis for the clustering in the MovieLens example? Just the ratings or other user/item features?
+22:52:33 From Jeanelle Frontin To Everyone:
+	Is this visual representation/ plot available in Python?
+22:52:34 From Alexander Prinz To Everyone:
+	👍🏼
+22:52:50 From Jeanelle Frontin To Everyone:
+	Thank you! ☺️
+22:56:44 From Gladys joseph To Everyone:
+	principal component analysis
+22:57:03 From Will Kerner To Everyone:
+	Dimension reduction tool right
+22:58:05 From Marja Crawford To Everyone:
+	thank you for leaving the writing on the slide!
+22:59:36 From James Appenzeller To Everyone:
+	sounds like a nash equilibrium problem
+22:59:44 From Sujatha Papagani To Everyone:
+	Heat map , pca , Kmeans and observations is what have done in our initial project So all problems  are finally recommendation systems ?
+23:00:13 From Srikanth Susarapu To Everyone:
+	once we identify the clusters of users , is the intent to recommend to these users a collection of items that they may have rated ? Is there criteria to decide what items to recommend to what user?
+23:00:29 From Chih-Chung Wuo To Everyone:
+	great thanks!
+23:00:51 From James Appenzeller To Everyone:
+	yah, the negotiation problem
+23:01:22 From Sujatha Papagani To Everyone:
+	Nicely put thank you.
+23:02:22 From Ron Carino To Everyone:
+	While we’re on break: The voting districts may not be a recommendation system. it could just be a scoring system that shows the fairness of a redistricting map in a state based on party affiliation and address to minimize the difference between the district split from the statewide split in elections.
+23:03:50 From Srikanth Susarapu To Everyone:
+	assuming that the prediction problem is solved, would a business decide to cultivate the clusters or to cross pollinate clusters by recommending dissimilar items among clusters? Is there a case to be made either way?
+23:05:40 From Ron Carino To Everyone:
+	@Skrikanth: crossover films.  Kids/Comedy to get a bigger audience!
+23:06:08 From Tamari Kirtadze To Everyone:
+	My screen shows that the professor's audio is muted. Can everyone else hear?
+23:06:18 From Srikanth Susarapu To Everyone:
+	no , he is muted.
+23:06:24 From Marja Crawford To Everyone:
+	no
+23:06:27 From Srikanth Susarapu To Everyone:
+	i cant hear him if he is speaking
+23:06:36 From Shawn Reynolds To Everyone:
+	He is very much muted.
+23:06:48 From Barbara Caporella To Everyone:
+	We're on a break, he is not speaking.
+23:06:52 From [GL Mentor] Shubham Sharma To Everyone:
+	We are having a 5 min break
+23:07:10 From Tamari Kirtadze To Everyone:
+	Thank you!
+23:07:25 From Chih-Chung Wuo To Everyone:
+	Great thank you Anthony Washington for confirming real situations (I am in Vancouver by the way and ILWU has been on strike for a week now hence comes to my mind quickly)
+23:09:55 From Anthony Washington To Everyone:
+	We are always in contract negotiates.   I totally understand.  In past, clustering was definitely used in this way.  Kudos to you and the union. Good luck with the strike! Solidarity.
+23:10:24 From Alpha Barry To Everyone:
+	Prof, how do you do to stop the time? Your clock is always on 9:41 AM Tue Jan 9 :)
+23:11:15 From Charles Henderson To Everyone:
+	Recommendation not in the temporal domain
+23:11:33 From Elizabeth Gozzer To Everyone:
+	did you just choose the first 3? or, is there a sub set pre-selected?
+23:11:49 From Marja Crawford To Everyone:
+	he selected user to user
+23:15:31 From Edwin Obando Hernandez To Everyone:
+	What is the difference respect to Euclidean distance?.
+23:15:32 From Samer El Boustany To Everyone:
+	what should be the minimum of known ratings for both users? if one user saw only one movie the information for the clustering will not be very accurate no?
+23:16:58 From Srikanth Susarapu To Everyone:
+	-1 .. they are polar opposites
+23:17:02 From Ron Carino To Everyone:
+	zero match. they should not eat together
+23:18:58 From Anthony Washington To Everyone:
+	Not a question!
+23:19:04 From Sriram Akella To Everyone:
+	So cosine similartty will always be between 1 and 0
+23:19:05 From Aseem Gupta To Everyone:
+	2 and 3 were always dissimilar as for none of the items they had common rating..
+23:19:08 From Sriram Akella To Everyone:
+	And it cannot be -1?
+23:19:23 From Anthony Washington To Everyone:
+	I was just giving support to another member of the cohort.
+23:19:26 From Steve Trenfield To Everyone:
+	I don’t know the answer either, but when I connect my iPad to my computer and screen share, it also goes to 9:41am on Tuesday, January 9th
+23:19:29 From Sujatha Papagani To Everyone:
+	in 1 and 2 we have 3 entries only where as 2 and 3 has 4 entries we collected So is there a factor we can assign to this in any method ?
+23:19:29 From Aseem Gupta To Everyone:
+	I saw the same Jan 9 time in Muzher Dahleh screen too, so it is the MIT portal thing
+23:19:36 From Bill Hutchison To Everyone:
+	What happens if all the matches are 0-0?
+23:20:01 From Angel Rafael Ortega Ramirez To Everyone:
+	so... is it possible to get the probability of similarity? or we are just calculating a similarity score?
+23:20:29 From Marja Crawford To All Panelists:
+	my name is pronounced Mar+"ya"
+23:20:51 From Jeanelle Frontin To Everyone:
+	I’m sorry, do you mind explaining a bit further the intuition behind the smaller purple matrix on the right ?
+23:21:20 From Will Kerner To Everyone:
+	So for the sparse matrix, the “?” Is replaced by averaging other similarities and inferring from where there is overlapping data for the missing data?
+23:21:25 From Edwin Obando Hernandez To Everyone:
+	Great. Thanks!
+23:22:10 From Samer El Boustany To Everyone:
+	ok thanks
+23:23:02 From kagiso monkge To Everyone:
+	Is the rating like and not like
+23:23:13 From Venkatesh Prasad To Everyone:
+	Can we use similarities between restaurants to compare ratings?
+23:23:18 From kagiso monkge To Everyone:
+	suppose rating was 0-5
+23:23:29 From Pam Marcus To Everyone:
+	i think i missed something - i thought you mentioned that 2 vectors that are 180 degress apart lead to sim=-1?
+23:23:38 From Vahid Monfared To Everyone:
+	if the similarity result is -1, what would be the unknowns?
+23:24:39 From Cris Arias To Everyone:
+	Are there other types of similarity functions we can use?
+23:24:57 From Ron Carino To Everyone:
+	per reddit: It’s a reference to date and time that the iPhone was revealed to the public (January 9th 2007 9:41). It’s a iOS/iPadOS “feature”. If you see the Apple marketing, usually the products are showing that same date and time.
+23:27:59 From Pam Marcus To Everyone:
+	i must leave early today. thanks to all for another great class.
+23:29:00 From Rewa Rai To Everyone:
+	May be I missed. What's singular value mean here?
+23:29:21 From Samer El Boustany To Everyone:
+	eighen values and vectors?
+23:31:09 From Aseem Gupta To Everyone:
+	Can you explain what are S and sigma again?
+23:33:12 From Aseem Gupta To Everyone:
+	Thanks got it..
+23:33:37 From Daniel Ayer To Everyone:
+	PCA was to identify features that most affected vector properties and eliminate low effect features.
+	Here we seem to be truncating to achieve the same dimensional reduction.  Are we saying that some threshold of data energy is sufficient as in the PPCA evaluation for feature effect?
+	I'm sorry if that's not so clear.
+	this seems similar too but distinct from PCA.
+23:33:40 From Maliha Ahmad To Everyone:
+	S is the similarity matrix. sigmas are components of S?
+23:33:58 From Maliha Ahmad To Everyone:
+	thank you!
+23:34:07 From Cris Arias To Everyone:
+	What do we gain by applying PCA in this context, and not jumping straight into K-Means?
+23:34:09 From Rewa Rai To Everyone:
+	Thx!
+23:35:09 From Sujatha Papagani To Everyone:
+	0.9 ..Alpha Level of significance ?
+23:35:13 From Andrew Mariano To Everyone:
+	How is it that d=2...?
+23:35:37 From Jeanelle Frontin To Everyone:
+	This is like the elbow method?
+23:35:43 From Jeanelle Frontin To Everyone:
+	Is that what d represents ?
+23:36:15 From Jeanelle Frontin To Everyone:
+	👍🏽
+23:36:30 From Alpha Barry To Everyone:
+	That elbow hardly works
+23:36:43 From Elizabeth Gozzer To Everyone:
+	I would say is in between eye-balling, plotting, and K clustering??
+23:37:06 From ivan salido To All Panelists:
+	Silhouette maybe?
+23:37:21 From Arif-ur-Rahman Joarder To All Panelists:
+	Why not DBSCAN?
+23:37:37 From Sujatha Papagani To Everyone:
+	Philosophy,Art and science very good choice of words Proff :-)
+23:37:42 From Maksim Virskii To All Panelists:
+	uij in PCA - are vectors of [0…0.1.0.00] type?
+23:42:07 From Elizabeth Gozzer To Everyone:
+	and you find them by using the previous tool of Similarities, correct?
+23:43:11 From James Appenzeller To Everyone:
+	very impressive!
+23:44:09 From Will Kerner To Everyone:
+	By proxy
+23:44:56 From Will Kerner To Everyone:
+	Inherent pitfalls I’m sure
+23:46:00 From Aseem Gupta To Everyone:
+	Could you explain user-user or item-item collaborative filtering?
+23:46:58 From Theodoros Alexandropoulos To Everyone:
+	Given the fact that that 99% of FB users are reachable within 6 hops (as stated in Week 2 by Prof Uhler) I believe this friend graph would actually correspond to the worst case scenario...
+23:47:23 From Joab Odera To Everyone:
+	Wouldn't this method lead to increasing certain biases?
+23:47:26 From Will Rein To Everyone:
+	https://papers.nips.cc/paper_files/paper/2017/file/7cc234202e98d2722580858573fd0817-Paper.pdf
+23:48:34 From kagiso monkge To Everyone:
+	SNN stands for?
+23:48:47 From Srikanth Susarapu To Everyone:
+	Synthetic Nearest Neighbors
+23:48:53 From kagiso monkge To Everyone:
+	thanks
+23:49:03 From Bill Hutchison To Everyone:
+	It makes me curious about what other people the platforms think I resemble 😀
+23:49:04 From Will Kerner To Everyone:
+	Thanks @ Will
+23:49:05 From Elizabeth Gozzer To Everyone:
+	Application: other than for movies or purchases or similar products.. could you use this to identify the best combination of interventions for a international development program?
+23:49:19 From David Sachs To Everyone:
+	I feel like we really blew through the last bit (with the matrix before pca)
+23:51:35 From leo-shuxiong wu To Everyone:
+	Even they gave the same rating. They may have different feelings. Maybe someone rate 2 is same with others rating 4 ,because they have different understand of rate numbers.  How can we see this kind of similarity?
+23:56:23 From Maliha Ahmad To Everyone:
+	rank
+23:56:26 From Aseem Gupta To Everyone:
+	d
+23:56:28 From Marja Crawford To Everyone:
+	plot it
+23:56:35 From Sharmila Veera To Everyone:
+	standard errors
+23:56:38 From Theodoros Alexandropoulos To Everyone:
+	explained variance?
+23:56:58 From Alpha Barry To Everyone:
+	Scree plot ?
+23:57:10 From Sujatha Papagani To Everyone:
+	Proff - Silly or smart may be - Can you give us a 80/20 rule for Data science - Meaning if we cover this 20% of the course you can get 80% of the information needed to become a good / comfortable data scientist
+23:57:27 From Aseem Gupta To Everyone:
+	So you fix 0.9 to calculate r?
+23:58:12 From Cris Arias To Everyone:
+	In collaborative filtering, do we necessarily need to apply PCA or can we just go from the similarity matrix to K-means?
+23:58:19 From Changsong Liu To Everyone:
+	but 0 originally means "dislike", in SVT we replace * with 0, is this OK
+23:59:43 From Anuradha Rajkumar To Everyone:
+	can you explain step 3 again please?
+00:01:01 From Marja Crawford To Everyone:
+	but couldn't some of the ?'s actually be 1, in which case we have created a bias?
+00:01:04 From Aseem Gupta To Everyone:
+	13
+00:01:04 From Maksim Virskii To All Panelists:
+	What are vk and uk vectors?
+00:01:12 From Maksim Virskii To All Panelists:
+	In decomposition
+00:01:15 From Rahul Rana To All Panelists:
+	What application is being used for displaying all the content? I am really eager
+00:01:38 From Marja Crawford To Everyone:
+	thank youi
+00:02:08 From Victor Mensah To Everyone:
+	Thank you prof
+00:02:14 From Bill Hutchison To Everyone:
+	Thanks for another great lecture!
+00:02:22 From Victor C Salas To Everyone:
+	Prof. Devavrat, very illustrative lecture. Thank you. (claps)
+00:02:23 From Shawn Reynolds To Everyone:
+	287k emails…?
+00:02:27 From Andres Alvarez To Everyone:
+	Thanks!!!
+00:02:27 From Christina Bell To Everyone:
+	Thank you Professor!
+00:02:27 From Anuradha Rajkumar To Everyone:
+	Thank you prof!
+00:02:28 From Rahul Rana To Everyone:
+	Thank you professor
+00:02:28 From Ron Carino To Everyone:
+	ikr?
+00:02:29 From Elizabeth Gozzer To Everyone:
+	thanks!
+00:02:29 From Joab Odera To Everyone:
+	Thanks
+00:02:30 From Laura Truncellito To Everyone:
+	Thank you!
+00:02:30 From Samer El Boustany To Everyone:
+	Thanks
+00:02:30 From James Appenzeller To Everyone:
+	thank you very much!
+00:02:31 From Ron Carino To Everyone:
+	thank you!
+00:02:31 From Will Rein To Everyone:
+	Thank you
+00:02:31 From Lakshmi Vidyasagar To Everyone:
+	Thank You Professor
+00:02:32 From Edwin Obando Hernandez To Everyone:
+	Thank you!
+00:02:33 From Aseem Gupta To Everyone:
+	Thank you Dr Shah.
+00:02:34 From Charles Henderson To Everyone:
+	Thank you
+00:02:34 From Sujatha Papagani To Everyone:
+	Nicely Done lot in less Thanks
+00:02:34 From MIKE I.C. ABEJO To Everyone:
+	Thank you professor!
+00:02:34 From Shawn Reynolds To Everyone:
+	Thank you!
+00:02:34 From Raj Maragoud To Everyone:
+	Thank you Prof!
+00:02:35 From Chih-Chung Wuo To Everyone:
+	Thank you Prof!
+00:02:35 From Jennifer Terrell To All Panelists:
+	Thank you!!!
+00:02:35 From Marja Crawford To Everyone:
+	Thank you
+00:02:36 From Tendo Lubwama To Everyone:
+	thank you
+00:02:36 From Victoria Elia To All Panelists:
+	Thank you!
+00:02:36 From Sarah Phen To Everyone:
+	thank you!
+00:02:36 From Ainur Abilova To Everyone:
+	Thank you!
+00:02:38 From Benktesh Kumar To Everyone:
+	Thank you!
+00:02:38 From Tibebu Ayalew To Everyone:
+	Thank you!
+00:02:39 From Santhanam Adaikalam To Everyone:
+	thank you
+00:02:40 From Raymond Nelson To Everyone:
+	Thank you
+00:02:45 From milly Nalukwago To Everyone:
+	Thank you
+00:02:47 From Rui Rodrigues To Everyone:
+	Thank You!
+00:02:47 From Mohammed Al Farsi To Everyone:
+	thank
+00:02:58 From Oliver Fugger To Everyone:
+	Thanks a lot!
+00:03:00 From Nazar Elbashir To Everyone:
+	Thank you very much, Professor!
+00:03:02 From Aseem Gupta To Everyone:
+	Good afternoon
+00:03:37 From Roderick Nuque To Everyone:
+	I am going. Thank you for the good lecture.
+00:03:52 From Marja Crawford To Everyone:
+	so like use supervised learning
+00:04:15 From Aseem Gupta To Everyone:
+	Where is SVD used for collaborative? In SVD we do PCA? But prof said in collaborative no PCA..
+00:04:20 From Marco Ocana To Everyone:
+	Could you go over building the similarity matrix and show where sigma and mu are extracted from it?
+00:06:14 From Rewa Rai To Everyone:
+	Review
+00:06:59 From Sujatha Papagani To Everyone:
+	May be out of some academic context : When we do any action on Facebook we are really caught about what we are and they get into our mail boxes , you tube adds and also sometimes into our mind but if we search on google or Youtube you are better Any thoughts why is this so or its not
+00:08:13 From Sujatha Papagani To Everyone:
+	answer expected from academic context pls
+00:08:41 From Pratik Baniya To Everyone:
+	How do we find drift detection in the recommended system? Also, how do we evaluate this system if it's giving good recommendations?
+00:09:53 From Marja Crawford To Everyone:
+	sigma is eigenvalues
+00:10:14 From Rewa Rai To Everyone:
+	I need to go. Thanks everyone!
+00:10:36 From Alpha Barry To Everyone:
+	Sigma singular value, uk singular vectot
+00:14:46 From Alpha Barry To Everyone:
+	Are data scientists specialized in some technics?
+00:14:48 From Laura Truncellito To Everyone:
+	Can you elaborate on how to build a recommendation system when data is limited. Thanks!
+00:15:15 From Sujatha Papagani To Everyone:
+	So being anxious is the answer the 20% Thank you...Just kidding... Very nice answer Nirupam!
+00:15:35 From Victor Mensah To Everyone:
+	Great answer!!!!!!
+00:16:49 From Sujatha Papagani To Everyone:
+	Thanks for adding Subham.
+00:18:24 From Laura Truncellito To Everyone:
+	Great; thanks Niruppam
+00:19:29 From Victor Mensah To Everyone:
+	Will we have access to any or all of you after this course...for a month or a year?  To ask real world problems...
+00:20:38 From Anuradha Rajkumar To Everyone:
+	can you walk through the linear algebra portion from this lecture - particularly the singularity from matrices
+00:21:30 From Sujatha Papagani To Everyone:
+	Can you share your linked in profile please
+00:21:44 From Victor Mensah To Everyone:
+	Great!!!    Thank you so much.  Much appreciated!!!
+00:22:34 From Anuradha Rajkumar To Everyone:
+	sure! I'll look at the pre-reads as well
+00:23:13 From Maliha Ahmad To Everyone:
+	curated resources folder also have very good videos and articles
+00:25:17 From [GL Mentor] Niruppam Sharma To Everyone:
+	https://www.linkedin.com/in/nirupam-sharma-data-scientist/
+00:25:59 From Sujatha Papagani To Everyone:
+	Thanks Nirupam
+00:26:01 From Mohamed Othman To Everyone:
+	In general, how is the job market for data scientist? what is the average unemployment period in, say US/Canada ? thx.
+00:27:15 From Anuradha Rajkumar To Everyone:
+	That helped! Thanks
+00:27:56 From Maliha Ahmad To Everyone:
+	WHat elective/ capstone would you recommend for someone seeking to pivot to Data Science.
+00:28:15 From Victor Mensah To Everyone:
+	You guys are great!!!!    Thank you.
+00:28:27 From Sujatha Papagani To Everyone:
+	Agree completely Thank you both
+00:29:12 From Yolanda Dolores To Everyone:
+	What would be a good starting point after this class to find a job in data science? What role?
+00:29:22 From Maliha Ahmad To Everyone:
+	Thank you!
+00:30:42 From Yolanda Dolores To Everyone:
+	Thank you very much
+00:30:43 From Charles Henderson To Everyone:
+	Great advice Niruppam -
+00:30:45 From Oliver Fugger To Everyone:
+	Thank you both!
+00:30:49 From Lakshmi Vidyasagar To Everyone:
+	Thank You Mentors!!
+00:30:52 From Victor C Salas To Everyone:
+	Thanks. Take care!
+00:30:55 From Charles Henderson To Everyone:
+	Great class!
+00:30:55 From Marja Crawford To Everyone:
+	thank you
+00:30:56 From Victoria Le To Everyone:
+	Thank you guys! Always good advice.
+00:30:56 From Samer El Boustany To Everyone:
+	Thank you both
+00:30:56 From Laura Truncellito To Everyone:
+	Thank you!
+00:30:57 From Rahul Rana To Everyone:
+	Thank you very much
+00:30:59 From Maliha Ahmad To Everyone:
+	Thank you!
+00:30:59 From Christina Bell To Everyone:
+	Thank you!
+00:30:59 From Edwin Obando Hernandez To Everyone:
+	Many thanks!!!
+00:31:01 From carla rudder To Everyone:
+	thankyou
+00:31:01 From Raymond Nelson To Everyone:
+	thanks
+00:31:02 From Tendo Lubwama To Everyone:
+	Thank you
+00:31:03 From MIKE I.C. ABEJO To Everyone:
+	thanks
+00:31:04 From Will Rein To Everyone:
+	Thank you very much!
+00:31:04 From Jyothi Ponde To Everyone:
+	Thank you everyone
+00:31:06 From Rui Rodrigues To Everyone:
+	Thanks a lot!

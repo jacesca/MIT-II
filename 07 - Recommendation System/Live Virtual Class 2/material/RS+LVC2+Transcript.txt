@@ -1,0 +1,2895 @@
+[[GL Mentor] Shubham Sharma] 21:58:53
+Good morning.
+
+[Faculty (Olympus)] 21:58:55
+Good morning.
+
+[[GL Mentor] Shubham Sharma] 21:58:57
+How are you doing?
+
+[Faculty (Olympus)] 21:58:58
+Excellent. How about you?
+
+[[GL Mentor] Shubham Sharma] 21:59:01
+Perfect.
+
+[Faculty (Olympus)] 21:59:04
+Okay.
+
+[Prof. Devavrat ] 21:59:17
+Alright, guess. Good morning. Good afternoon everyone. I think again just to remind everyone including Jack Clean.
+
+[Prof. Devavrat ] 21:59:28
+Please direct your chat to everyone. Know those things with zoom where or somehow if by default it always leaves host and panelists.
+
+[Prof. Devavrat ] 21:59:40
+In the webinars.
+
+[Prof. Devavrat ] 22:00:00
+So we'll wait for a few minutes before we get started.
+
+[[GL Mentor] Shubham Sharma] 22:00:03
+Yeah, so we have so far like 118 at So maybe one or 2 more minutes. Then we start.
+
+[Prof. Devavrat ] 22:00:10
+Got it.
+
+[Prof. Devavrat ] 22:01:03
+Right, shall we?
+
+[[GL Mentor] Shubham Sharma] 22:01:05
+Okay, yeah, I guess we can start if people can confirm on the chat that they can your professors audio clearly they can see the video and the screen as well.
+
+[[GL Mentor] Shubham Sharma] 22:01:17
+Perfect. So just the normal reminders. This will be a 2 h session with the professor.
+
+[[GL Mentor] Shubham Sharma] 22:01:24
+As you can see, this is the second LVC. Recommendation systems part 2. And you can stay back for half an hour after the session.
+
+[[GL Mentor] Shubham Sharma] 22:01:32
+For clarifying additional queries we'll be having mentors from Great Learning. Who would be more than happy to clarify your queries?
+
+[[GL Mentor] Shubham Sharma] 22:01:39
+Please keep your questions coming in the chat during this session. The professor will monitor the chat live. And despite Professor's reminder, I can still see some people are sending messages to hosts and panelists.
+
+[[GL Mentor] Shubham Sharma] 22:01:53
+A gentle request, please change that to everyone. You can do that. But going into your chat box and looking for the option where it says 2.
+
+[[GL Mentor] Shubham Sharma] 22:01:59
+And you can change it to everyone. So with that, let me welcome, Professor.
+
+[Prof. Devavrat ] 22:02:06
+Alright, thanks, thanks everyone for joining. And a team. The latest I'm reading from you is yes, hello from Mandela Park.
+
+[Prof. Devavrat ] 22:02:17
+And then there's a folks from Amsterdam as I was looking at the commence of one question that that came up from Kevin is about regulating regulating algorithmic filtering on social media.
+
+[Prof. Devavrat ] 22:02:34
+It's about regulating effectively recommendations system in the context of social media setting and One way I would say Kevin.
+
+[Prof. Devavrat ] 22:02:43
+The thesis it proposes is to say that well one way to do regulation is to define what the right person puts laws are and then Enable those laws to be audible using data that is algorithms themselves can do the auditing in a data driven manner rather than.
+
+[Prof. Devavrat ] 22:03:06
+You was doing it like right now so far we have to whenever we have to do law enforcement. Typically it's based on lawyers working very hard.
+
+[Prof. Devavrat ] 22:03:15
+Washes that can be used algorithms and statistics and machine learning to do that as well. And I believe that applies more broadly than just social media.
+
+[Prof. Devavrat ] 22:03:24
+It's in that context where you could. Think an argument. And then Will's point is that huge loss it at Google for taking internet viewprint for training AI and that's again an interesting question. Is it really true?
+
+[Prof. Devavrat ] 22:03:39
+Can we design algorithms to actually algorithms to actually, track it. What is your data, etcetera?
+
+[Prof. Devavrat ] 22:03:50
+So lots of. Lots of such things now I'm gonna get started with the topic of second lecture.
+
+[Prof. Devavrat ] 22:04:00
+I hope you all had some time going through the content of lecture one. Some of the recommendations that I had.
+
+[Prof. Devavrat ] 22:04:09
+During the lecture if you have questions please feel free to sort of type on the chat and I will address them as I go along.
+
+[Prof. Devavrat ] 22:04:19
+But with this, let's see what we're gonna do in today's lecture. First, I'm gonna recall what within the lecture one.
+
+[Prof. Devavrat ] 22:04:27
+Okay, I'll do it very quickly. As I do that as well, I want to introduce something new.
+
+[Prof. Devavrat ] 22:04:34
+Okay, so that doesn't feel boring and just old recall. But also it is a recall so that you know we remember what we did last lecture.
+
+[Prof. Devavrat ] 22:04:44
+And the way I will do something new is I will tell you Some examples of settings where you might not think of them as a recommendation system problem, but there are actually direct application of, methods you are learning here.
+
+[Prof. Devavrat ] 22:04:59
+So that's first what I do. After that, I'll Quickly remind ourselves of the problem statement that we saw as well as the simple solutions.
+
+[Prof. Devavrat ] 22:05:11
+To be looked at the last picture. I had left you with, a few questions around simple solutions.
+
+[Prof. Devavrat ] 22:05:19
+I want to address them when we get there and then we will dive into the content for new content for this part.
+
+[Prof. Devavrat ] 22:05:27
+And I will sort of describe in detail what those topics would be. So with that, if you remember.
+
+[Prof. Devavrat ] 22:05:35
+The basic
+
+[Prof. Devavrat ] 22:05:38
+Problem of recommendation system that we boil down for studying in this. This set of lectures is to say, well, in the simplest form, it's about filling missing values in the matrix.
+
+[Prof. Devavrat ] 22:05:51
+And removing noisy value. That we have observed. So removing noise from here and filling a missing can be considered this simple setting of 0 and one.
+
+[Prof. Devavrat ] 22:06:04
+Formally it looks something like this. There is a matrix. The true matrix is Matrix LIJ.
+
+[Prof. Devavrat ] 22:06:14
+Okay, and we don't observe that we want to recover that What we observe is a matrix Y.
+
+[Prof. Devavrat ] 22:06:23
+Some entries of that matrix are observed and some are not. The ones that are observed are random outcomes.
+
+[Prof. Devavrat ] 22:06:32
+So just in an expectation, it looks like the true matrix. We're observing only one. Such entry for one such observation for each IJ if we are observing them.
+
+[Prof. Devavrat ] 22:06:42
+If we don't observe, of course, is a question mark or stop and we still want to recover all the entry.
+
+[Prof. Devavrat ] 22:06:47
+So very hard problem. The way we had also tried to argue why this is very hard and because as you remember, I said that if there are end users and items.
+
+[Prof. Devavrat ] 22:06:58
+Then each entry Each of the entry corresponds to as new But amateur Li, you can think of as a bias of a coin.
+
+[Prof. Devavrat ] 22:07:12
+So I got N times M such coins. If all of those coins have different parameters associated with them.
+
+[Prof. Devavrat ] 22:07:23
+I'm gonna predict all of them simultaneously estimate all of them simultaneously. Where for a given coin I'm observing one observation or no observations.
+
+[Prof. Devavrat ] 22:07:32
+Very hard problem.
+
+[Prof. Devavrat ] 22:07:34
+And that's where we had to sort of put some structure into it. And we looked at simple algorithms.
+
+[Prof. Devavrat ] 22:07:39
+Before I get into those algorithms first as I promised you, I wanna show you a few. Examples that might be look new.
+
+[Prof. Devavrat ] 22:07:47
+Okay, so here is an example of a social network. Okay, so there are people on left and right.
+
+[Prof. Devavrat ] 22:07:56
+Okay. An entry one here means that this person is connected to this person, which you are because you are always self connected.
+
+[Prof. Devavrat ] 22:08:06
+And free here, for example, means that this 2 people are connected with each other. And suppose 2 people are not connected with each other like this lady and this lady.
+
+[Prof. Devavrat ] 22:08:16
+And one is asking a question.
+
+[Prof. Devavrat ] 22:08:19
+What is the chance that they should be connected based on the data we have observed? And we, if we can predict that, then maybe we can utilize it to decide whether we should be recommending these 2 people to connect with each other or not.
+
+[Prof. Devavrat ] 22:08:35
+This is the type of things that happens when you get recommendation in LinkedIn for connections.
+
+[Prof. Devavrat ] 22:08:43
+How did that example? Now let's imagine that in that same social network there are groups. Groups of let's say this is a group that I have from my sort of friends at MIT.
+
+[Prof. Devavrat ] 22:08:57
+This is a group that are friends at in New York City and whatnot. Okay. There might be communities like this.
+
+[Prof. Devavrat ] 22:09:06
+And maybe people within community are a lot more well connected than people outside community.
+
+[Prof. Devavrat ] 22:09:14
+And that's what this means. So point is that for any 2 people within a community, the likelihood of connecting is P.
+
+[Prof. Devavrat ] 22:09:23
+But any 2 people which are in different community, the likelihood of that connecting is Q.
+
+[Prof. Devavrat ] 22:09:29
+That's a ground truth model. This is called this model is called a stochastic. Block model.
+
+[Prof. Devavrat ] 22:09:39
+This model has been utilized to study social interaction structure. It has been used to study some of the, interesting phenomena is happening in life science and mall.
+
+[Prof. Devavrat ] 22:09:51
+Been around since early 19 seventies. So it's a very old model. And it's been very influencer.
+
+[Prof. Devavrat ] 22:09:59
+The typically to learn the model what you have to do is given again connections ones and 0 based on that you have to figure out What the likelihoods are?
+
+[Prof. Devavrat ] 22:10:09
+And then based on that decide who are the people in the same community and who are not. Now if I have connection zeros and ones based on that if I could estimate the likelihoods like in recommendation system problem.
+
+[Prof. Devavrat ] 22:10:22
+And if all likelihoods are peer queue, I'll find that maybe these are the people. For which their like nodes are close to QP.
+
+[Prof. Devavrat ] 22:10:31
+For this queue and then I can segregate them and say well looks like this is a community while and there's a community too.
+
+[Prof. Devavrat ] 22:10:39
+And then I can solve that problem. That means by solving recommendation system problem, I can solve this. Community detection problem.
+
+[Prof. Devavrat ] 22:10:47
+Okay. Let's make it a little bit more interesting. So now imagine that these people are playing games with each other.
+
+[Prof. Devavrat ] 22:10:57
+And then we are recording. How often who wins against each other. So for example, you can say that this means that this lady One against this person twice.
+
+[Prof. Devavrat ] 22:11:11
+On the other hand, if you look at this relation, maybe let's think of this. This lady won against this 1 6 times.
+
+[Prof. Devavrat ] 22:11:19
+So when she and these 2 people played. She went twice. And she went 6 times. Okay, that's basically.
+
+[Prof. Devavrat ] 22:11:31
+So again, this is a little misplaced. Think of it here.
+
+[Prof. Devavrat ] 22:11:35
+So that's basically what this data means now. It's possible that not everybody has played with each other.
+
+[Prof. Devavrat ] 22:11:41
+Think of right now Wimbledon going on, right? Not everybody, every pair of players are playing with each other.
+
+[Prof. Devavrat ] 22:11:47
+Only 2 pads of players are playing with each other. Based on that, maybe you wanna decide, better than maybe a few other turn.
+
+[Prof. Devavrat ] 22:11:54
+I mean, she would decide. What is the ranking of all players?
+
+[Prof. Devavrat ] 22:11:59
+Hey, global ranking. This happens in online gaming all the time. Not every pair of players are playing with each other.
+
+[Prof. Devavrat ] 22:12:06
+So how do you decide a global ranking among that? Well, this is a nice model called.
+
+[Prof. Devavrat ] 22:12:16
+Bradley. Terry Lose. Are also known as Money no meal logic model. Okay, these models have been utilized for.
+
+[Prof. Devavrat ] 22:12:34
+All sorts of, these models have been utilized for all sorts of rankings, social choice.
+
+[Prof. Devavrat ] 22:12:41
+And these haven't utilized for all sorts of policy planning. For example, somebody won Nobel Prize in 2,000 in economics.
+
+[Prof. Devavrat ] 22:12:49
+Because that person use these models. To do data driven. Policy proposals, okay, in transportation system. Very influential.
+
+[Prof. Devavrat ] 22:13:01
+No. What we want to do is for this model effectively says that for every BAR of players, there's a notion of likelihood that if these 2 players played with each other, there's a chance that she would won against him with this much.
+
+[Prof. Devavrat ] 22:13:17
+So based on the data we have, we were to figure out those like loops. Again, it's a very similar problem.
+
+[Prof. Devavrat ] 22:13:23
+It's a similar recommendation system problem. Once you figure out this likely or then we can apply some other ranking algorithm on top to determine who is the what is the global ranking.
+
+[Prof. Devavrat ] 22:13:33
+Okay. Towards this. In early 2,000 myself and some of my group members we wrote this paper called rank centrality which utilizes these ideas and this algorithm has been utilized for all sorts of collaborative decision making.
+
+[Prof. Devavrat ] 22:13:54
+For example, you want to admit multiple students. So let's say you wanna admit. or let's say higher.
+
+[Prof. Devavrat ] 22:14:01
+Few people. One video hire a person is everybody talk to that person. And then rank, everybody talk to another person, then rank everybody or another person and then you make a decision.
+
+[Prof. Devavrat ] 22:14:12
+Another option is that you have 3 people who you want to among one those 3 people you will recruit and you have 5 people who are making decision, maybe a subset of 2 talks to this, subset of 2 talks to that's to talk to the other one and based on their their answers you want to aggregate them to make a
+
+[Prof. Devavrat ] 22:14:30
+decision. That problem is very much like this problem. Okay. And you can sort of use this kind of algorithms to make these things and many people, many systems these days use this algorithm behind the scene.
+
+[Prof. Devavrat ] 22:14:44
+And if you so if you are not able to fall asleep tonight. Searched by rank centrality and you will find a bunch of papers from that.
+
+[Prof. Devavrat ] 22:14:53
+Okay, now there's there are a few questions that are coming up. So let me take those questions.
+
+[Prof. Devavrat ] 22:14:59
+Marja's question is that how do you decide who gets a number of wins. Is it the row person?
+
+[Prof. Devavrat ] 22:15:07
+Okay. So, person is the one who gets events in my notation. Jyoti's question, what if somebody is not in any group? Great.
+
+[Prof. Devavrat ] 22:15:16
+So for example, what if somebody is has not played with anyone? Of course there is no way to consider, provide ranking for that person.
+
+[Prof. Devavrat ] 22:15:25
+That person is effectively out.
+
+[Prof. Devavrat ] 22:15:29
+Let's look at one more thing and then to have I will move on. So this is called a crowd sourcing setting.
+
+[Prof. Devavrat ] 22:15:36
+It's a low cost low budget crowd sourcing likes environment.
+
+[Prof. Devavrat ] 22:15:43
+The platform like that called no, mechanical Turk.
+
+[Prof. Devavrat ] 22:15:51
+It's also, any situation where, you know, you are trying to get people's survey responses and all that.
+
+[Prof. Devavrat ] 22:15:59
+Think of, type of things you collect when you do. Great learning feedback. That's interesting.
+
+[Prof. Devavrat ] 22:16:07
+Think of you do, run LinkedIn. You know, polls and people give you responses for different things.
+
+[Prof. Devavrat ] 22:16:16
+Okay. Here I'm thinking of an example where you know you've got But of websites and until AI can figure out.
+
+[Prof. Devavrat ] 22:16:25
+Okay. let's say a question like, is this website suitable for children or not?
+
+[Prof. Devavrat ] 22:16:33
+Maybe you will have to rely on people's opinion to figure out. So what do we do? Well, I show this website to a few people like these 2 people.
+
+[Prof. Devavrat ] 22:16:42
+Somebody says, yes, it's suitable. Somebody says no in suitable and now you're in trouble you don't know what to do.
+
+[Prof. Devavrat ] 22:16:47
+Okay. Well, if you knew that You should trust this person's answer point one and this person will answer point 9.
+
+[Prof. Devavrat ] 22:16:57
+And maybe at this stage you can make a decision saying that well it's more likely it looks like I should trust this one then this one.
+
+[Prof. Devavrat ] 22:17:05
+Yeah, question, how do you figure out these kind of numbers based on just data like this? Well, maybe you have information for the same person across multiple things and for same web page your information for answers from multiple people.
+
+[Prof. Devavrat ] 22:17:20
+It put all of that information together and then based on that decide whether What is the skill score of each person saying that what is the likelihood that this person is going to give answer correctly.
+
+[Prof. Devavrat ] 22:17:35
+For an underlying task of interest.
+
+[Prof. Devavrat ] 22:17:39
+It's a very nice model for this crowd sourcing problem. It's been around in, since 19 seventies.
+
+[Prof. Devavrat ] 22:17:46
+There was that came up in the context of, you know, taking feedback from patients on the round in hospital.
+
+[Prof. Devavrat ] 22:17:54
+So I don't know if you. I hope none of you have ever been Edmund into hospital or ever will be.
+
+[Prof. Devavrat ] 22:18:01
+But suppose you have been on, that environment, then typically what happens is when a patient is in a hospital, especially in academic hospital.
+
+[Prof. Devavrat ] 22:18:11
+There is a somebody like a junior member of the team like medical student would come and ask you.
+
+[Prof. Devavrat ] 22:18:19
+How are you doing and take your information? An hour later or 15 min later or a medical accident would come then a fellow would come and then the actual doctor would come or a team of doctors would come.
+
+[Prof. Devavrat ] 22:18:32
+So each time you're getting patient is being asked by multiple people and depending on that patient is maybe giving correct answer or not correct answer, right?
+
+[Prof. Devavrat ] 22:18:41
+And so now how do you aggregate that kind of noisy information? Across patients and across.
+
+[Prof. Devavrat ] 22:18:48
+Questions? Okay. To answer that question, this type of model was developed. And recommendation system like thing that we just, learning can help us pick it out for each person, what is the likelihood and for each task, what is the chance that it is, correct or not.
+
+[Prof. Devavrat ] 22:19:07
+And then based on that we can sort of find out all of these and then based on that we can find an answer saying that this is the right good estimation.
+
+[Prof. Devavrat ] 22:19:15
+Okay, so recommendation system can be now.
+
+[Prof. Devavrat ] 22:19:22
+A good. Building block towards solving all of these problems. Okay, so even though last lecture when I introduced you to you basic version of recommendation system, it might have looked like a gimmick, actually.
+
+[Prof. Devavrat ] 22:19:34
+It can help you solve a lot of problems. Now for this one, the paper we wrote, has these in, keyword.
+
+[Prof. Devavrat ] 22:19:44
+These are the key words. Or low cost budget.
+
+[Prof. Devavrat ] 22:19:53
+Optimo.
+
+[Prof. Devavrat ] 22:19:57
+Crowd sourcing. In such, again, this was. D.
+
+[Prof. Devavrat ] 22:20:08
+Alright, so that was those were various different. different applications. Now let me see one question that I've not answered from Mary.
+
+[Prof. Devavrat ] 22:20:22
+If multiple people interview one person and each person is asked to rank based on one criteria, what kind of ranking model would this be?
+
+[Prof. Devavrat ] 22:20:31
+Mary, what I'm thinking is something like this. Okay, so then let's say.
+
+[Prof. Devavrat ] 22:20:38
+That's it. These are candidates. Okay.
+
+[Prof. Devavrat ] 22:20:44
+And let's say these are people who are making decision.
+
+[Prof. Devavrat ] 22:20:49
+Okay, and I said this person has
+
+[Prof. Devavrat ] 22:20:54
+Right. I'm just gonna show you a simple example and later we can make it more complicated. So I said this person is running this too and feels that as per person one candidate one is better than candidate 2.
+
+[Prof. Devavrat ] 22:21:10
+Okay, and as per person 2, let's say, 2 is better than candidate 3, then you might conclude from this is a candidate one is better than candidate one is better than candidate 2 is better than candidate 3.
+
+[Prof. Devavrat ] 22:21:21
+Okay, more generally this is not the type of answer you would get from these kind of data from many many of, reviews and many of the candidates.
+
+[Prof. Devavrat ] 22:21:31
+You will collect information like what is the chance that what is the chance at candidate one is better than candidate 2.
+
+[Prof. Devavrat ] 22:21:39
+It is the same as one minus. Candidate to his.
+
+[Prof. Devavrat ] 22:21:45
+Candidate 2 is better than candidate one. Okay, so for every pair of candidates you will gather.
+
+[Prof. Devavrat ] 22:21:52
+You will, your recommendation system will help you estimate this. From there, you might go and make a decision like this.
+
+[Prof. Devavrat ] 22:22:00
+Okay. And there's some work in. Ron's questions. I would imagine skill score for a certain user can be better than.
+
+[Prof. Devavrat ] 22:22:09
+Was this review helpful? Yes, that would sort of naturally come out of many of these things as well.
+
+[Prof. Devavrat ] 22:22:17
+Excellent. Suja had to be really usually bring up info from a problem to support decision making.
+
+[Prof. Devavrat ] 22:22:31
+Yes, that depends. What your end goal is to, so kind of hard for me to answer out of context.
+
+[Prof. Devavrat ] 22:22:39
+Okay, so.
+
+[Prof. Devavrat ] 22:22:43
+So this was the data that we, looked at last time, the yellow data. We saw that was extremely sparse.
+
+[Prof. Devavrat ] 22:22:51
+2 in every 100 countries. Movie lens data was another data set Again, it had a heterogeneity like with layout data.
+
+[Prof. Devavrat ] 22:23:01
+Again, sparse not as far as yellow, but still sparse enough. Only 6% of entries were observed.
+
+[Prof. Devavrat ] 22:23:11
+And from both of them, we concluded that the key step towards building recommendation system as a decision system is.
+
+[Prof. Devavrat ] 22:23:19
+Actually. Filling missing values or, as end. Denoising observed values, both of them.
+
+[Prof. Devavrat ] 22:23:31
+Okay. And that led us to look at this as a problem which we discussing the beginning, right? That is the problem.
+
+[Prof. Devavrat ] 22:23:41
+This is the First step, version one of the problem. But then also as we discuss in detail, version one is not that end is just a beginning.
+
+[Prof. Devavrat ] 22:23:51
+More generally we might not have just one type of data but multiple type of interaction data between users and item.
+
+[Prof. Devavrat ] 22:23:59
+We might also have attributes associated with users and items. So we wanna utilize all of them together.
+
+[Prof. Devavrat ] 22:24:05
+Okay, and then we have this type of information across time. Okay, restaurants how Management changing chefs changing.
+
+[Prof. Devavrat ] 22:24:17
+Movies likely liking changes and all that stuff so things are changing over time Okay. And this is the type of problem they were to solve.
+
+[Prof. Devavrat ] 22:24:28
+That is time. Very. 10. Again, we are not able to get to any of that today.
+
+[Prof. Devavrat ] 22:24:37
+Today we are still going to continue with the the vanilla version of the problem but we'll go to complex methods.
+
+[Prof. Devavrat ] 22:24:44
+Before we go to complex method, does it remind ourselves of? 2 simple solutions that we looked at. And before I go to 2 simple solutions, let me see if there are.
+
+[Prof. Devavrat ] 22:24:54
+A few questions that have come up.
+
+[Prof. Devavrat ] 22:24:57
+Okay, so.
+
+[Prof. Devavrat ] 22:25:04
+Steve's question is how do recommendation systems handle bias? Something like EL, people are more likely to review a place than they're likely to.
+
+[Prof. Devavrat ] 22:25:16
+Dislike the place. So Steve, this is briefly we discussed last time. What has to account for that explicitly?
+
+[Prof. Devavrat ] 22:25:27
+In a designing method for recommendation system. And this set of lectures, I'm not be able to go to that as I.
+
+[Prof. Devavrat ] 22:25:35
+Also explained it but given you a reference so for example if you want to study more about how does one think about building on top of, things we will learn in this.
+
+[Prof. Devavrat ] 22:25:46
+This collection of lectures you might wanna look at manuscript with titles based, Causal, Matrix.
+
+[Prof. Devavrat ] 22:25:55
+Completion. Okay. John Christopher, Penance question is our recommendation system used in, biomedical or broadly life sciences field.
+
+[Prof. Devavrat ] 22:26:07
+So maybe if, I can tell you how at least one of the applications I know in the context of let's say getting more out of existing
+
+[Prof. Devavrat ] 22:26:22
+Clinical trial then at a population level, how do you get personalized information out or more generally given patient data.
+
+[Prof. Devavrat ] 22:26:31
+A clinical patient's clinical data. How do you use that to do personalized prediction of personalized treatment and then hence use that to do personalized prediction treatment design.
+
+[Prof. Devavrat ] 22:26:43
+I will do that in the next lecture. If I don't do that, just remind me. Because next lecture is the last lecture and is a part of last lecture typically I try to leave 15 min to have that discussion.
+
+[Prof. Devavrat ] 22:26:56
+Great. Bankadeh, can we use distance to closest user, fill in blank? So Megan is great.
+
+[Prof. Devavrat ] 22:27:04
+You are getting eager to talk about algorithms. Let's come to that version of that would be what we'll do in collaborative filtering.
+
+[Prof. Devavrat ] 22:27:13
+Sure, Al's question, since LMS are designed to predict missing values, what is the connection between LLM?
+
+[Prof. Devavrat ] 22:27:21
+And missing values for recommendation system. So LLMs in my mind are fundamentally, unstructured time CDs.
+
+[Prof. Devavrat ] 22:27:30
+Okay. The view of LLM is that As you say, like there's some history that I've given you and that you want to figure out what is the next.
+
+[Prof. Devavrat ] 22:27:41
+Step. Okay. So for example, if you think of Recommendation system as a sequence of time cities, yes.
+
+[Prof. Devavrat ] 22:27:53
+Elizabeth LLMs are unstructured time cities in my mind. Okay, if you think of, because You're going in document from left to right in certain languages in some languages right to left, but that's all that's happening.
+
+[Prof. Devavrat ] 22:28:09
+You're trying to go from left to right while thinking about multi layer structure in the document and use all other documents that are out there to sort of do that prediction.
+
+[Prof. Devavrat ] 22:28:19
+Okay, so if you think of recommendation system as a very specific sequential view of that rather than this matrix or spreadsheet view then definitely you could think of ALM as telling you, okay, you have done A, B, and C, what will be D, right?
+
+[Prof. Devavrat ] 22:28:37
+So you have seen movie one, movie 2, movie 3, then what will be D. Okay, so that would be sort of, one way to think about it.
+
+[Prof. Devavrat ] 22:28:45
+Mohammed's, thing question is, correlated review acceptable as a review is afflicted by other reviews.
+
+[Prof. Devavrat ] 22:28:53
+So. Again, moment correlated reviews relationship between those things. How, those are all puzzle questions and this is the type of manuscript that I have to set up that causal framework for it.
+
+[Prof. Devavrat ] 22:29:07
+This is a little beyond what I will be able to cover. This set of lectures, but those are great questions.
+
+[Prof. Devavrat ] 22:29:14
+Rava, can we also recommend experimental method that which will be better than another? So.
+
+[Prof. Devavrat ] 22:29:22
+Well, it depends on how we think about that if it's. If you can model it as a recommendation system problem, absolutely.
+
+[Prof. Devavrat ] 22:29:33
+Alright, and Elizabeth, I answered your question. So now let's continue.
+
+[Prof. Devavrat ] 22:29:43
+Hey. So this is the This is the, if you remember. This was our algorithm, right? Everything algorithm.
+
+[Prof. Devavrat ] 22:29:55
+We said, but let's look at let's do row average plus column average divided by 2.
+
+[Prof. Devavrat ] 22:30:02
+And that's the stream made for, So matrix, average this, average this, add them up, divide by 2 to estimate this entry.
+
+[Prof. Devavrat ] 22:30:13
+And then I added this plus one over square root of 10 minus one over spare time was another thing to do.
+
+[Prof. Devavrat ] 22:30:19
+And then just one over square root of N why. Right. So now I want to explain that. But before I do that.
+
+[Prof. Devavrat ] 22:30:24
+So 3 questions, right? Question one.
+
+[Prof. Devavrat ] 22:30:28
+Why one of us square root of 10? Question 2, why plus?
+
+[Prof. Devavrat ] 22:30:37
+Question 3. What if? We need minus. Okay, why does one do those things right?
+
+[Prof. Devavrat ] 22:30:47
+I wanna answer these 3 questions that I have given you as a homework exercise. Now let me see if there's any response.
+
+[Prof. Devavrat ] 22:30:55
+If not, I can start answering that question.
+
+[Prof. Devavrat ] 22:31:02
+Okay, so notice. So let's start sort of answering that question. First, let's think about one over So remember when we did averaging, we assume, okay.
+
+[Prof. Devavrat ] 22:31:14
+Thanks Charles. Plus means reward outliers. Minus means spinelize outliers.
+
+[Prof. Devavrat ] 22:31:21
+You're actually a pretty much on target. I would instead of outliers, I will say something a little different, but pretty much on target.
+
+[Prof. Devavrat ] 22:31:30
+Ron added depends on and absolutely standard error correction, central limit theorem. That's what Sashi says.
+
+[Prof. Devavrat ] 22:31:38
+And Jean says that to take the average error. All are correct. Excellent. So everybody gets A plus.
+
+[Prof. Devavrat ] 22:31:46
+And now I'll just explain what the responses that your fellow colleagues have given and we will. Convert them a little bit more in detail.
+
+[Prof. Devavrat ] 22:31:54
+So Remember when we did averaging basic viewers that say all coins are equal. And so we observed, let's say, total number of ratings we have observed is an.
+
+[Prof. Devavrat ] 22:32:05
+So the idea is that I would go at 1 point whose unknown bias, let's say, I observed n outcomes.
+
+[Prof. Devavrat ] 22:32:14
+Okay. And outcomes. Let's say call those outcomes X one to Xn. 0 or one.
+
+[Prof. Devavrat ] 22:32:26
+And then I will take average of them.
+
+[Prof. Devavrat ] 22:32:31
+And the idea is that this goes to P as N goes to infinity. And that's called law of large numbers, right?
+
+[Prof. Devavrat ] 22:32:43
+The central limit theorem says that This.
+
+[Prof. Devavrat ] 22:32:49
+One would end. Is actually distributed like Gaussian distribution with mean B. And the variance with scales like one over n.
+
+[Prof. Devavrat ] 22:33:02
+Some constant over end but let's say one over n. And that means that the standard error is the square root of this, which is one over square root of n.
+
+[Prof. Devavrat ] 22:33:12
+Okay, so that means that this quantity is within plus or minus one over square root of n of the thing that you want to estimate.
+
+[Prof. Devavrat ] 22:33:22
+So that means that if I give you this as an estimate.
+
+[Prof. Devavrat ] 22:33:27
+So this is my average. True value is between plus one over plus one over square root of entered that and minus one over square root of end of that.
+
+[Prof. Devavrat ] 22:33:36
+So true value might be anywhere somewhere here with a high chance. The confidence interval. Okay. And.
+
+[Prof. Devavrat ] 22:33:46
+That's why we can sort of do correction. See if I will give you confidence interval I give you correction.
+
+[Prof. Devavrat ] 22:33:52
+If I don't want to do any correction, I will just give you this number. Now somebody might get this.
+
+[Prof. Devavrat ] 22:33:58
+As a recommendation system, for example, we produce this answer saying there is this as my average rating. And this is the uncertainty.
+
+[Prof. Devavrat ] 22:34:06
+Okay, then you say okay, should I choose this number? Should I choose this number? Should I choose this number?
+
+[Prof. Devavrat ] 22:34:14
+So I choose a number in between as my answer that might depend on your end goal, right? Recommendation system provides you prediction answer.
+
+[Prof. Devavrat ] 22:34:21
+Oh sorry, recommendation problem as we are looking at provides you prediction answer but the system needs to make a decision.
+
+[Prof. Devavrat ] 22:34:27
+And that requires system to decide. How it wants to use the outcome of prediction problem. And if objective is of one form, you might add.
+
+[Prof. Devavrat ] 22:34:40
+Objective is of another form you might subtract. Okay, so as. Who say it is
+
+[Prof. Devavrat ] 22:34:52
+Charles Henderson said when would you like to do plus? Well, if your objective is the following that You want young restaurants who have very few ratings.
+
+[Prof. Devavrat ] 22:35:06
+It could be initially very noisy too. You want them to be noticed. Then what you will do is you will take that average and you will add this.
+
+[Prof. Devavrat ] 22:35:16
+So that they can little bit of boost. They get exploration. Okay. What's this old restaurants which are been around there have been 100,000 ratings or 1,000 ratings.
+
+[Prof. Devavrat ] 22:35:28
+What were square root of and is extremely small so it doesn't matter. Okay, their true rating is already revealed in those ratings for data and hence you're going to the connection won't change much.
+
+[Prof. Devavrat ] 22:35:40
+So if you are a new restaurant, you need to be noticed. One over square root of 10 will help a lot.
+
+[Prof. Devavrat ] 22:35:45
+For example, if any 0 one over square root of n is effectively infinity in you will definitely get your first choice.
+
+[Prof. Devavrat ] 22:35:51
+Good. And so on. Right? So that's plus.
+
+[Prof. Devavrat ] 22:35:57
+Why minus? Well, what if you believe the other way around? You feel that whenever a new restaurant opens up.
+
+[Prof. Devavrat ] 22:36:04
+All the friends and family go and give 5 star to that rating. So it's like all bogus.
+
+[Prof. Devavrat ] 22:36:10
+All useless. So then you want to sort of actually let this restaurant. Overcome that silly, made up.
+
+[Prof. Devavrat ] 22:36:18
+Plus do rating and then you do minus. So again, it depends on what you wanna do as a design.
+
+[Prof. Devavrat ] 22:36:25
+You want to promote. Because you want to overcome these kind of anomalies and analyze them. You want to do this.
+
+[Prof. Devavrat ] 22:36:33
+Okay, and that's where it is. Now let's look at some of the questions.
+
+[Prof. Devavrat ] 22:36:42
+Okay, so, Shim, I think a zoom pam, I think I answered your question. Times question so in effect you're using the upper bound or low bound to conference interval using Z score of one why 1 1.5 9 6 absolutely You could do 1.9 6 too.
+
+[Prof. Devavrat ] 22:36:59
+Janelle, thank you. Yolanda. It's like showing the queuing the data correcting it.
+
+[Prof. Devavrat ] 22:37:05
+Yes. Sujatha, in case of pointers, is it always point 5 so will this even apply?
+
+[Prof. Devavrat ] 22:37:11
+But, fair coin toss in case that will be point 5. And again, in that case, also it will apply because if suppose I have a fair pointers and if I toss it once I will see either head or tail which means my empirical average would be one or 0 not point 5 right so I'll have
+
+[Prof. Devavrat ] 22:37:27
+to do correction. Alpha, so how do we evaluate the recommendation system accuracy?
+
+[Prof. Devavrat ] 22:37:34
+Are you able to do cross validation like any other thing that you've done in before. Okay.
+
+[Prof. Devavrat ] 22:37:38
+Alright. So with that, I've answered one of the exercise I had given you. And then that's that.
+
+[Prof. Devavrat ] 22:37:47
+Okay. And this was the other one that we did. Again, I will call these content based method.
+
+[Prof. Devavrat ] 22:37:53
+I will call these kind of approaches. Rating based methods, right?
+
+[Prof. Devavrat ] 22:37:58
+And today's entire lecture is about developing more complex rating debate methods. Okay. So we've got a few things to cover.
+
+[Prof. Devavrat ] 22:38:10
+Okay. Sorry at the highest level we want to now do reading based approach only. Okay, that is we are not good to utilize content today.
+
+[Prof. Devavrat ] 22:38:23
+So reading based. The simplest solution we saw was averaging. Now I'm going to go from averaging to whatever part clustering we take.
+
+[Prof. Devavrat ] 22:38:34
+Dividing population into like-minded people and then doing averaging there. So that would be part one.
+
+[Prof. Devavrat ] 22:38:41
+Then you say, well, why average by first clustering people? Why not just do? Completely personalized stuff and this is what I would call collaborative filtering.
+
+[Prof. Devavrat ] 22:38:52
+Remarkable algorithm. This is where we'll spend quite a bit of time. Interpreting and how it's interpretable scalable and all that stuff.
+
+[Prof. Devavrat ] 22:39:00
+And then finally I will give another view and a perspective for these kind of algorithms from the perspective of matrix.
+
+[Prof. Devavrat ] 22:39:08
+Through a method called singular value composition. I will not be able to get to this last part, the optimization.
+
+[Prof. Devavrat ] 22:39:16
+But we will come to that there is how do we think of this view as a solving an optimization problem.
+
+[Prof. Devavrat ] 22:39:24
+Starting next lecture when I will recall what we did in this lecture. Okay, so that's going to be the plan for today's lecture.
+
+[Prof. Devavrat ] 22:39:32
+Before I proceed further, any questions?
+
+[Prof. Devavrat ] 22:39:38
+Again, my hope is that Around 20 min there will be some good place for us to break from within this So that we'll take 5 min break.
+
+[Prof. Devavrat ] 22:39:52
+If it's little later, I do apologize for that. And then we will sort of, continue our journey.
+
+[Prof. Devavrat ] 22:39:58
+Okay.
+
+[Prof. Devavrat ] 22:40:02
+Alright, so saying that no more new questions, let's get started.
+
+[Prof. Devavrat ] 22:40:09
+Okay, so. Good question. Is clustering.
+
+[Prof. Devavrat ] 22:40:16
+So what do I mean by clustering? Okay. So here's an example.
+
+[Prof. Devavrat ] 22:40:24
+Okay, of visual example of clusters. What I have is I've got bunch of points on this.
+
+[Prof. Devavrat ] 22:40:32
+Two-dimensional plane. And some of them are distributed close to each other. Okay, and those things I'm saying they're clusters.
+
+[Prof. Devavrat ] 22:40:44
+Okay. And. I look at visually and for you I have colored them with colored with blue.
+
+[Prof. Devavrat ] 22:40:51
+Red and yellow and definitely these guys look close. These guys look close. These guys look close. Little bit of an outline, a little bit of an outline.
+
+[Prof. Devavrat ] 22:41:01
+These are a little bit of an outline too. But let's ignore them for a second, but broadly speaking, otherwise it is clear that there are 3 clusters.
+
+[Prof. Devavrat ] 22:41:08
+So in a sense, cluster is nothing but collection of observations for a subset of observation that close to each other than compared to others.
+
+[Prof. Devavrat ] 22:41:17
+Okay. What is the clustering problem we want to solve in the recommendation system? Well, If I know that are people.
+
+[Prof. Devavrat ] 22:41:28
+Who are giving me rating, let's say a movie land setting are 3 different types. People who love.
+
+[Prof. Devavrat ] 22:41:36
+Thrillers people who love comedy and people who are children And then movies. Are also of 3 different types thrillers comedy and kids movie okay so if you look at it from that perspective And suppose I've organized all of them like that.
+
+[Prof. Devavrat ] 22:41:58
+So. So let's call it these are mine. Thrillers, these are my comedy. And these are kids movie.
+
+[Prof. Devavrat ] 22:42:08
+So this is movies.
+
+[Prof. Devavrat ] 22:42:12
+And then among, users. Okay. There are people who are Let's call it.
+
+[Prof. Devavrat ] 22:42:22
+Striller lovers. Okay, and then people who are comedy lovers and then people work kids.
+
+[Prof. Devavrat ] 22:42:33
+Yeah, and then maybe these guys would say we love this point 9. Will say well I don't love comedy that much but I would love somewhat and kids definitely not.
+
+[Prof. Devavrat ] 22:42:46
+Comedy would say well we love comedy point 8 kids would say we love, kids 1 9 5.
+
+[Prof. Devavrat ] 22:42:54
+And then maybe comedy lower for thrillers would say we like it point 6 5 and commented we say we like point 4, then maybe point 2 and point 1.
+
+[Prof. Devavrat ] 22:43:04
+Okay. So that means that all the thriller movies I love by all the thriller lovers roughly point 9.
+
+[Prof. Devavrat ] 22:43:14
+All the comedy movies. All of them. Are lower by thriller lovers point 5 not much half half and kids move we only point to.
+
+[Prof. Devavrat ] 22:43:27
+So that means that I've got now Gluster of people. And cluster of movies. So that if I look at any given cluster of movies and people There might be lots of movies here and there might be lots of people here.
+
+[Prof. Devavrat ] 22:43:43
+But any entry in this sub matrix is the same. White time. So if I could hypothetically. Identify what these clusters are.
+
+[Prof. Devavrat ] 22:43:56
+If they exist, what these clusters are. Then within the cluster, all I need to do is just one average.
+
+[Prof. Devavrat ] 22:44:04
+Which will be different from this average, which will be different from this average. But within a cluster I can do averaging which is like a simplest version of my original algorithm.
+
+[Prof. Devavrat ] 22:44:15
+The only problem though is I need to find out clusters. And remember I'm not using any content information, right?
+
+[Prof. Devavrat ] 22:44:23
+I'm telling you that I'm not telling you that this movie is a thriller and this movie is a comedy and whatnot.
+
+[Prof. Devavrat ] 22:44:29
+I'm just telling you this is moving number 3, movie number 7. So somehow I need to use the data itself.
+
+[Prof. Devavrat ] 22:44:35
+First to figure out what are the clusters. And then do averaging on top.
+
+[Prof. Devavrat ] 22:44:43
+So our goal. In this set of algorithms is to first do clustering.
+
+[Prof. Devavrat ] 22:44:51
+Alright, let's see if there are some questions. Nicholas question is, How the application of the recommendation system in public policy analysis.
+
+[Prof. Devavrat ] 22:45:04
+Fantastic question, Nicholas. Yes, there are, they're applied in the context of using causal inference for observation data and I'll talk about that in next lecture.
+
+[Prof. Devavrat ] 22:45:16
+Can be used for policy valuation. Ron's question, independent district for voting. I'm not sure Ron, I fully understand it.
+
+[Prof. Devavrat ] 22:45:24
+If you could elaborate that will be very helpful. Bob's question is since diagonal should be one.
+
+[Prof. Devavrat ] 22:45:32
+Should you use the observe? Well, I don't know why diagonal should be one.
+
+[Prof. Devavrat ] 22:45:38
+Just because you're a thriller lover doesn't mean that you like all thriller 100%.
+
+[Prof. Devavrat ] 22:45:43
+You may not like some thrillers. Okay. Shila, okay, last thing is for clustering the movie is what could be the feature that we could use.
+
+[Prof. Devavrat ] 22:45:52
+Exactly. We don't have features. We have to use the data. Interesting one.
+
+[Prof. Devavrat ] 22:45:56
+Ron is there was an attempt, that was an attempt and Nick's niches question.
+
+[Prof. Devavrat ] 22:46:03
+Nicholas's question I presume. Oh, I see what you mean. Okay. Thanks.
+
+[Prof. Devavrat ] 22:46:11
+Thanks, Ron. Bill Hutchison, so are there clusters not necessarily interpretable by a human?
+
+[Prof. Devavrat ] 22:46:18
+Absolutely. There could be. It could be simply data driven. Okay, and yes, Iran.
+
+[Prof. Devavrat ] 22:46:24
+Ron's original remark about independent district for voting. Restricting for voting was in the context of use of recommendation system for public policy.
+
+[Prof. Devavrat ] 22:46:35
+It's interesting, thing. I'm not sure I fully understand it. Would love to.
+
+[Prof. Devavrat ] 22:46:39
+If it was a simpler explanation if you could. Type out at some point. Chu Chang's thing is so can this be used for mediation to resolve a conflict between union and employer.
+
+[Prof. Devavrat ] 22:46:53
+That's an interesting. Oh, I'm pretty sure, Hey, if you put it on that as well, that'd be great.
+
+[Prof. Devavrat ] 22:47:02
+Okay, what I've found is recommendation systems are Amazing, they're way more applicable than anybody has ever thought. Okay.
+
+[Prof. Devavrat ] 22:47:13
+That like a universal prediction engines in my mind for tabular data.
+
+[Prof. Devavrat ] 22:47:21
+Yeah.
+
+[Prof. Devavrat ] 22:47:28
+Okay, and Pam, you are right. Any such system used. Any AI system for that matter to be used, one has to be careful.
+
+[Prof. Devavrat ] 22:47:38
+Okay, so now our question is how do we find clusters?
+
+[Prof. Devavrat ] 22:47:45
+I guess we'll say that's why you're buying a lot of good stuff. Excellent.
+
+[Prof. Devavrat ] 22:47:50
+Well, I think. Buying too much is a global question. Okay. Alright.
+
+[Prof. Devavrat ] 22:47:56
+Now before we do clustering, let me sort of Here is something I drew myself, right?
+
+[Prof. Devavrat ] 22:48:03
+Is that an evidence in data? Okay, so here is an evidence in data. So this was generated by George.
+
+[Prof. Devavrat ] 22:48:15
+Chen, he's now a professor at CMU. He finished his PhD, 2,015 from MIT.
+
+[Prof. Devavrat ] 22:48:23
+Under my supervision and his thesis in their part of that he sort of had analyzed this movie lens data.
+
+[Prof. Devavrat ] 22:48:32
+So what he had done is the following. What he's done here. The way I want you to think about this, right?
+
+[Prof. Devavrat ] 22:48:38
+Okay, let's just first explain what the data is and then I'll show you why this is like this.
+
+[Prof. Devavrat ] 22:48:45
+So he took top. 500 movies and top 200 users. What is talking? Stop means if you think of top user is the user who has given most number of ratings.
+
+[Prof. Devavrat ] 22:49:00
+Top movie means that it's a movie that has received most number of ratings. Okay. The reason for choosing that is to so that entries in this sub Matrix are very dense.
+
+[Prof. Devavrat ] 22:49:12
+Okay, that is a true day.
+
+[Prof. Devavrat ] 22:49:16
+Then what he did is on Gray scale that is a number between 0 to I think meeting was 5, 0 means.
+
+[Prof. Devavrat ] 22:49:25
+White. And 5 min black. And in between is gray. So at that gray scale, he has plotted everything.
+
+[Prof. Devavrat ] 22:49:35
+Empty values are also white. Okay. Then what he did is he did clustering. After clustering, what we did is that all the items that were part of the same cluster were here.
+
+[Prof. Devavrat ] 22:49:49
+So this was cluster one. Plus state 2 cluster 3 cluster 4 dot dot dot. And see clusters are becoming smaller and smaller.
+
+[Prof. Devavrat ] 22:49:59
+For all the users also it did the same thing. This was cluster one, Lester 2, cluster 3, cluster 4, 5, 6, and now becoming smaller and smaller.
+
+[Prof. Devavrat ] 22:50:12
+Okay, so now what this is like a cluster one user cluster one movies and now let's look at this some matrix.
+
+[Prof. Devavrat ] 22:50:20
+As expected. Across all of these entries. The darkness of increase remains the same. In fact, we're suggesting that All users here, all movies here effectively the same way.
+
+[Prof. Devavrat ] 22:50:35
+Similarly, you can pick this part right and say. This one. All users here, all of these movies.
+
+[Prof. Devavrat ] 22:50:45
+Roughly the same. And if you go to other users, that looks like this, right? So the point is that this chequered box or chest like pattern that you're seeing is because of something like this is happening.
+
+[Prof. Devavrat ] 22:51:03
+Okay, so really. There is an evidence of clustering. In movie lens data set.
+
+[Prof. Devavrat ] 22:51:12
+So now let's look for a clustering. Now before I start for a clustering, there is a few questions that are a few remarks at that.
+
+[Prof. Devavrat ] 22:51:21
+So, Chi Chung's thing is union has different level of employees. Within that may help.
+
+[Prof. Devavrat ] 22:51:27
+Different demand and the employer have a different department. Okay, I think these are. Very detailed.
+
+[Prof. Devavrat ] 22:51:38
+Responses. I don't want to indulge into them yet. I will come back to and read them, but I do want to.
+
+[Prof. Devavrat ] 22:51:43
+First finish the describing this algorithmic approach and then come to this. Okay. So I'm going to remember Chi Chang's thing.
+
+[Prof. Devavrat ] 22:51:55
+Head injuries question is some of the popular link commonly known recommendation systems. But I don't hear much about financial services and all that.
+
+[Prof. Devavrat ] 22:52:07
+Well, there are recommendation system that many financial services are trying to do that or doing it. Ehor's question is did you, did I sort before trying?
+
+[Prof. Devavrat ] 22:52:18
+Yes, I did.
+
+[Prof. Devavrat ] 22:52:22
+Okay, and Alexandra's point, what was the basis for clustering in the movie lens example?
+
+[Prof. Devavrat ] 22:52:27
+Just the ratings or the other user and item just the ratings and we will discuss that kind of algorithm in a second.
+
+[Prof. Devavrat ] 22:52:33
+Okay, great point. So. Is a visual represented available in Python. So, Geneo, yes, you can do that.
+
+[Prof. Devavrat ] 22:52:41
+Actually, If my time permits, I'll show you, something else where you can also produce in a no code manner or local manner.
+
+[Prof. Devavrat ] 22:52:49
+And lots of good Hands on exercise that are available there as well. So before I end this lecture today's lecture, I'll try to sort of set few things up for you guys.
+
+[Prof. Devavrat ] 22:52:59
+Okay. So clustering, okay, at the highest level. All we, okay, so this is just an algorithm, right?
+
+[Prof. Devavrat ] 22:53:08
+As I said, once we find these kind of clusters, we will just average it. And so I'm gonna ignore that.
+
+[Prof. Devavrat ] 22:53:14
+That's what it is detail. But how are we going to do clustering? There are 3 ways in which we can do clustering.
+
+[Prof. Devavrat ] 22:53:20
+So suppose Somehow, somehow I could Imagine a world in which user I can let's say we will do user clustering.
+
+[Prof. Devavrat ] 22:53:32
+Okay, so I'm gonna describe this algorithm only for user clustering. Item clustering would look the same.
+
+[Prof. Devavrat ] 22:53:36
+Because user clustering means that I'm clustering rows. Clustering columns is the same thing.
+
+[Prof. Devavrat ] 22:53:42
+Like you can flip the matrix or you know It's the same thing. So let's think of users are clustering.
+
+[Prof. Devavrat ] 22:53:50
+To do that. If suppose I could figure out how to say that well this cluster and this cluster in this cluster are in two-dimensional plane looking like this.
+
+[Prof. Devavrat ] 22:54:00
+If I could do that kind of a mapping, then I can do classical clustering algorithm like K means for that matter, right?
+
+[Prof. Devavrat ] 22:54:08
+Now you remember K memes, right? You have learned gaming and many other potential clustering algorithms in this.
+
+[Prof. Devavrat ] 22:54:18
+In this boot camp so far. You also know that how to choose K of K means and I will talk a little bit about that.
+
+[Prof. Devavrat ] 22:54:26
+And a more interesting way in this in this step before but Point is that if I could figure out how to map users into some kind of a D dimensional play Spain.
+
+[Prof. Devavrat ] 22:54:40
+Then I could do Kings algorithm and then do clustering. So then the question is how do you find that?
+
+[Prof. Devavrat ] 22:54:47
+Well, to do this kind of d dimensional a representation effectively I want to do something like PCA that you have already learned.
+
+[Prof. Devavrat ] 22:54:55
+In your earlier part, dimension reduction. And on what am I going to do dimensionality reduction? I'm gonna do that dimension IP reduction on a similarity matrix.
+
+[Prof. Devavrat ] 22:55:08
+So I'm going to go construct a matrix. Where here are let's say users and here are users and every entry says how similar are any pair of users.
+
+[Prof. Devavrat ] 22:55:21
+So I'm gonna look at true reading data of users and items. That was reading data from there.
+
+[Prof. Devavrat ] 22:55:30
+I'm going to construct a user by user similarity matrix. On the similarity matrix, I'm going to apply PCA.
+
+[Prof. Devavrat ] 22:55:41
+And then after that I will do gay means. And one side who came means at the end I got clustering.
+
+[Prof. Devavrat ] 22:55:50
+Off users. And that's it. So that's basically the algorithm. So start from reading data.
+
+[Prof. Devavrat ] 22:55:59
+No features of user, no features of movies, only rating data. Use that to construct similarity matrix of users.
+
+[Prof. Devavrat ] 22:56:10
+Given that similarity matrix of users, you apply PCA and I will remind you what PCA is if you've forgotten.
+
+[Prof. Devavrat ] 22:56:16
+To do dimensionality reduction and plot every user in every, so every user in D dimensional plane. Once you have data that looks like a nice 2 dimensional or d dimensional plane, you can do K means.
+
+[Prof. Devavrat ] 22:56:29
+And then you can do clustering and how you choose cable. You can apply any of your clustering.
+
+[Prof. Devavrat ] 22:56:35
+Algorithms things. How do you choose how much dimensionality reduction to do? We use the same PCA trick and I will remind you of that.
+
+[Prof. Devavrat ] 22:56:41
+So the whole question that boils down is You know, K means, you know PCA, yes, principal component analysis Gladys.
+
+[Prof. Devavrat ] 22:56:51
+You don't know how to do this part. Okay, how do you go from rating data to similarity matrix?
+
+[Prof. Devavrat ] 22:57:00
+And that is of all my explanation next. So right now it's. 1 27 pm, which means we close to an hour.
+
+[Prof. Devavrat ] 22:57:11
+This is a good place to take a break. Sorry, what am I gonna do is before I let you go.
+
+[Prof. Devavrat ] 22:57:16
+Give me a second. Don't go away anywhere. To summarize, once we come back.
+
+[Prof. Devavrat ] 22:57:22
+I'm gonna start by telling you how we go from user items rating matrix to user user similarity matrix.
+
+[Prof. Devavrat ] 22:57:30
+On top of that user is there a similarity matrix? We can apply principal component analysis. To come up with reduction or representation of user in-dimensional space.
+
+[Prof. Devavrat ] 22:57:40
+On that we can do Kings clustering algorithm and we are done. Because once we do clustering, then we know how to do compute.
+
+[Prof. Devavrat ] 22:57:47
+Iveraging. Okay. You would like to do the same way clustering for items to be for you do averaging, but that's just a detail.
+
+[Prof. Devavrat ] 22:57:56
+Now, before I go further and I let you go, there are few questions I want to, clear up.
+
+[Prof. Devavrat ] 22:58:04
+So in particular, I would also want to sort of pick up Chi Chun's comments and then we go from there.
+
+[Prof. Devavrat ] 22:58:10
+Okay. Thanks Marida. Yes, I If it disappears, it sort of, kind of, loses the purpose.
+
+[Prof. Devavrat ] 22:58:18
+One good news by the way is that all of this is a recorded so you can always go back and hopefully you have a recording available instantly.
+
+[Prof. Devavrat ] 22:58:26
+So Chi Chi Chang's, comment was the following. So union has different level of employees within that.
+
+[Prof. Devavrat ] 22:58:35
+May have different demand and employer have different department management. For example, if employee is asking for collective raise and finances may have different opinion, likes on certain offer, then what the board of investor and all that.
+
+[Prof. Devavrat ] 22:58:49
+So if we. If we both sides onto this matrix. We can get a recommended set. So the solution that mediator can use to try to bring sides on the group agreement.
+
+[Prof. Devavrat ] 22:59:02
+It's an interesting point. Let's see what is. She's trying to say, and again, I'm I'm just simply translating what she's saying.
+
+[Prof. Devavrat ] 22:59:10
+Okay. So these are, let's say, employees. Yeah, you can call it groups, employees doesn't matter.
+
+[Prof. Devavrat ] 22:59:19
+And these are different. Implore other groups like finance group and all that. And. Okay, let's do this for instead
+
+[Prof. Devavrat ] 22:59:36
+What it says, a employer group.
+
+[Prof. Devavrat ] 22:59:40
+Okay, now. And let's say there's only one proposal. Okay, so now the question is that for that one proposal, this employee, this employer and for this employee group you get plus one.
+
+[Prof. Devavrat ] 22:59:54
+This MS group for the same employee you get minus one and so on. At the end of it, what you would have is for different group of.
+
+[Prof. Devavrat ] 23:00:04
+Different group of employees and for different by different group. What would be the likely liking matrix for a given option or given rule?
+
+[Prof. Devavrat ] 23:00:16
+If you want multiple such options you might want to add a tensor view of this, okay? And then maybe you wanna combine those 2 things.
+
+[Prof. Devavrat ] 23:00:24
+That might be the best interpretation I can. Take here.
+
+[Prof. Devavrat ] 23:00:29
+Sojata, okay, so. Okay. Thanks for leaving. I think James sounds like a Nash equilibrium problem.
+
+[Prof. Devavrat ] 23:00:40
+In, yeah, James, I presume you are commenting to which aspect. You mean to teach you the, I presume?
+
+[Prof. Devavrat ] 23:00:50
+So Jaya's point is heat map PCA, K means and observation is what we have done in our initial project.
+
+[Prof. Devavrat ] 23:00:57
+So all problems are finally in recommendation. Absolutely. So that's the point as I made a comment.
+
+[Prof. Devavrat ] 23:01:01
+That in some sense you will never you will not learn new things in this this module and you will learn a lot of new things in module.
+
+[Prof. Devavrat ] 23:01:11
+Once you identified the clusters of users, they intend to recommend to those users in collection of items that they want.
+
+[Prof. Devavrat ] 23:01:21
+Rated as a criteria to decide what items to recommend. Well, so Strikan as we are discussing throughout, right?
+
+[Prof. Devavrat ] 23:01:26
+There's a one thing to decide what to recommend. There's another thing is to have prediction problems solve to make that decision.
+
+[Prof. Devavrat ] 23:01:37
+We are solving prediction problem. We are saying that for a given pair of user an item, what is the likelihood that that user is gonna like that item if she or he's presented that item.
+
+[Prof. Devavrat ] 23:01:47
+Okay, we are focusing on only prediction problem. Teaching okay great yes thanks James yes negotiation problem thanks and Sujata nicely good thank you okay great so at this stage it's 1 31 let's come back to come back to this as 1 36 exactly 5 min.
+
+[Prof. Devavrat ] 23:02:05
+Okay, and we'll start.
+
+[Prof. Devavrat ] 23:08:10
+Okay, I hope. You guys are all getting back. And we are gonna get restarted.
+
+[Prof. Devavrat ] 23:08:21
+All right.
+
+[Prof. Devavrat ] 23:08:28
+Okay, so the place where we left was how do we compute? how do we compute a similarity, matrix?
+
+[Prof. Devavrat ] 23:08:40
+And I think just checking the chat, yes, we are on a break, a break. Thank you, great.
+
+[Prof. Devavrat ] 23:08:46
+Awesome. Okay, so we go.
+
+[Prof. Devavrat ] 23:08:53
+Let me sort of actually. Explain how we are going to compute the similarity matrix now.
+
+[Prof. Devavrat ] 23:09:00
+And towards that I'm gonna take nice
+
+[Prof. Devavrat ] 23:09:05
+And that's what we'll explain this of the computation of SIM.
+
+[Prof. Devavrat ] 23:09:11
+So let's take a setting where we've got 3 users, user one, user 2, user 3.
+
+[Prof. Devavrat ] 23:09:17
+And we've got 6 different items. So 1, 2, 3, 4, 5, 6.
+
+[Prof. Devavrat ] 23:09:27
+And let's suppose just to keep things, simpler, Guru again as before, I'm gonna think of the similarity between user and item when users are rating either 0, one or question mark.
+
+[Prof. Devavrat ] 23:09:42
+Okay. So this one likes this movie. There's a question Mark. Dislikes, dislikes.
+
+[Prof. Devavrat ] 23:09:51
+Likes question one. Okay, user 2 likes. Does not like, is not like question mark.
+
+[Prof. Devavrat ] 23:10:02
+Likes does not like. Okay. And then user 3. Zeta one.
+
+[Prof. Devavrat ] 23:10:12
+One question mark, question mark, one. Let's say these are this is the data set that we have.
+
+[Prof. Devavrat ] 23:10:21
+3 users and 6 items and now question is it how do we compute similarity? So the way I want to compute from this similarity matrix is a similarity matrix of 3 by 3.
+
+[Prof. Devavrat ] 23:10:33
+1, 2, 3, 1, 2, 3. Of course, user one is similar to 1, 2, one, and 3 to one.
+
+[Prof. Devavrat ] 23:10:41
+That 100%.
+
+[Prof. Devavrat ] 23:10:45
+And that's funny. I'll come to your joke Alpha. The I want to sort of compute what is similarity between user user 2 and user one which is same as user one and user 2.
+
+[Prof. Devavrat ] 23:11:05
+So these 2 things will be same. Similarly, these 2 things will be same. And these 2 things will be same.
+
+[Prof. Devavrat ] 23:11:13
+So I need to compute these 3 pairs of similarities, right? How are I do that? That's the question.
+
+[Prof. Devavrat ] 23:11:19
+Good. Recommendation is not. All right, you guys are all making fun of me. That's all very good.
+
+[Prof. Devavrat ] 23:11:28
+Let's compute similarity between, user one and 2. Okay, doing that what we're gonna do is we're gonna look at the vector of user one and vector of user 2.
+
+[Prof. Devavrat ] 23:11:41
+That both have shared observations. So let's see. It's user one. This is user 2.
+
+[Prof. Devavrat ] 23:11:49
+I have to compute similarity between them. Well, remember, I call you similar to me in terms of my food taste if the restaurants that you and I go that like we go both go to and both like or we both go to and we both dislike.
+
+[Prof. Devavrat ] 23:12:05
+In that case, we will call ourselves similar on the other end. I go to some restaurant, I love it and you go to some restaurant, you really dislike it.
+
+[Prof. Devavrat ] 23:12:11
+That's not similar. So I want to incorporate that. But let's say I go to a restaurant.
+
+[Prof. Devavrat ] 23:12:16
+I really like it and you have not gone to that restaurant at all. And so I have no information so I can't use that information to do anything about you and me.
+
+[Prof. Devavrat ] 23:12:25
+Similarly, you are going to a restaurant. You have really disliked it, but I've not gone to that restaurant.
+
+[Prof. Devavrat ] 23:12:31
+There is nothing I can do about it. Okay, so to compute similarity between paragraph users, I'm gonna take items.
+
+[Prof. Devavrat ] 23:12:38
+Then both have rated. Like this. Okay, so these are the 3 entries. For 3 items for each both user.
+
+[Prof. Devavrat ] 23:12:48
+Both users wanted to have rated. And so from that perspective, if I start thinking about User one's vector of interest.
+
+[Prof. Devavrat ] 23:12:57
+It's coming from this, this and this. Which looks like. 1, 0. So I'm taking these 3 entries.
+
+[Prof. Devavrat ] 23:13:09
+1, 2, and 3. Similarly, user 2 would be these 3 things and they are
+
+[Prof. Devavrat ] 23:13:17
+1, 0, and one. Okay, so they are really, really, effectively items for which they are rated.
+
+[Prof. Devavrat ] 23:13:26
+They look represent aligned effectively. Okay, and given that what I'm gonna now I wanna so do that as a part of my formula.
+
+[Prof. Devavrat ] 23:13:36
+So this is what's called go sign similarities. I'm gonna give you formula for cosine singularity.
+
+[Prof. Devavrat ] 23:13:41
+So go sign similarity between user one and 2. And the idea is this that effectively user one and 2.
+
+[Prof. Devavrat ] 23:13:51
+Are vectors in some 3 dimension planes. So to be one and B 2 in this case, they're the same.
+
+[Prof. Devavrat ] 23:13:56
+So if I want to compute the more generally if I think of these as vectors I would look at this angle between them.
+
+[Prof. Devavrat ] 23:14:04
+And then compute the cosine of it. If the angle is theta is 0, then cosine is one.
+
+[Prof. Devavrat ] 23:14:10
+If they're exactly opposite, then go sign is minus one. Okay. And that's the idea.
+
+[Prof. Devavrat ] 23:14:14
+So in this case, similarity is one if it's this way. We one and B 2 in this case, similarities minus one.
+
+[Prof. Devavrat ] 23:14:24
+Because this is plus one. And that's what this concludes. Now I'll give you its formula.
+
+[Prof. Devavrat ] 23:14:30
+The formula says that this is equal to We one in our product with V 2 or even to V 2 divided by norm of V one norm of V 2.
+
+[Prof. Devavrat ] 23:14:43
+Let's see what is the this term? This term says multiply these 2 plus multiply these 2 plus multiply these 2.
+
+[Prof. Devavrat ] 23:14:54
+So that is. One times one plus 0 times 0 plus one times one, which is 2.
+
+[Prof. Devavrat ] 23:15:04
+This one says. Take the squares of each of them, add them up. Okay, so. One square plus this 0 squared plus one square takes square root.
+
+[Prof. Devavrat ] 23:15:14
+That's what. Normal V one is so that is One square plus 0 square plus one square square root.
+
+[Prof. Devavrat ] 23:15:24
+Norm of V 2 is the same thing one square plus 0 square plus one squared So these are both this one is equal to square root of Plus the square root of 2.
+
+[Prof. Devavrat ] 23:15:36
+So effectively this turns out to be numerator is 2 denominator is also 2. And hence this answer is One.
+
+[Prof. Devavrat ] 23:15:49
+Okay. So that's how we compute similarity between user one and 2. Let's try to do one more so that we are all.
+
+[Prof. Devavrat ] 23:16:00
+All fully understood. Let's do similarity between 2 and 3. So when we do similarity between 2 and 3, how many common things are there?
+
+[Prof. Devavrat ] 23:16:10
+This is 1, 2, 3, no, no. And yes, so 1, 2, 3 and 4 places.
+
+[Prof. Devavrat ] 23:16:19
+And as you can see in places, it's one is Z one, here's 0 0 1 1.
+
+[Prof. Devavrat ] 23:16:25
+And then like exact there either zeros or ones. So if I do this calculation. Like this What I will conclude from Numerator, right?
+
+[Prof. Devavrat ] 23:16:39
+In this case, so let's through the next page.
+
+[Prof. Devavrat ] 23:16:43
+So I'm gonna try to see if I can copy this.
+
+[Prof. Devavrat ] 23:16:54
+Copy this.
+
+[Prof. Devavrat ] 23:17:01
+Paste here. Okay, now let's do similarity between. 2 and 3 so then this is vector of 2 is 1 0 0 and 0.
+
+[Prof. Devavrat ] 23:17:17
+3 is 0 1 1. One and then cosine similarity between. Between V 2 and V 3 is we do transpose.
+
+[Prof. Devavrat ] 23:17:30
+Be 3 divided by a norm of B 2. Normal V 3 which is equal to One time 0, 0 times 1, 0 times 1, 0 times one.
+
+[Prof. Devavrat ] 23:17:41
+So it's a numerator is 0 denominator is square root of this is one times for v 3 square root of one square, so it's square root of 3.
+
+[Prof. Devavrat ] 23:17:51
+There is 0 divide password of 3, which is 0. That means similarity between 2 and 3 is 0.
+
+[Prof. Devavrat ] 23:17:56
+Okay, so that means that now we know that similarity between 2 and 2 and 3. Just this.
+
+[Prof. Devavrat ] 23:18:07
+So this entries, these 2 entries are 0. You computed these 2 entries. One and something that I left is one N 3 and I'll hopefully.
+
+[Prof. Devavrat ] 23:18:18
+You can do that calculation if you can't follow a So that's basically how, similarities are calculated.
+
+[Prof. Devavrat ] 23:18:26
+Once similarities are calculated, then we will do PCA. Once we do PCA, we do G meetings.
+
+[Prof. Devavrat ] 23:18:34
+But before we do that, let's see if there are any questions. And, go from just, Go back, okay.
+
+[Prof. Devavrat ] 23:18:41
+So Anthony's question is what are always what are always in contract negotiations. I totally understand in past clustering was Definitely used in this way. Kudos to you and the union.
+
+[Prof. Devavrat ] 23:18:53
+Good luck with the strike. Alpha's comment was how do I keep my time fix to 9 forty- am Tuesday January 9 that's a very good question actually I still have not figured yet.
+
+[Prof. Devavrat ] 23:19:09
+Charles, okay, let's say yes. Elizabeth's thing is, did you just choose the first 3 or question mark or is there a subset pre selected?
+
+[Prof. Devavrat ] 23:19:22
+So, but we chose, I think by now the, your question should have been answered.
+
+[Prof. Devavrat ] 23:19:29
+I'm choosing by looking at things that are rated by both users for which I want to compute similarity.
+
+[Prof. Devavrat ] 23:19:39
+I think that's what Miles responded. Thank you. What is the difference?
+
+[Prof. Devavrat ] 23:19:43
+Respect to Euclidean distance. So I think it's a good point. Let's see.
+
+[Prof. Devavrat ] 23:19:51
+Okay, so. To see if I can sort of. Explain it here.
+
+[Prof. Devavrat ] 23:19:58
+Okay, so what is the difference between you please and distance? So suppose you take, Euclidean distance, let's say, between you and B.
+
+[Prof. Devavrat ] 23:20:09
+Let's say square of them. This can be written as you square. Plus v square minus 2 times p transpose u.
+
+[Prof. Devavrat ] 23:20:20
+What's in this one is this quantity divided by this normalization. So really suppose all the vectors.
+
+[Prof. Devavrat ] 23:20:28
+I don't know how, but suppose all vectors were normalized. They were normalized to be made equal to u equals to one equals to v.
+
+[Prof. Devavrat ] 23:20:37
+Then this would be one plus one minus 2 times. Be transpose you. Okay. And cosine would be V transpose you.
+
+[Prof. Devavrat ] 23:20:48
+So really. In that case, what you will see is that Euclidean distance is 2 minus 2 times cosine similarity.
+
+[Prof. Devavrat ] 23:20:57
+So youuclidean. Euclidean distance would look like 2 times one minus It was sign similarity.
+
+[Prof. Devavrat ] 23:21:08
+Okay. So if cosine similarities, one thing your distance would be another thing and vice versa.
+
+[Prof. Devavrat ] 23:21:14
+Hopefully that helps. Excellent. Alright, what should be minimum number of known and ratings for both users?
+
+[Prof. Devavrat ] 23:21:26
+Great. So I think this is a fantastic question Summer if you don't have too many ratings in a sense you are a small data and in which case you might be creating errors or noise.
+
+[Prof. Devavrat ] 23:21:37
+Asking for too many ratings to have common like too many ratings to be common between 2 users which means you are very dense dataset.
+
+[Prof. Devavrat ] 23:21:45
+So there's always a challenge. We'll talk about a little bit about how to deal with setting when Not every pair of users have actually shared.
+
+[Prof. Devavrat ] 23:21:54
+Rating okay that is I live in Boston I have already only Boston restaurants you live in New York you're at your only New York question, we have never gone to commonplace.
+
+[Prof. Devavrat ] 23:22:03
+There's a way to deal with that too, but hold on to that. Okay. Shrikanti has management puller opposite 0 match, not a question.
+
+[Prof. Devavrat ] 23:22:13
+So similarity will always be okay. A team is 2, 3, we're always dissimilar, and it cannot be minus one.
+
+[Prof. Devavrat ] 23:22:21
+Well, okay, good point. So here I'm looking at things as 0 and one. If you replace zeros by minus one, you will find minus one.
+
+[Prof. Devavrat ] 23:22:27
+Okay, so this is little bit of It's a range setting. Okay, if you remove from 0 you make it one minus one then it's so one and minus one because you see when it's 0 and one you're always in the top quadrant.
+
+[Prof. Devavrat ] 23:22:43
+So your distance is at most between 0 and 90 degrees.
+
+[Prof. Devavrat ] 23:22:50
+Not really, so if that relevant. Okay. I don't know that either. Okay, thanks to you.
+
+[Prof. Devavrat ] 23:23:03
+Soja's thing is, in one and 2, we have 3 entries only where 2 and 3, yes, that's correct with different entries.
+
+[Prof. Devavrat ] 23:23:11
+Okay, thanks Hazim. Bill, what happens if all matches are 0 0? It's all zeros.
+
+[Prof. Devavrat ] 23:23:19
+Okay, but then sort of denominator is 0. So what's gonna happen is that you will have to you will have to in that case interpret 0 divide by 0 as one.
+
+[Prof. Devavrat ] 23:23:30
+Okay. My name is pronounced Maria. Okay. Thanks Maria.
+
+[Prof. Devavrat ] 23:23:36
+I appreciate it. Janelle is I'm sorry, do you mind explaining a bit further the intuition beyond the smaller purple matrix?
+
+[Prof. Devavrat ] 23:23:43
+Well, this smaller purple matrix is a similarity matrix between every pair of users and I'll come to that in a second.
+
+[Prof. Devavrat ] 23:23:50
+He will, so the for the sparse matrix. Question might replace by average, to compute similarity.
+
+[Prof. Devavrat ] 23:23:58
+Well, there is an iterative way to do that and we'll come to that. Okay, so I think.
+
+[Prof. Devavrat ] 23:24:04
+People are acknowledging is the meeting like or not like yes, that's where it is.
+
+[Prof. Devavrat ] 23:24:08
+Can we use similarities between restaurants to compare ratings? Yes, we can and we'll see that.
+
+[Prof. Devavrat ] 23:24:15
+I think I missed something. I thought you mentioned 2 vectors that are 180 degrees apart.
+
+[Prof. Devavrat ] 23:24:22
+Lead to similarity minus one. Yes, they are but 2 vectors that are 90 degrees apart would lead to only similarity 0.
+
+[Prof. Devavrat ] 23:24:29
+Okay, excellent. So I think I have answered most of the question if I missed and I cannot come back to your question.
+
+[Prof. Devavrat ] 23:24:38
+My apologies in advance. Again, stick around and all your questions will be answered. But if I have answered a question at this stage, I want to move forward with.
+
+[Prof. Devavrat ] 23:24:47
+Going to the next step. Okay, so what is the next step? So at this stage we have.
+
+[Prof. Devavrat ] 23:24:54
+Hopefully I've given you enough idea about how do you compute similarity matrix. So similarity matrix.
+
+[Prof. Devavrat ] 23:25:02
+Going back to that small purple thing. We've got n users one top 2 n. 1 2 up to N.
+
+[Prof. Devavrat ] 23:25:09
+Where SIJ is similarity between user I and user J. Okay. And how do we compute similarity between user Have you gone through this example?
+
+[Prof. Devavrat ] 23:25:24
+If. 2 users. Do not share any common movie or item for which both of them have rated.
+
+[Prof. Devavrat ] 23:25:35
+Then how do you compute that similarity? That is a good question. Let's ignore that question for the timing.
+
+[Prof. Devavrat ] 23:25:41
+Let's assume we can compute similarity between every pair of users. And we cannot to deal with that kind of sparsity issue I will come back.
+
+[Prof. Devavrat ] 23:25:50
+So at this stage that's assume that we have similarity matrix and by and matrix it's a symmetric matrix because similarity between user one and 2 is in a similarity between user 2 and one.
+
+[Prof. Devavrat ] 23:26:01
+Okay. What this matrix, S, which is an n by n matrix. It does have its singular value decomposition.
+
+[Prof. Devavrat ] 23:26:11
+Okay, using this which means that it effectively looks like A close to one drop to N. Sigma K UK UK Transpose because this is a symmetric matrix so it must have all the singular vectors this left and right are saved.
+
+[Prof. Devavrat ] 23:26:31
+Where vector UK is a vector in and dimension such that UK is of norm one.
+
+[Prof. Devavrat ] 23:26:39
+This is something you know from your earlier exposition in, in this boot camp and before. Okay.
+
+[Prof. Devavrat ] 23:26:49
+So what? How do we use this to do BCA? How do we find the representation of users of similarity matrix to 2 dimensional space?
+
+[Prof. Devavrat ] 23:26:58
+He is what we do. So look at these singular values values. There will be sigma. Well, I'm greater than you.
+
+[Prof. Devavrat ] 23:27:07
+Sigma n. Okay, we also know the following fact. Sigma one squared plus sigma 2 squared plus Sigma and square is equal to
+
+[Prof. Devavrat ] 23:27:25
+Somation SIJ squared.
+
+[Prof. Devavrat ] 23:27:31
+Okay, and that you can derive it from this fact and the realization that UK inner product with UK prime is 0 and their normal one.
+
+[Prof. Devavrat ] 23:27:46
+Okay, I'm not gonna divulge it to this much more, but that's roughly how it you can derive this.
+
+[Prof. Devavrat ] 23:27:52
+Okay, so this is true. There's some of the squares of entire matrix is same with the sum of the squares of singular values.
+
+[Prof. Devavrat ] 23:27:58
+Yes, so that's good. That means let's say if we call this as the energy.
+
+[Prof. Devavrat ] 23:28:03
+Of your data. And energy of your data is same as energy. Some of the squares of your singular values.
+
+[Prof. Devavrat ] 23:28:11
+Okay. Which means that Now if I can sort of plot this way. So. First singular value, second singular value and And here it's my this value is sigma one square.
+
+[Prof. Devavrat ] 23:28:25
+This value is sigma 2 squared. Maybe sigma 3 squared and so on. And maybe my plot might look something like this.
+
+[Prof. Devavrat ] 23:28:35
+Okay. If I find, let's say, are singular values Well, sigma one squared plus sigma 2 square plus sigma r squared divided by
+
+[Prof. Devavrat ] 23:28:52
+This suppose this is greater than I could to point 9 for example.
+
+[Prof. Devavrat ] 23:28:57
+So suppose I find an where this holds what this says is that Some of the squares of top are singular values.
+
+[Prof. Devavrat ] 23:29:09
+Captures. 90% of the total
+
+[Prof. Devavrat ] 23:29:17
+And this might suggest that all I need to do is I need to truncate my matrix to this.
+
+[Prof. Devavrat ] 23:29:24
+Actually, let me, so, let me call this D because This is where I'm going.
+
+[Prof. Devavrat ] 23:29:30
+So let's call this B. So what this says is that if I Right. My I can replace my X by S Twitter which is Okay, goes to one job to D.
+
+[Prof. Devavrat ] 23:29:46
+Okay, so not up to N, but up to D. Sigma K UK UK transpose. So I've truncated my matrix.
+
+[Prof. Devavrat ] 23:29:56
+Okay, to D eigenvectors or singular vectors. Symmetric matrix And, then so that's how I kept it.
+
+[Prof. Devavrat ] 23:30:08
+And then in that case, you can argue that S minus this. Is less than or equal to point one times S.
+
+[Prof. Devavrat ] 23:30:19
+Okay, because 90% of the energy is captured by Estud.
+
+[Prof. Devavrat ] 23:30:25
+So really, Estril is a very good approximation of true S, which is a good thing.
+
+[Prof. Devavrat ] 23:30:31
+And now this suggests how I sort of what are the top D components, right? Because No, I can look at my singular vector u one to ud.
+
+[Prof. Devavrat ] 23:30:44
+Each of these vector is n dimensional, right?
+
+[Prof. Devavrat ] 23:30:48
+So let's say you 1 one to u one and. UD one to you the end and everything in between.
+
+[Prof. Devavrat ] 23:30:58
+Now if I look at this U 1 one U 2 one U 3 one and UD one these D components.
+
+[Prof. Devavrat ] 23:31:09
+I can think of this as a D coordinate.
+
+[Prof. Devavrat ] 23:31:14
+Off user one. Similarly, this is you Cord D coordinate support. D coordinates for user and and everything in between.
+
+[Prof. Devavrat ] 23:31:26
+That means that now what has happened is that I've gotten representation of every user in the dimensional space.
+
+[Prof. Devavrat ] 23:31:34
+That's my . Okay, so if D was for example 2 it would look something like this. Data points listed somewhere like this.
+
+[Prof. Devavrat ] 23:31:48
+And then on top of it, then I can do PC. K means to do the clustering.
+
+[Prof. Devavrat ] 23:31:54
+Okay. So again, there's a ton of that I have covered in past 5 min. And I can see that lots of questions.
+
+[Prof. Devavrat ] 23:32:05
+So let's go through those questions quickly and then sort of, I will repeat the whole thing again.
+
+[Prof. Devavrat ] 23:32:10
+And then so we will move on to the next thing.
+
+[Prof. Devavrat ] 23:32:15
+Okay, so let's see. First of all, Pam, Pam is to leave early today.
+
+[Prof. Devavrat ] 23:32:22
+Okay. Pretty sure she will be able to sort of, figure it out. Maybe I missed something which was Rava says what singer value mean here.
+
+[Prof. Devavrat ] 23:32:31
+So, singular values are as you may remember from your linear algebra or from covering for getting ready for this core boot camp or During the course.
+
+[Prof. Devavrat ] 23:32:44
+Any matrix? It's an n by M matrix. Can be decomposed, especially if it's a symmetric matrix can be decomposed like this.
+
+[Prof. Devavrat ] 23:32:54
+And these are my singular values and these are my singular vectors. Okay. And yes summer eigenvalues this is symmetric matrix and NCS but more generally singular values.
+
+[Prof. Devavrat ] 23:33:10
+Asim, can you explain what our essence sigma again? Okay, good. So S is an end by end matrix.
+
+[Prof. Devavrat ] 23:33:17
+Which is a similarity matrix between every pair of users. And computing similarity between them the way we did in go sign similarity.
+
+[Prof. Devavrat ] 23:33:29
+Then we do singularity composition and that's where we get stigmas. Great.
+
+[Prof. Devavrat ] 23:33:34
+So I think at this stage, everybody seemed to have all that queries answered. So I'm gonna quickly repeat what we need here.
+
+[Prof. Devavrat ] 23:33:48
+So Malia Sigmazar. Singular values of S. Don't call them components.
+
+[Prof. Devavrat ] 23:33:57
+But he is that related to your components for singular value decomposition.
+
+[Prof. Devavrat ] 23:34:06
+Okay, so you have a similarity matrix. How did we compute that similarity matrix through cosine similarity?
+
+[Prof. Devavrat ] 23:34:15
+Once we complete similarity matrix. We did singular value decomposition. We plotted this sigma square, look for the D where The fraction of them are large fraction of the true thing.
+
+[Prof. Devavrat ] 23:34:31
+This is a parameter you mentioned you might say point 8 you might say point 5 you might say point 9 I'm just choosing a number to give you an idea.
+
+[Prof. Devavrat ] 23:34:40
+And then you choose your top B components. Good. This is what D dimensional dimension introduction is. Okay.
+
+[Prof. Devavrat ] 23:34:55
+Once you find D dimensional representation of your users like this. No, you can do k-means on it, right?
+
+[Prof. Devavrat ] 23:35:01
+So remember how it came in school. So K means was. Came in to go like this, right?
+
+[Prof. Devavrat ] 23:35:08
+So let's say you have data point like this, see your data point like this. Your data point like this.
+
+[Prof. Devavrat ] 23:35:14
+And you start initially by choosing some random initial point. So let's say this one and this one and Maybe this one.
+
+[Prof. Devavrat ] 23:35:23
+And then what you do after that you say well for all other points. Let me connect to that as a closest thing.
+
+[Prof. Devavrat ] 23:35:33
+This forms cluster one plus t 2 cluster 3. Select the new centers. And then repeat the process till you converge.
+
+[Prof. Devavrat ] 23:35:44
+Okay, so that's like doing K or here k equals to 3 K means cholesterol.
+
+[Prof. Devavrat ] 23:35:54
+And how do you do? Choose K, whether it is 5, case, 4, case 3.
+
+[Prof. Devavrat ] 23:36:00
+Well, you choose that using the Algo method that you learned. And that is you plot. Okay, versus the, let's say the relatively that Portugal's explainability or in track cluster is to inter-cluster relationship.
+
+[Prof. Devavrat ] 23:36:20
+And what you will find is that as girl goes like this, this is like, marginal utility or MARGEUEU gates are reducing and you say this is a good K for me.
+
+[Prof. Devavrat ] 23:36:33
+And as Alpha says, elbow hardly works and maybe you are right. But the philosophy remains the same.
+
+[Prof. Devavrat ] 23:36:43
+Okay.
+
+[Prof. Devavrat ] 23:36:44
+Okay.
+
+[Prof. Devavrat ] 23:36:50
+Alright, so and yeah Elizabeth you might you might be right between it's in both art and science
+
+[Prof. Devavrat ] 23:37:01
+Hmm. So Jeanneil, D represented how you choose the dimensional reduced thing which is for PCA.
+
+[Prof. Devavrat ] 23:37:12
+Gaming, how many clusters do you need to find for your users? Ivan says maybe you use SIDE.
+
+[Prof. Devavrat ] 23:37:21
+Those are different. Clustering methods that you have studied. I'm not gonna prescribe which one.
+
+[Prof. Devavrat ] 23:37:30
+Think of one example and that's how I'm thinking here. Okay. And you guys are very good at it.
+
+[Prof. Devavrat ] 23:37:35
+So you remember all of that. So with all of that. What I would like to do is I would like you to go back and work very hard and apply this method to Yelp data to see what happens.
+
+[Prof. Devavrat ] 23:37:51
+Okay, and compare it with global averaging for that matter or user averaging or writer averaging.
+
+[Prof. Devavrat ] 23:37:57
+Okay, or do that with movie lens data. How will do that with movie lens data in a second, okay?
+
+[Prof. Devavrat ] 23:38:04
+I'll show you what I have done or give you any examples.
+
+[Prof. Devavrat ] 23:38:10
+No. That was clustering algorithm. A lot of stuff we did there, okay? Now I wanna use clustering algorithm to do what I would call collaborative filtering.
+
+[Prof. Devavrat ] 23:38:23
+Collaborative filtering is, In some sense, just a personalized clustering.
+
+[Prof. Devavrat ] 23:38:31
+Basic idea is that look, when we Clustered. Okay. So that's it, visually.
+
+[Prof. Devavrat ] 23:38:39
+This is one cluster of users.
+
+[Prof. Devavrat ] 23:38:43
+This is another cluster of users. And let's say you are in the boundary. Okay, now should you belong to this?
+
+[Prof. Devavrat ] 23:38:52
+Or should you belong to this? Actually, neither because maybe what you really want is a cluster. That looks like this.
+
+[Prof. Devavrat ] 23:39:02
+That's your own cluster.
+
+[Prof. Devavrat ] 23:39:04
+Okay. And. So the point is that why not so do clustering for personalized setting? There is every time you want to fill up LIJ.
+
+[Prof. Devavrat ] 23:39:15
+You find the right cluster for I, right, cluster, Persia, and use it.
+
+[Prof. Devavrat ] 23:39:19
+So what do I mean by that? So suppose I want to I want to estimate.
+
+[Prof. Devavrat ] 23:39:26
+L Ij. Okay, let's say in the matrix form here is where it is. So this is Hi, this is Jay.
+
+[Prof. Devavrat ] 23:39:34
+I wanna find out what this entry is. What I'll do is that I'll do I'll do clustering personalized clustering for I that is fine.
+
+[Prof. Devavrat ] 23:39:43
+That's it. Other users Okay, that are. Like I, there's a closest, most similar users.
+
+[Prof. Devavrat ] 23:39:59
+And let's say without loss, I mean just for simplicity, these are top 10 users here.
+
+[Prof. Devavrat ] 23:40:02
+I call them user one to 10. Similarly, find Dop 10. Items. That are most similar.
+
+[Prof. Devavrat ] 23:40:18
+To Jake. Let's say let's call that one group to 12. So now I've got this.
+
+[Prof. Devavrat ] 23:40:24
+10 users in 10 items.
+
+[Prof. Devavrat ] 23:40:29
+These users are the most similar to I. These items are most similar to Jay. Now I look at the entries that are there.
+
+[Prof. Devavrat ] 23:40:37
+So let's say a one years, you know, here, 0 here, one here and one here and everything else is question mark, okay?
+
+[Prof. Devavrat ] 23:40:43
+So out of these 100 possible entries, I've got this. 5 entries available. Now what I will do, All of these look like me.
+
+[Prof. Devavrat ] 23:40:55
+All of these look like me. So effectively, all of these must be very similar to me. So all I should do is I should just take average of this.
+
+[Prof. Devavrat ] 23:41:05
+That means that now for these top 10 similar things, I will just take the average of this sub matrix.
+
+[Prof. Devavrat ] 23:41:12
+In this case, it's 5 entries. 3 of them are one and other than 0.
+
+[Prof. Devavrat ] 23:41:17
+So I would say this is the And that's my collaborative filtering algorithm. This is what I would call user item.
+
+[Prof. Devavrat ] 23:41:29
+Collaborative filtering that I have used similar users and similar items together to produce my Averaging.
+
+[Prof. Devavrat ] 23:41:40
+And that's basically. The user item collaborative filtering. So it's nothing but first.
+
+[Prof. Devavrat ] 23:41:48
+Finding your personalized clusters of users and items and doing global averaging in that. That's that thing.
+
+[Prof. Devavrat ] 23:41:57
+This is just like clustering algorithm but that cluster was determined across users and items. Now here I'm creating a cluster on demand.
+
+[Prof. Devavrat ] 23:42:06
+For a given pair of users and items and then doing averaging. That's why I would call it a personalized clustering.
+
+[Prof. Devavrat ] 23:42:14
+And that's it. And now Elizabeth asked questions. Great. So Elizabeth's question is that, okay, this is all good, but I this question is that, okay, this is all good, but I missed most important thing.
+
+[Prof. Devavrat ] 23:42:23
+How do I find top or most similar? Let's say most Similar. Users are more similar items then she's absolutely right.
+
+[Prof. Devavrat ] 23:42:36
+The way I would do that is I would use cosine similarity that I calculated. In, my previous algorithm, right?
+
+[Prof. Devavrat ] 23:42:42
+I don't need to I don't need to work to. Hard now because I already explained to you how to compute similarities.
+
+[Prof. Devavrat ] 23:42:50
+So at this stage I've only told you everything about our collaborative filtering algorithm too. So in a nutshell in few minutes, I went from situation where I had not explained any new algorithm to you today to explain to full algorithms to you.
+
+[Prof. Devavrat ] 23:43:06
+But there was a ton of work we did.
+
+[Prof. Devavrat ] 23:43:10
+So there are details in the slides, animations and all that. I'll leave you with that.
+
+[Prof. Devavrat ] 23:43:17
+Okay. Please review that content before you go there, but Here is one thing that I still have not addressed and which should be an everybody's top of everybody's mind is that what happens when data is sparse and we cannot compute similarity.
+
+[Prof. Devavrat ] 23:43:33
+So think of here as an example. Of setting but I'm saying that Alice, for example, has rated this 4 movies.
+
+[Prof. Devavrat ] 23:43:43
+Bob has rated these 4 movies and 2 of them are common and hence I can determine similarity between them.
+
+[Prof. Devavrat ] 23:43:51
+For when data is sparse that may not be the case. So how do I Deal with sparsity.
+
+[Prof. Devavrat ] 23:43:59
+As a little bit of detailed thing here, but in a nutshell what it says is that Alice knows this person who is similar to her and this person who is similar to her.
+
+[Prof. Devavrat ] 23:44:09
+Who are similar to these people who are similar to these people. Okay, so Alice is similar to these 4 people to some amount.
+
+[Prof. Devavrat ] 23:44:20
+Bob is similar to these 3 people to somehow and hey. This one and this one are here. And so maybe now I can use that by proxy as Will says.
+
+[Prof. Devavrat ] 23:44:33
+The point is your friend is my friend. So if you are similar to somebody else and I'm similar to you, so I might be similar to somebody else.
+
+[Prof. Devavrat ] 23:44:44
+Now one has to be careful in terms of how you do this similarity propagation. And that is not straightforward.
+
+[Prof. Devavrat ] 23:44:51
+So I'm not explaining your detail here. I'm just giving you intuition. But if you want to know that there is a former state of mind, her name is Christina Lee You.
+
+[Prof. Devavrat ] 23:45:02
+She's a professor at Cornell now. And her thesis actually lays down these things in detail.
+
+[Prof. Devavrat ] 23:45:09
+And it's also, if you wanna look at the manuscript look for iterative Actually, just buy these keywords.
+
+[Prof. Devavrat ] 23:45:15
+It creative collaborative filtering and then you will find those things.
+
+[Prof. Devavrat ] 23:45:20
+Okay, so do you address all the key challenges with that I think I left. Unattended so far.
+
+[Prof. Devavrat ] 23:45:30
+So this stage, got clustering and collaborative filtering. And of course, I want to so as I have explained you, I wanna spend a few time, few minutes.
+
+[Prof. Devavrat ] 23:45:39
+Explaining the nice things about collaborative filtering. One is it is extensively used in practice as at least.
+
+[Prof. Devavrat ] 23:45:48
+As a building block.
+
+[Prof. Devavrat ] 23:45:52
+It is the way to build this is through, scalable nearest neighbor. So if you are keeping up with this modern, noise that's going on around LLMs and LLM based applications that one bill, there's a term that has been thrown around.
+
+[Prof. Devavrat ] 23:46:09
+Is called vector dB, right? That's basically this. This building block isn't this building block has been around for a while.
+
+[Prof. Devavrat ] 23:46:17
+Okay. And it just because now it's LLM has frenzy and there's an application people are using it put in a nutshell if you want to build collaborative filtering you would build that.
+
+[Prof. Devavrat ] 23:46:26
+It is a non-parametric method. And. What that means is that it actually is not of.
+
+[Prof. Devavrat ] 23:46:35
+Restricted by small model class as more and more data comes it becomes more and more powerful.
+
+[Prof. Devavrat ] 23:46:41
+That's a way to think about it on a natural way. It is by design incremental and robust you can add one thing at a time one data point at time change things at a time incrementally.
+
+[Prof. Devavrat ] 23:46:52
+Finally, it is interpretable. No, I tell you that I'm gonna give you good fellas because you like Godfather and there are people who like good Father, Godfather like good fellas and hence I'm recommending you that.
+
+[Prof. Devavrat ] 23:47:06
+That type of interpretation is. Inherent to these kind of algorithms. But I would call this as surveillance of your predictions.
+
+[Prof. Devavrat ] 23:47:15
+It can also help you with this kind of prevalence why uncertainty is high or low. Sorry, that's why I thought this is very, very good.
+
+[Prof. Devavrat ] 23:47:25
+And as Tudor says, you're absolutely right. That is this iterative collaborative filtering works because the world is small.
+
+[Prof. Devavrat ] 23:47:35
+Okay. Everybody's within. So, few hours of each other.
+
+[Prof. Devavrat ] 23:47:43
+Now, Job's question is wouldn't this matter be increasing bias? So again, I will put back you there's a go to this thing called causal matrix completion where What way to think about this causal matrix completion, there's an algorithm called synthetic.
+
+[Prof. Devavrat ] 23:47:58
+So algorithm is called SNN synthetic nearest neighbor. Collaborative filtering can be thought of as nearest neighbors.
+
+[Prof. Devavrat ] 23:48:06
+So Synthetic nearest neighbor in causal matrix completion is trying to overcome those bias in a systematic manner.
+
+[Prof. Devavrat ] 23:48:12
+Okay, I haven't leave you with that.
+
+[Prof. Devavrat ] 23:48:19
+Excellent. So, I got 10 min or so. Let's see if there are any burning questions that people have.
+
+[Prof. Devavrat ] 23:48:29
+And that might determine my some of my next steps. So what I wanna do really.
+
+[Prof. Devavrat ] 23:48:37
+SNN stands for synthetic nearest neighbors. Synthetic.
+
+[Prof. Devavrat ] 23:48:46
+Here it is. Neighbors.
+
+[Prof. Devavrat ] 23:48:54
+Thanks, Ron. Okay, great. So we've been remaining 10 min unless people don't have any burning questions.
+
+[Prof. Devavrat ] 23:49:02
+I want to walk you through this algorithm of singular value decomposition.
+
+[Prof. Devavrat ] 23:49:10
+Okay, and then shall I go from there?
+
+[Prof. Devavrat ] 23:49:17
+So let's see. So this is a detailed slides and all that you can go through it, but I think.
+
+[Prof. Devavrat ] 23:49:27
+But with,
+
+[Prof. Devavrat ] 23:49:31
+I'll just walk you through sort of a basic view of this. Singular value decomposition.
+
+[Prof. Devavrat ] 23:49:38
+We'll come back next lecture and I will review it again. Okay. And David, I will try to review some of the content.
+
+[Prof. Devavrat ] 23:49:44
+Again, next lecture. So if you have a lecture recording available, so please try to go through it again.
+
+[Prof. Devavrat ] 23:49:51
+You have sort of, a terrific team of, learning support available after the lecture.
+
+[Prof. Devavrat ] 23:49:56
+So hopefully through that combination of that you'll be able to. Recover the content if not Ask me question beginning of next lecture.
+
+[Prof. Devavrat ] 23:50:06
+I'll be more than happy to have. Okay. So let's see.
+
+[Prof. Devavrat ] 23:50:10
+We have data which looks like a matrix like this. Okay. Be want to find out.
+
+[Prof. Devavrat ] 23:50:24
+Matrix L which looks like this. Good. Why has lots of values that are missing question mark while I say star?
+
+[Prof. Devavrat ] 23:50:34
+And then I wanna go from here to here. And the idea was that, well, if you observe why.
+
+[Prof. Devavrat ] 23:50:41
+Then expectation of Y. Is I will add a little bit of additional model thing. I'll say well.
+
+[Prof. Devavrat ] 23:50:51
+Each entry IJ.
+
+[Prof. Devavrat ] 23:50:55
+You observe it probability B. So you observe. So which pair of user item pet I'm going to show you?
+
+[Prof. Devavrat ] 23:51:02
+I'm going to show you each entry by flipping a coin of Bias P. If it comes up ahead, then you will see Yij.
+
+[Prof. Devavrat ] 23:51:09
+Says that in expectation it's L. If it comes up tail with probability one minus p. Then you will not observe.
+
+[Prof. Devavrat ] 23:51:18
+Then your Yij effectively would be question one. No observation.
+
+[Prof. Devavrat ] 23:51:23
+Now, if you put this model. Then for every IJ, what you can say is that what is it, what are we my expected value?
+
+[Prof. Devavrat ] 23:51:31
+But let's replace question mark or star. By 0.
+
+[Prof. Devavrat ] 23:51:38
+So that means that Ij I observe equals to with probability p. Okay, with probability p. IG expected value of Yij.
+
+[Prof. Devavrat ] 23:51:52
+Is equal to.
+
+[Prof. Devavrat ] 23:51:56
+In probability P, with probability one minus p. That's when I don't observe since I've replaced stars or question mark by 0, it's just 0.
+
+[Prof. Devavrat ] 23:52:07
+Which means that expected value. My IG matrix when I replace star or question mark by 0 is p times Okay.
+
+[Prof. Devavrat ] 23:52:20
+So under this model, that is my model is. Okay. For each. Hi, Jay.
+
+[Prof. Devavrat ] 23:52:32
+You observe it. Observe with probability. Be and do not. Observe with Probably one minus p.
+
+[Prof. Devavrat ] 23:52:47
+If you observe It is a random variable said that it's expected value is equal to Lij.
+
+[Prof. Devavrat ] 23:52:58
+Under this model. When I replace Do not observe by 0. What I get is the expected matrix Y looks like p times expected me or the original matrix of my interest.
+
+[Prof. Devavrat ] 23:53:16
+Okay, so that's very good. That means that my observed matrix on average is p times the true matrix.
+
+[Prof. Devavrat ] 23:53:27
+So for some reason, somehow, if I could compute singular value decomposition of LA singular value decomposition of expectation expected value expected matrix of Y.
+
+[Prof. Devavrat ] 23:53:40
+Then I can so just take that and divide by P and I will get the answer. Okay, so with that as a motivation.
+
+[Prof. Devavrat ] 23:53:51
+What this is what singular
+
+[Prof. Devavrat ] 23:53:55
+Value thresholding algorithm looks like.
+
+[Prof. Devavrat ] 23:54:00
+Okay, so again, you have a matrix Y. Okay, first step. Replace question mark or missing values by 0.
+
+[Prof. Devavrat ] 23:54:13
+2, compute SVD of singular value decomposition. Why, which means that why would look like something like.
+
+[Prof. Devavrat ] 23:54:21
+K equals to 1 2 minimum of m. Sigma K UK. BK transpose. That's a singular value decomposition.
+
+[Prof. Devavrat ] 23:54:33
+3 compute p hat equals to number of entries. Observed in matrix y divided by m times n. And then 4.
+
+[Prof. Devavrat ] 23:54:49
+Your estimate, Let's say k equals to 1 2 up to R. How do I choose RI will tell you in a second.
+
+[Prof. Devavrat ] 23:54:57
+It's small are, I'm Sigma, EK transport. So all I did is that instead of this I'm truncating it.
+
+[Prof. Devavrat ] 23:55:10
+Here like this. So keeping the top outcomes here and then normalizing by one over p hat.
+
+[Prof. Devavrat ] 23:55:18
+And this should to you look very much like what we did in PCA by the way, right?
+
+[Prof. Devavrat ] 23:55:26
+In PCA of course for similarity calculation we had UK and MKay same. But effectively we truncated it.
+
+[Prof. Devavrat ] 23:55:35
+Here we in addition to truncation we also normalized it by fraction of observed entries.
+
+[Prof. Devavrat ] 23:55:40
+But that's all that's happening.
+
+[Prof. Devavrat ] 23:55:43
+This is your singularity composition, or singular value thresholding algorithm. Take the observed matrix, replayed missing value by zeros, do singular value decomposition.
+
+[Prof. Devavrat ] 23:55:53
+Compute fraction of observed entries in original matrix. And then estimate by truncating this up to some parameter r and normalizing it.
+
+[Prof. Devavrat ] 23:56:07
+And that's it. So what I've not done so far is I've not explained you how to choose R.
+
+[Prof. Devavrat ] 23:56:16
+Any guesses? H, we did. Something like this to decide. Damaged IIT reduction, amount for PCA.
+
+[Prof. Devavrat ] 23:56:27
+Yeah, so exactly. As seen we how we did the We do that. It's approximately rank as Mahi has says and indeed we should plot it.
+
+[Prof. Devavrat ] 23:56:38
+That is. What we should do like before, a k goes to one to up to so these are my singular values one to up to minimum of in this case m comma and And these are the squared singer values.
+
+[Prof. Devavrat ] 23:56:55
+Plot them so that it looks something like this. And then find R so that sigma one square dot dot dot sigma r squared.
+
+[Prof. Devavrat ] 23:57:05
+Divided by all the sigma squared like minimum of m. This is greater than I go to some threshold, say, point 9 or point 8 or whatever your choices.
+
+[Prof. Devavrat ] 23:57:17
+And that's how you do it.
+
+[Prof. Devavrat ] 23:57:21
+Okay. That's basically, your singular value for Schuling and we are done with that algorithm.
+
+[Prof. Devavrat ] 23:57:31
+Now we've got few minutes left. So I'm gonna try to see if I can, respond to your questions.
+
+[Prof. Devavrat ] 23:57:37
+Starting with, OK, so resonance, Nea's neighbor, it makes me curious about what other people platform I think I resemble a good point.
+
+[Prof. Devavrat ] 23:57:47
+Well, thanks at well. Okay, so I think you guys are talking to each other Elizabeth application other than for movie or purchases or similar products would you use this to identify the best combination of interventions for an international development program.
+
+[Prof. Devavrat ] 23:58:02
+Absolutely Elizabeth. Bring this question up next lecture. I'm going to talk about how this whole framework of recommendation system can be applied to causal influence, scenario analysis, what if question answers.
+
+[Prof. Devavrat ] 23:58:16
+David, I feel like we really blew through the last bit. Okay, I hope, I think David, I responded to that.
+
+[Prof. Devavrat ] 23:58:22
+I do hope that, today through help with the support of Facilitators after can help or going through lecture.
+
+[Prof. Devavrat ] 23:58:31
+If not, please ask me question next lecture and I'll more than happy to help. Leo, is even, even they gave the same rating, they may have different feelings.
+
+[Prof. Devavrat ] 23:58:41
+How can we see this kind of similarity? Well, so I think this is where if you and I had different feelings, right, then it would somewhere different show difference.
+
+[Prof. Devavrat ] 23:58:53
+If there's no difference, then all data looks same, then there's no way for us to differentiate it, right?
+
+[Prof. Devavrat ] 23:58:59
+That's basically the world. Okay, so I think This is where you guys are answering me question about my question.
+
+[Prof. Devavrat ] 23:59:08
+Sujata's question is perhaps silly or smart question maybe. There's nothing, silly about questions.
+
+[Prof. Devavrat ] 23:59:15
+Can you give us 2080 or 80 20 rule for data science, meaning if we cover this 80 20% of the course.
+
+[Prof. Devavrat ] 23:59:20
+You'll get 80% of the information needed to become a good comfortable Alright, that is a tough question because I'm still trying to become a good data scientist.
+
+[Prof. Devavrat ] 23:59:30
+In my life. Not sure, but why do you bring this up next lecture near the end where I will leave 15 min for conversation and we can try to see if we can come up with something meaningful for you.
+
+[Prof. Devavrat ] 23:59:47
+So you fixed point 9 to calculate R yes that's my choice you could choose it 2.8 Chris and Collaborative, do we necessarily need to apply PC and no?
+
+[Prof. Devavrat ] 23:59:57
+Cooperative friction nothing. You just in-coraborative filtering all you do is compute similarities and that's it.
+
+[Prof. Devavrat ] 00:00:02
+But then you will compute. The closes similar to you among all people, right? So that's a lot of calculation.
+
+[Prof. Devavrat ] 00:00:10
+For every Okay, Cheng Song, but 0 originally means dislike in SWT, we replace star by 0 and SWT, we replace star by 0 and is okay. Absolutely.
+
+[Prof. Devavrat ] 00:00:22
+It is okay because of this. This model that I explained. Okay, and another other thing is can I explain step 3 again?
+
+[Prof. Devavrat ] 00:00:29
+Yes, on the rather. So step 3 is says that. You know when we looked at original data matrix I see this one.
+
+[Prof. Devavrat ] 00:00:39
+I have some example, okay. Yeah, so for this matrix. How many total entries are there?
+
+[Prof. Devavrat ] 00:00:47
+Where total entries are 6 times 3 is 18. How many entries are observed in this matrix? Let's say one d023-45-6789.
+
+[Prof. Devavrat ] 00:00:58
+So 1 2 3 4 5 6 7 8 9 1011 1230. So it is my p hat in this case is 13 over 80.
+
+[Prof. Devavrat ] 00:01:09
+Okay, so I hope you exactly as soon answered. Thank you. So that's what. My step 3 was.
+
+[Prof. Devavrat ] 00:01:16
+Mari, Maria, not Marja. I remembering your name. Maria says, but couldn't some of the questions be actually one?
+
+[Prof. Devavrat ] 00:01:26
+Absolutely pretty much, but the point is that by replacing 0 as a starting point you are able to first do singular value decomposition and then once you calculate singular value decomposition and truncate it you're gonna replace those with missing values by something else.
+
+[Prof. Devavrat ] 00:01:38
+A team thank you for answering my question. Maxim is What are VKs and you case they're singular vectors, the decomposition, Raoul, what application is being used for displaying all the content?
+
+[Prof. Devavrat ] 00:01:51
+I'm really eager. Oh, I see. What is this app? If that's what you are asking, let's see, it is called, what is this called?
+
+[Prof. Devavrat ] 00:02:03
+What is this card?
+
+[Prof. Devavrat ] 00:02:05
+It's called Good Notes.
+
+[Prof. Devavrat ] 00:02:08
+Okay, and. Okay, I think this is a good place to conclude an ICM plus 2. My apologies.
+
+[Prof. Devavrat ] 00:02:17
+Okay, great. For take send your time sure much all yours how everybody have a lovely day and try to do your bedtime homework and we will sort of do something really interesting next lecture.
+
+[[GL Mentor] Shubham Sharma] 00:02:29
+Thank you.
+
+[Prof. Devavrat ] 00:02:31
+Don't disappear. If you need help, please stay back. We're got fantastic support here.
+
+[[GL Mentor] Shubham Sharma] 00:02:36
+Thanks a lot. Bye. Okay, hi Neuerb. How are you doing?
+
+[[GL Mentor] Shubham Sharma] 00:02:45
+You are muted.
+
+[[GL Mentor] Shubham Sharma] 00:02:49
+You are muted.
+
+[[GL Mentor] Niruppam Sharma] 00:02:53
+Sorry. Yes, I was saying I'm doing very well. Well, you are well to and good morning to everyone else.
+
+[[GL Mentor] Niruppam Sharma] 00:03:01
+Good afternoon. Good morning.
+
+[[GL Mentor] Shubham Sharma] 00:03:02
+I'm doing it as well. Thank you. Right, so let's get started. We can have more questions.
+
+[[GL Mentor] Shubham Sharma] 00:03:09
+There are there are some interesting questions that we have from. The from during the election as well. So, Elvisa Barry had posted one question.
+
+[[GL Mentor] Shubham Sharma] 00:03:20
+How do we evaluate the recommendation system accuracy?
+
+[[GL Mentor] Niruppam Sharma] 00:03:23
+So when you are building a systems right You have the actual ratings provided by these users. You can think of them as missing like you want to find them out.
+
+[[GL Mentor] Niruppam Sharma] 00:03:34
+So you find them from the model, right? So you guys estimating the ratings, you have the ratings from your test data known.
+
+[[GL Mentor] Niruppam Sharma] 00:03:42
+You can compare them. So you can look at the mean square error. Who to means that mean absolute error as well.
+
+[[GL Mentor] Niruppam Sharma] 00:03:50
+So we look at those things to find out how I create your rating estimations are compared to the actual possible ratings.
+
+[[GL Mentor] Niruppam Sharma] 00:04:00
+Yes, like supervise learning.
+
+[[GL Mentor] Shubham Sharma] 00:04:03
+Right. And in fact, in the, mental learning session as well, we will see. Some of these as well as an idea of how can we use procedure and recall as well.
+
+[[GL Mentor] Shubham Sharma] 00:04:14
+To find if the recommendations are doing a good job or not.
+
+[[GL Mentor] Shubham Sharma] 00:04:19
+And on top of it as we discussed last time also. Recommendation systems are you know they are developed for a certain use case for a certain business goal.
+
+[[GL Mentor] Shubham Sharma] 00:04:31
+So there are a lot of KPIs as well that you can monitor to see if the recommendation systems are sort of able to meet the goal that they, you know, you originally.
+
+[[GL Mentor] Shubham Sharma] 00:04:41
+Set for developing that particular recommendations. Or how to what extent? For example, let's say. Are you able to improve the user engagement?
+
+[[GL Mentor] Shubham Sharma] 00:04:50
+Or are you able to, improve the top line or something like that, right? Click through rates, improvement and click through rates, etc.
+
+[[GL Mentor] Niruppam Sharma] 00:05:00
+Very good.
+
+[[GL Mentor] Shubham Sharma] 00:05:03
+So Shiram is asking for clustering the movies. What could be the features that we could use?
+
+[[GL Mentor] Shubham Sharma] 00:05:10
+Will user prices be one of them?
+
+[[GL Mentor] Niruppam Sharma] 00:05:13
+Well user.
+
+[[GL Mentor] Shubham Sharma] 00:05:15
+I mean, I think the prices on the movies.
+
+[[GL Mentor] Niruppam Sharma] 00:05:19
+What if the prices of like But I see price.
+
+[[GL Mentor] Shubham Sharma] 00:05:24
+Yeah, the cost of the movie basically.
+
+[[GL Mentor] Niruppam Sharma] 00:05:28
+Yeah, it could be. I mean. See the more diverse features you have, the better it is.
+
+[[GL Mentor] Niruppam Sharma] 00:05:36
+But you have to keep in mind. What kind of features actually, you know, make people come to the theatres or come to the platform and watch the movies.
+
+[[GL Mentor] Niruppam Sharma] 00:05:45
+Do you think the actual cost of the movie actually plays a role or not? Right. That's the question you need to answer.
+
+[[GL Mentor] Niruppam Sharma] 00:05:53
+So definitely you want to look at John, the actor names. Look at it really easier, how old the movie is.
+
+[[GL Mentor] Niruppam Sharma] 00:06:00
+Did it win any awards or? Made as you may also get bilingual movies as well.
+
+[[GL Mentor] Niruppam Sharma] 00:06:08
+Then what was the plot line? You can have a brief summary of the plot and make sense from the The duration of the movie as well.
+
+[[GL Mentor] Niruppam Sharma] 00:06:16
+Data many people who like to watch short movies, short films. So you can look at duration as well.
+
+[[GL Mentor] Niruppam Sharma] 00:06:22
+What's the average eating given by users? Is it trending or not? They can be, reviews also, right?
+
+[[GL Mentor] Niruppam Sharma] 00:06:29
+What's the overall sentiment of the reviews? So they can be huge things. You can look at IMD meetings as well.
+
+[[GL Mentor] Niruppam Sharma] 00:06:35
+You can bring See, this is where you can bring external data as well. For your own products. So the more diverse your features are, the better it is.
+
+[[GL Mentor] Niruppam Sharma] 00:06:45
+But just need to make sure the features should be actually relevant to what makes people prefer the product or not.
+
+[[GL Mentor] Shubham Sharma] 00:06:56
+So Asim is asking. Where is SVD used for collaborative? In SWD we do PC but profs are in collaborative we don't use PCA.
+
+[[GL Mentor] Niruppam Sharma] 00:07:07
+See the basic collaborative filtering was finding similarities between users and the items. Right to SMADD ratings, 30 problem with that is as this scale of your data becomes too much right most of your values will be very sparse I didn't the example also.
+
+[[GL Mentor] Niruppam Sharma] 00:07:28
+Professor talked about 6% of the data being available and right. So in those cases, the collaborative filtering approach is either going to be very inefficient.
+
+[[GL Mentor] Niruppam Sharma] 00:07:35
+Or because they use scale. Running those algorithms can be difficult. So what do you want to do is you want to reduce the dimensions of your user metrics and item metrics.
+
+[[GL Mentor] Niruppam Sharma] 00:07:45
+So that you can. Can say you can encapsulate the big data into small parts itself. Because most of it is passing nature and use that small information with estimating data.
+
+[[GL Mentor] Niruppam Sharma] 00:08:00
+So to retrieve the smaller component of the larger data. Use SPD for that.
+
+[[GL Mentor] Shubham Sharma] 00:08:12
+So that is asking maybe out of some academy context when we do any action on Facebook we are really caught about what we are and they get into our mailboxes, YouTube ads and also sometimes into our mind.
+
+[[GL Mentor] Shubham Sharma] 00:08:26
+But if we search on Google or YouTube, you are better. Any thoughts why is this or it's not?
+
+[[GL Mentor] Niruppam Sharma] 00:08:38
+See ultimately, because of what I can get from a question ultimately depends on how companies are using your data, right?
+
+[[GL Mentor] Niruppam Sharma] 00:08:46
+You have your data saved on your cookies and all right on your own system. They're looking at your past browsing history, what other applications you use.
+
+[[GL Mentor] Niruppam Sharma] 00:08:55
+Get our many many applications when you download them right. You are not looking at the actual contract but you approved that decal locality as the apps you are using.
+
+[[GL Mentor] Niruppam Sharma] 00:09:04
+So how the information gets extracted and used. And how the insights get interacted with you again, right?
+
+[[GL Mentor] Niruppam Sharma] 00:09:13
+That depends on application application application. So maybe what you're saying is happening with Facebook, but you 2 may not be doing that.
+
+[[GL Mentor] Niruppam Sharma] 00:09:20
+Right.
+
+[[GL Mentor] Shubham Sharma] 00:09:24
+So Mark was asking, could you go over building this similarity matrix? And show where Sigma and Mu are extracted.
+
+[[GL Mentor] Shubham Sharma] 00:09:32
+From it.
+
+[[GL Mentor] Niruppam Sharma] 00:09:35
+So.
+
+[[GL Mentor] Niruppam Sharma] 00:09:40
+What is the Sigma I knew about? Do you know the context? Because I know the Cincinnati my taxi guys.
+
+[[GL Mentor] Niruppam Sharma] 00:09:46
+You have the ratings vector for every user, right? Every user has a vector for all the objects.
+
+[[GL Mentor] Niruppam Sharma] 00:09:53
+Think of them on a big large dimensional space. As a coordinate for the given user. So multiple users have different different coordinates.
+
+[[GL Mentor] Niruppam Sharma] 00:10:03
+Create a line from the origin to each of these coordinates. Think of them as a vector representing those.
+
+[[GL Mentor] Niruppam Sharma] 00:10:10
+Users patterns or behaviors. So similarity can be the angle between them right or it can be how co-related the 2 vectors of the users are.
+
+[[GL Mentor] Niruppam Sharma] 00:10:21
+Or it could be a disturbance between So there's still between the actors how correlated they are.
+
+[[GL Mentor] Niruppam Sharma] 00:10:27
+Was the angle between them? That can be used to find similarity.
+
+[[GL Mentor] Niruppam Sharma] 00:10:33
+I don't know where does the mu and sigma came into this question. Maybe there was some other context.
+
+[[GL Mentor] Shubham Sharma] 00:10:39
+Yeah, I think this is about the eigenvalue of singular value decomposition. So basically Sigma would be the singular values.
+
+[[GL Mentor] Shubham Sharma] 00:10:46
+That you get from your. From your SVD basically.
+
+[[GL Mentor] Shubham Sharma] 00:10:54
+And I think it's not new, but it's the UK vector. The single vectors that you get.
+
+[[GL Mentor] Shubham Sharma] 00:11:00
+Right, so if you feel about S. Yeah.
+
+[[GL Mentor] Niruppam Sharma] 00:11:01
+The UPA So you use for the user actor so once the size has been reduced right So for every user, the vector lens just came.
+
+[[GL Mentor] Niruppam Sharma] 00:11:13
+Only it was very huge. And for every item, also the length of the vector which was very huge has become shorter now.
+
+[[GL Mentor] Shubham Sharma] 00:11:26
+So Paige is asking how do we find Drift detection in the recommendation system?
+
+[[GL Mentor] Shubham Sharma] 00:11:31
+Also, how do we evaluate this system if it's giving good recommendations?
+
+[[GL Mentor] Niruppam Sharma] 00:11:37
+So it comes back to the previous question which was asked about how you evaluated quality of a system.
+
+[[GL Mentor] Niruppam Sharma] 00:11:44
+So like Shuba has also mentioned apart from looking at RMSC, MSC and all look at precision recall is another metric then you can look at other measures.
+
+[[GL Mentor] Niruppam Sharma] 00:11:56
+For example, has the engagement been increasing? So, I am a user and my average time spent on Fix is supposed 30 min a day.
+
+[[GL Mentor] Niruppam Sharma] 00:12:05
+Has it been increasing over the last quarter or not? I think applied the system right or has it been decreasing?
+
+[[GL Mentor] Niruppam Sharma] 00:12:15
+Is that trend similar for a group of people? Okay, if yes. What are the features of the group of people, right?
+
+[[GL Mentor] Niruppam Sharma] 00:12:20
+Can you evaluate all those things? You can also get click to rate. Amount of time spent on product page.
+
+[[GL Mentor] Niruppam Sharma] 00:12:26
+And measure those KPIs and see if they are increasing or decreasing. If that changing in a positive way than you expected, that shows that either your algorithm is not doing well or maybe the behaviors are changing.
+
+[[GL Mentor] Niruppam Sharma] 00:12:40
+Because sometimes in different different seasons the behaviors may be different. The kind of movies I like to watch in summer is very different to the movies I like to watch in winter.
+
+[[GL Mentor] Niruppam Sharma] 00:12:49
+In winter, I'm mostly fond of watching water movies. Why is somewhere I like to watch?
+
+[[GL Mentor] Niruppam Sharma] 00:12:53
+Comedy movies or other stuff right so you can look at those KPIs and if they're changing or not.
+
+[[GL Mentor] Shubham Sharma] 00:13:04
+So, I had asked a question earlier. Can you give us a 80 20 rule for data science, meaning if we cover 20% of the course you can get 80% of the information needed to become a good slash comfortable data scientist.
+
+[[GL Mentor] Niruppam Sharma] 00:13:20
+See, if you ask me today, today also if you give me a data science problem. I will be like in my mind I'm talking about my mind right I'll be anxious I'll be curious to know what I'm trying to solve okay because I always believe every challenge is different.
+
+[[GL Mentor] Niruppam Sharma] 00:13:37
+Because you have to include domain knowledge. Business knowledge as well you have to be good how do you apply the right algorithm how to improve the algorithms what parameters it takes for your new data variables.
+
+[[GL Mentor] Niruppam Sharma] 00:13:49
+Which way should you select? Which one should we remove? How will the algorithm be used in real world?
+
+[[GL Mentor] Niruppam Sharma] 00:13:54
+Who are the people on which the algorithms tried? So there are so many factors to consider. We use always changing, right?
+
+[[GL Mentor] Niruppam Sharma] 00:14:03
+So I don't think there's any how you can say that if you learn these things will be very comfortable you will never be comfortable never ever But I still feel if you're statistics is strong, if your probability is strong.
+
+[[GL Mentor] Niruppam Sharma] 00:14:17
+Then if you cover the basic algorithms. Like linear integration. Leicester. Ldkmda logistic DCMPs random forest I think we have missed SVM, so SVM also.
+
+[[GL Mentor] Niruppam Sharma] 00:14:32
+You may be. You can say at a good foundational level okay beyond that is all about practice says the practice which is more important without solving many case studies you will not even know
+
+[[GL Mentor] Niruppam Sharma] 00:14:47
+Machine learning is just a small part of it. Okay. You may not even use it in a data center project.
+
+[[GL Mentor] Niruppam Sharma] 00:14:54
+I'm telling you honestly, you may come to know that tomorrow you are working on 100 projects. 70 of them don't even require machine learning.
+
+[[GL Mentor] Niruppam Sharma] 00:14:58
+It may be done without them also, right? So it's about solving a data science, solving a business question with what you've learned, which can be very difficult at the same time if you have foundations just strong it can be easier to learn.
+
+[[GL Mentor] Niruppam Sharma] 00:15:14
+That's the only thing I can say.
+
+[[GL Mentor] Shubham Sharma] 00:15:17
+Yeah, right. And a lot of times the term data scientist, you know, I mean this term has been used for a wide variety of requirements I would say from the data scientist term will really vary the you know the rules and the source will get from organization to organization.
+
+[[GL Mentor] Shubham Sharma] 00:15:37
+It really depends on how an organization looks at a data scientist and what sort of requirements a company would have, right?
+
+[[GL Mentor] Shubham Sharma] 00:15:43
+So In a company, maybe you're all you're doing is just more like data analysis, but they're still calling that role under the scientists as well.
+
+[[GL Mentor] Shubham Sharma] 00:15:52
+And in some other company, maybe you're more doing more of. Software development work which involves machine learning and that is also given this term of data scientist right so that to give a very general answer to that question is very difficult would need more context as to, you know.
+
+[[GL Mentor] Shubham Sharma] 00:16:10
+What sort of role you are in and what actually is expected out of your work.
+
+[[GL Mentor] Shubham Sharma] 00:16:20
+Okay, so alpha is also alpha where he's asking a question. Are data scientists specialized in some technique?
+
+[[GL Mentor] Niruppam Sharma] 00:16:28
+I would say they are more specialist in a domain now already, right? For example, marketing in finance is my domain, right?
+
+[[GL Mentor] Niruppam Sharma] 00:16:38
+I have a friend of mine who is more into health care right so everyone in the domain that they are more comfortable with because they've worked on many key studies tools and techniques are going to be common.
+
+[[GL Mentor] Niruppam Sharma] 00:16:49
+Okay, because the foundations are same statistics and probability right. So I would set a tools, going to be common, but.
+
+[[GL Mentor] Niruppam Sharma] 00:16:57
+Domain knowledge you have the kind of problems you have sold. That is going to be unique for every data scientist.
+
+[[GL Mentor] Shubham Sharma] 00:17:08
+Next question from Laura, can you elaborate on how to build a recommendation system when data is limited?
+
+[[GL Mentor] Niruppam Sharma] 00:17:15
+So when your data is limited, I think first of all, the technique of SVD is very good because it works with spars data very well.
+
+[[GL Mentor] Niruppam Sharma] 00:17:23
+Secondly, I think If you are the data is limited, you can always try the clustering method as well.
+
+[[GL Mentor] Niruppam Sharma] 00:17:29
+So keep it closed on small users and small items. Anyhow, it works very well. Then, the system is pretty good.
+
+[[GL Mentor] Niruppam Sharma] 00:17:37
+And most importantly, I think is about trying to make users interact with more and more items, right? So good advertisement, good marketing, techniques, you know, making sure everyone is exposed to variety of contains that is a very important role so that you can increase your data.
+
+[[GL Mentor] Niruppam Sharma] 00:17:59
+Right. So That's it, but most importantly thing about it, the continuous system and populated a system.
+
+[[GL Mentor] Niruppam Sharma] 00:18:08
+They will be most important for you if your data is limited.
+
+[[GL Mentor] Shubham Sharma] 00:18:14
+So Elizabeth had a A question earlier. Other than for movies or purchases of similar products, could you use this to identify the best combination of interventions.
+
+[[GL Mentor] Shubham Sharma] 00:18:27
+For an international development program.
+
+[[GL Mentor] Niruppam Sharma] 00:18:31
+Yeah, definitely. I think definitely see. Is a technique called market past analysis We just commonly used to group things together which are often use together like if you go into market you'll buy bread and butter together right just like a combination So you can always try these recommended systems to find out the perfect combinations to.
+
+[[GL Mentor] Niruppam Sharma] 00:18:54
+Sell or use. Definitely. We didn't.
+
+[[GL Mentor] Shubham Sharma] 00:19:03
+So Asim had a question earlier. Can you please, explain again user user or item item collaborative building?
+
+[[GL Mentor] Niruppam Sharma] 00:19:11
+So in users, there what I do is suppose there are 10 movies on the system. I like 4 of them.
+
+[[GL Mentor] Niruppam Sharma] 00:19:19
+I hate couple of them. And there are 4 I am not yet exposed to. System wants to know which of these 4 remaining ones should they, show me.
+
+[[GL Mentor] Niruppam Sharma] 00:19:30
+So what it is, they find. Very, let's say they find a very closely group of people who have similar as to what I have.
+
+[[GL Mentor] Niruppam Sharma] 00:19:40
+Okay. So let's say they find 100 people. Well, very similar to me in terms of license dislikes.
+
+[[GL Mentor] Niruppam Sharma] 00:19:46
+So what they do, they pick up those 100 people and see Do those 100 people who are similar to Neera Pam.
+
+[[GL Mentor] Niruppam Sharma] 00:19:53
+Like those 4 movies or not or which of those remaining 4 movies. Boodles 100 people like. Those ones you recommend to me.
+
+[[GL Mentor] Niruppam Sharma] 00:20:03
+That is user user. Okay, if my friend likes something because he's my friend. I may also like it.
+
+[[GL Mentor] Niruppam Sharma] 00:20:10
+Test user user. Okay. You know item item. Basically you're getting if I like item.
+
+[[GL Mentor] Niruppam Sharma] 00:20:16
+Find other like other items which are similar to it not in terms of properties But in terms of the way it has received the user ratings.
+
+[[GL Mentor] Niruppam Sharma] 00:20:25
+Okay. And then among those items. So is the ones which are highly rated. I recommend them to me.
+
+[[GL Mentor] Niruppam Sharma] 00:20:33
+This item item.
+
+[[GL Mentor] Shubham Sharma] 00:20:39
+So Wicked is asking, will we have access to any or all of you after this calls for a month or a year to ask real world problems.
+
+[[GL Mentor] Niruppam Sharma] 00:20:49
+I'm not sure on that so guys. Nobody has asked us questions after the quote is up till now.
+
+[[GL Mentor] Niruppam Sharma] 00:20:56
+If even if they are, I don't know if it has reached to us or not. So the I think the management can answer your question divest.
+
+[[GL Mentor] Niruppam Sharma] 00:21:02
+But you do have access to content for 3 years so sure.
+
+[[GL Mentor] Shubham Sharma] 00:21:07
+Right, I mean, I have I have been in touch with some learners on LinkedIn and other modes.
+
+[[GL Mentor] Shubham Sharma] 00:21:14
+So definitely I mean you can reach out to mentors you can you know have connections and discuss something later on as well depending on how your connection is with the mentor.
+
+[[GL Mentor] Niruppam Sharma] 00:21:23
+Yeah, and, when I take a group I always share my email with them so they can always reach out to me.
+
+[[GL Mentor] Niruppam Sharma] 00:21:31
+I definitely, Linda is always open right.
+
+[[GL Mentor] Shubham Sharma] 00:21:37
+So under others asking can you walk through the linear algebra portion from this lecture particularly the singularity from matrices.
+
+[[GL Mentor] Niruppam Sharma] 00:21:49
+So that will take some time. So Anwara, I have one request, on that.
+
+[[GL Mentor] Niruppam Sharma] 00:21:55
+So, Shimam, if you can summarize it quickly, maybe you should realize it's totally okay.
+
+[[GL Mentor] Niruppam Sharma] 00:22:00
+But anyhow, when you have your to ask that question again in case you feel our summarization is very short.
+
+[[GL Mentor] Niruppam Sharma] 00:22:07
+So she won't if you can summarize, for another.
+
+[[GL Mentor] Shubham Sharma] 00:22:11
+Right, so let me quickly share it and also I would say I think this is discussed in detail in the 3 weeks as well.
+
+[[GL Mentor] Shubham Sharma] 00:22:20
+So you can, you know, spend time on the previews. And, hopefully you will get more clarity there.
+
+[[GL Mentor] Shubham Sharma] 00:22:27
+So let me see. Line algebra portion the singularity found in matrices.
+
+[[GL Mentor] Shubham Sharma] 00:22:34
+Oh
+
+[[GL Mentor] Niruppam Sharma] 00:22:40
+I think it might be in the SVD.
+
+[[GL Mentor] Shubham Sharma] 00:22:43
+Yeah, right, single. Okay, so this one right.
+
+[[GL Mentor] Niruppam Sharma] 00:22:48
+Yes.
+
+[[GL Mentor] Shubham Sharma] 00:22:53
+Yes, I think these are the steps. Okay, so basically What we know of SED is that you haven't any, so let's say.
+
+[[GL Mentor] Shubham Sharma] 00:23:04
+You have, I mean, think of if I try to explain from very basic, you know. We in, what do you call?
+
+[[GL Mentor] Shubham Sharma] 00:23:13
+Standard fifth mathematics we use to learn to factor out numbers into prime numbers, right? So let's say if we have 10, we used to write it like 2 multiplies by 5, right?
+
+[[GL Mentor] Shubham Sharma] 00:23:23
+So, similarly, think of SVD as decomposing a matrix into simple matrices, right?
+
+[[GL Mentor] Shubham Sharma] 00:23:28
+So we decompose this matrix L into simple matrices US and V transpose. Now these have special properties.
+
+[[GL Mentor] Shubham Sharma] 00:23:36
+You and we are matrices which would have orthogonal vectors. S is a matrix which is a diagonal matrix.
+
+[[GL Mentor] Shubham Sharma] 00:23:43
+It would have singular vectors, right? So how is how is this done? This is something that you should, you know, lead on your own.
+
+[[GL Mentor] Shubham Sharma] 00:23:51
+It would take a bit of time. But I think we have discussed this earlier also in the PCA, PCA discussion as well.
+
+[[GL Mentor] Shubham Sharma] 00:23:58
+So this is this is like, the algebraic form of it. Where you know you're talking about each and every entry in that matrix else.
+
+[[GL Mentor] Shubham Sharma] 00:24:08
+A lot of ID can be written like this where You is a vector, V is a vector and SK would be a scalar, which is basically that single value.
+
+[[GL Mentor] Shubham Sharma] 00:24:16
+Right, so now L we know is the matrix which has a lot of missing values, right? So what if we can Find these matrices, then we can find the product of these matrices and the resultant matrix that we would Right.
+
+[[GL Mentor] Shubham Sharma] 00:24:32
+So if I if we have you at and we task force, we multiply these matrices, the resultant matrix that we would get.
+
+[[GL Mentor] Shubham Sharma] 00:24:36
+Would be a full matrix, right? I mean, it won't have any missing value. So that's a way to fill in the missing values for the original L matrix.
+
+[[GL Mentor] Shubham Sharma] 00:24:43
+So the way we do this is What's the we have to decompose L right so What we do is we fill up the missing values of L with anything, you know, 0 or any missing value invitation strategy that you would be able to follow.
+
+[[GL Mentor] Shubham Sharma] 00:25:00
+Then you do the F 3D you find these you know decompose matrices and then you do the reverse you multiply back these decompose matrices to get the original matrix L but One thing that you do differently here is that instead of taking all the singular values, You know, let's say if
+
+[[GL Mentor] Shubham Sharma] 00:25:22
+you have if the rank is are then you would get our singular values, right? So you try to choose less number of single values depending on as the professor explained, right?
+
+[[GL Mentor] Shubham Sharma] 00:25:35
+You can choose a threshold of of that ratio basically saying that how much of the variation is being explained by the number of components that you're taking.
+
+[[GL Mentor] Shubham Sharma] 00:25:45
+Okay, so. Then that's what we are doing. So let's say we get 10.
+
+[[GL Mentor] Shubham Sharma] 00:25:50
+SK values, right? So, like minimum of N comma n is 10, we might choose only 4, right?
+
+[[GL Mentor] Shubham Sharma] 00:25:57
+So we then we multiply back those 4. Okay, let me actually. So let's say this is S.
+
+[[GL Mentor] Shubham Sharma] 00:26:06
+It's a diagonal matrix. So we take a sub matrix of this diagonal matrix. So let's say if we have 10 values here, one to 3, along the diagonal 10 value.
+
+[[GL Mentor] Shubham Sharma] 00:26:15
+So we just take 4, right? And accordingly we will take the corresponding U and B and then we multiply them to get this LIKE original matrix and that place you know you saw that matrix estimation problem for your recommendation system.
+
+[[GL Mentor] Shubham Sharma] 00:26:32
+So hopefully that clarified the question. But again, I would recommend you to go in detail to SVD.
+
+[[GL Mentor] Shubham Sharma] 00:26:39
+You can check the Wikipedia link. For this video and also Also the free reads.
+
+[[GL Mentor] Shubham Sharma] 00:26:47
+In fact, I can recommend you a book as well, which is Gilbert. Strang. This is a very foundational book for Lenar algebra.
+
+[[GL Mentor] Shubham Sharma] 00:26:56
+So I think we'll book title is introduction to L algebra by Gilbert Strang.
+
+[[GL Mentor] Shubham Sharma] 00:27:02
+Okay, so We have. Quality resources folder also have very good videos and articles. Yeah, thanks a lot Malia for adding that.
+
+[[GL Mentor] Shubham Sharma] 00:27:15
+Normally the last thing in general how is the job market for data scientists? What is the average unemployment period?
+
+[[GL Mentor] Shubham Sharma] 00:27:21
+In say US Canada.
+
+[[GL Mentor] Niruppam Sharma] 00:27:24
+So Joe market is always good guys. The problem right now is because of the expected recession coming in right.
+
+[[GL Mentor] Niruppam Sharma] 00:27:30
+So companies are right now cautious about spending money. Okay. So they are waiting for the. Water to end and wait for what is going to happen next.
+
+[[GL Mentor] Niruppam Sharma] 00:27:40
+And then decide how much do you want to spend in hiring new people where they want to hire. But if you see a lot for all of the firing that has been happening right has been happening in the either non like says HR, accounts and all.
+
+[[GL Mentor] Niruppam Sharma] 00:27:59
+So, market is definitely there, but the problem right now is the crunch of money that is there in the company's accounts you know they are not trying to spend too much because you never know what is going to happen.
+
+[[GL Mentor] Shubham Sharma] 00:28:15
+Right next question from Malia what elective slash gaps don't would you recommend for someone seeking to pivot to data science.
+
+[[GL Mentor] Niruppam Sharma] 00:28:25
+Feel all of the capstones are made about data scientist only, right? If you think about it.
+
+[[GL Mentor] Niruppam Sharma] 00:28:31
+Every topic none of those topics are not from data science So it's all about what do you like doing?
+
+[[GL Mentor] Niruppam Sharma] 00:28:38
+Do you like to work with images? Go with deep learning, right? If you like to work with these kind of systems.
+
+[[GL Mentor] Niruppam Sharma] 00:28:44
+Go with a committee system. Would you like to interact more with the client, get involved more in making strategies, go for clustering or like marketing side and all right.
+
+[[GL Mentor] Niruppam Sharma] 00:28:54
+But would you like to make 4 algorithms? Right. Would you like to make predictive machine learning models?
+
+[[GL Mentor] Niruppam Sharma] 00:28:59
+So in that case, go with a registration and classification, right? So ultimately it depends on what you really like doing.
+
+[[GL Mentor] Niruppam Sharma] 00:29:06
+You like working on the code stuff more or working on the client side more. So it depends on those things or computer vision or recommendations.
+
+[[GL Mentor] Shubham Sharma] 00:29:20
+Okay, so let's take the last question from Yolanda. What would be a good starting point after this class to find a job in data science and what role.
+
+[[GL Mentor] Niruppam Sharma] 00:29:31
+See. Obviously it depends on person to person. How much domain knowledge you have, what kind of work you have done.
+
+[[GL Mentor] Niruppam Sharma] 00:29:39
+But I'm gonna talk about people who are like. Starting a fridge because they are the most US to know right or won't have any experience.
+
+[[GL Mentor] Niruppam Sharma] 00:29:49
+See. Right now if you try to find a job in data science, right? And we just signed it will be difficult, right?
+
+[[GL Mentor] Niruppam Sharma] 00:29:57
+So what if you try is generate a scientist? Data size associate. Okay, those are better options because they are not looking for you experiencing that.
+
+[[GL Mentor] Niruppam Sharma] 00:30:06
+Another thing you can try is become a data analyst or And why you at the job, right? You can all this communicate with the data sense team that you're willing to help them.
+
+[[GL Mentor] Niruppam Sharma] 00:30:17
+Right. Because you know this stuff so you want to see how they are applying it Help them with that and eventually if they have opening down the line you would like to apply internally for that.
+
+[[GL Mentor] Niruppam Sharma] 00:30:27
+So that can be a great idea. But if you believe you have some experience. Networking is always important.
+
+[[GL Mentor] Niruppam Sharma] 00:30:34
+Network, network network, reach out to people. See what they're working on. Can you help them with something?
+
+[[GL Mentor] Niruppam Sharma] 00:30:40
+And let them move.
+
+[[GL Mentor] Shubham Sharma] 00:30:44
+Right. Okay, perfect. So I guess we had user time that we had today. So thanks a lot everyone.
+
+[[GL Mentor] Shubham Sharma] 00:30:52
+Take care. Have a nice day and I see you on Friday. Bye bye
+
